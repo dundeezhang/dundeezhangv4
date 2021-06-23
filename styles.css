@@ -1,0 +1,30 @@
+html {
+    height: 100%;
+    background-color: rgb(22, 35, 46);
+}
+
+body {
+    height: 100%;
+    color: white;
+}
+
+.cover-image {
+
+    background-color: rgba(51, 66, 79, 0.4);
+    position: relative;
+
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -35px;
+    margin-left: -8px;
+    margin-right: -8px;
+
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+}
