@@ -7,7 +7,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
     background: transparent;
     font-family: 'Noto Sans JP', sans-serif;
-    text-align: center;
 }
 
 html {
@@ -67,6 +66,7 @@ body {
     background-size: cover;
     letter-spacing: 0.3em;
     color: rgb(195, 203, 209);
+    text-align: center;
 
 }
 
@@ -90,16 +90,24 @@ div.About-Overview {
 h2.About-Overview {
     padding-top: 200px;
     font-size: 50px;
+    text-align: center;
 }
 
 p.About-Overview {
     padding-top: 10px;
     padding-left: 30%;
     padding-right: 30%;
+    text-align: center;
 }
 
 .read-more {
     padding-top: 10px;
     font-size: 100%;
     color: white;
+    text-align: center;
+}
+
+.aboutme-overview {
+    padding-left: 25%;
+    padding-right: 25%;
 }
