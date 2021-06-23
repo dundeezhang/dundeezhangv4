@@ -93,13 +93,13 @@ footer {
 }
 
 .Name {
-    font-size: 80px;
-    padding-top: 15%;
+    font-size: 10vmin;
+    padding-top: 34vmin;
     letter-spacing: 0.05em;
 }
 h1 {
     color: rgb(255, 255, 255);
-    font-size: 50px;
+    font-size: 4vw;
     text-align: center;
 }
 
@@ -110,23 +110,24 @@ div.About-Overview {
 }
 
 h2.About-Overview {
-    padding-top: 200px;
-    font-size: 50px;
+    padding-top: 10vmin;
+    font-size: 4.5vmin;
     text-align: center;
     letter-spacing: 0.05em;
 }
 
 p.About-Overview {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-left: 30%;
     padding-right: 30%;
     text-align: center;
     letter-spacing: 0.03em;
+    font-size: 3vmin;
 }
 
 .read-more {
     padding-top: 10px;
-    font-size: 100%;
+    font-size: 3vmin;
     color: white;
     text-align: center;
 }
@@ -138,7 +139,7 @@ p.About-Overview {
 }
 
 h1.Sub-about {
-    font-size: 45px;
+    font-size: 5vmin;
     letter-spacing: 0.03em;
 }
 
@@ -165,18 +166,16 @@ h1.Sub-about {
 }
 
 .project-one {
+    
     background-color:rgb(4, 13, 19);
     height: 100%;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
     background-size: cover;
     letter-spacing: 0.1em;
     color: rgb(195, 203, 209);
     text-align: center;
     padding-left: 20%;
     padding-right: 20%;
-
+    font-size: 2.7vmin;
 }
 
 a.project-one {
@@ -186,4 +185,36 @@ a.project-one {
 
 .AboutMeClass {
     padding-top: 100px;
+}
+
+ul.socialcons {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: transparent;
+    display: table;
+    margin: 0 auto;
+}
+
+img.socialcons {
+    width: 6vw;
+    height: 6vw;
+    object-fit: contain;
+
+}
+
+div.Links {
+    background-color:rgb(4, 13, 19);
+    height: 500px;
+    background-size: cover;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 2.7vmin;
+}
+
+a.emaillink {
+    color: white;
+    font-size: 2vw;
+    text-decoration: none;
 }
