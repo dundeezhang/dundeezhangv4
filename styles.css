@@ -24,12 +24,26 @@ div.navontop {
     z-index: 100;
 }
 
+div.navontopAbout {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: rgb(22, 35, 46);
+}
+
+div.navontopProj {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: transparent;
+}
+
 ul.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(51, 66, 79, 0);
+    background-color: transparent;
 }
 
 li {
@@ -133,4 +147,43 @@ h1.Sub-about {
     padding-right: 25%;
     padding-top: 25px;
     letter-spacing: 0.03em;
+}
+
+.cover-Project {
+    background-image: url("images/banner-cover.png");
+    position: relative;
+
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    letter-spacing: 0.3em;
+    color: rgb(195, 203, 209);
+    text-align: center;
+
+}
+
+.project-one {
+    background-color:rgb(4, 13, 19);
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    letter-spacing: 0.1em;
+    color: rgb(195, 203, 209);
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+
+a.project-one {
+    text-decoration: none;
+    color: white;
+}
+
+.AboutMeClass {
+    padding-top: 100px;
 }
