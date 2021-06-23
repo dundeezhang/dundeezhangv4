@@ -1,6 +1,42 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
 html {
     height: 100%;
     background-color: rgb(22, 35, 46);
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(51, 66, 79);
+}
+
+li {
+    padding-right: 15px;
+    float: right;
+}
+
+li a {
+    display: block;
+    color: rgb(96, 127, 153);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: white;
 }
 
 body {
@@ -10,21 +46,23 @@ body {
 
 .cover-image {
 
-    background-color: rgba(51, 66, 79, 0.4);
+    background-color: rgb(51, 66, 79);
     position: relative;
 
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -35px;
-    margin-left: -8px;
-    margin-right: -8px;
 
+}
+
+.Name {
+    font-size: 75px;
+    padding-top: 20%;
 }
 
 h1 {
     font-size: 50px;
-    font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
 }
+
