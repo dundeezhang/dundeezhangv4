@@ -54,6 +54,14 @@ body {
     color: white;
 }
 
+footer {
+    background-color:rgb(20, 47, 58);
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 26px;
+}
+
 .cover-image {
 
     background-image: url("images/coverbanner.jpg");
@@ -91,6 +99,7 @@ h2.About-Overview {
     padding-top: 200px;
     font-size: 50px;
     text-align: center;
+    letter-spacing: 0.05em;
 }
 
 p.About-Overview {
@@ -98,6 +107,7 @@ p.About-Overview {
     padding-left: 30%;
     padding-right: 30%;
     text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .read-more {
@@ -110,4 +120,17 @@ p.About-Overview {
 .aboutme-overview {
     padding-left: 25%;
     padding-right: 25%;
+    padding-top: 25px;
+}
+
+h1.Sub-about {
+    font-size: 45px;
+    letter-spacing: 0.03em;
+}
+
+.Sub-about {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 25px;
+    letter-spacing: 0.03em;
 }
