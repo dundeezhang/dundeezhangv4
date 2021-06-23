@@ -16,7 +16,7 @@ html {
 }
 
 .nav-selected {
-    color:rgb(185, 201, 216);
+    color:rgb(213, 245, 255);
 }
 
 div.navontop {
@@ -40,7 +40,7 @@ li {
 
 li a {
     display: block;
-    color: rgb(96, 127, 153);
+    color: rgb(202, 202, 202);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -57,14 +57,16 @@ body {
 
 .cover-image {
 
-    background-color: rgb(51, 66, 79);
+    background-image: url("images/coverbanner.jpg");
     position: relative;
 
     height: 100%;
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     letter-spacing: 0.3em;
+    color: rgb(195, 203, 209);
 
 }
 
@@ -74,6 +76,7 @@ body {
     letter-spacing: 0.05em;
 }
 h1 {
+    color: rgb(255, 255, 255);
     font-size: 50px;
     text-align: center;
 }
