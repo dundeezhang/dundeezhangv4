@@ -1,0 +1,179 @@
+.cover-image {
+    background-image: url("images/coverbanner.jpg");
+    position: relative;
+    height: 100%;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    letter-spacing: 0.3em;
+    color: rgb(195, 203, 209);
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.navbar-links {
+    position: absolute;
+    z-index: 100;
+}
+.navbar-links {
+    width: auto;
+    height: 100%;
+    font-size: 18px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 32px;
+    padding-left: 7px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.navbar-links ul li {
+    padding-right: 0px;
+    float: none;
+}
+
+.navbar-links ul li a {
+    display: block;
+    color: rgb(236, 236, 236);
+    text-align: left;
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-left: 30px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-links ul li a:hover {
+    color: rgb(255, 129, 129);
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 100px;
+    z-index: 101;
+    color: transparent;
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        background-color: rgba(34, 34, 34, 0.829);
+        width: 100%;
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        display: none;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li {
+        text-align: center;
+        padding-right: none;
+    }
+    .navbar-links li a{
+        text-align: center;
+        padding-right: none;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Name {
+    position: absolute;
+    font-size: 5.5vw;
+    text-align: center;
+    padding-top: 300px;
+    letter-spacing: 0.02em;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+p.hobbies {
+    position: absolute;
+    font-size: 2vw;
+    text-align: center;
+    padding-top: 300px;
+    letter-spacing: 0.04em;
+    top: 450px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul.footerlinks {
+    font-size: 18px;
+    list-style-type: none;
+    display:flex;
+    justify-content: center;   
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li.footerlinks {
+    list-style: none;
+    padding: 5px;
+    display: inline-block;
+}
+
+li a.footerlinks {
+    color: rgb(83, 83, 83);
+    padding-top: 7px;
+    padding-bottom: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    font-family: 'Space Mono', monospace;
+
+}
+
+li a.footerlinks:hover {
+    color: rgb(177, 96, 96);
+}
