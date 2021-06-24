@@ -1,0 +1,103 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+html {
+    height: 100%;
+    background-color: rgb(22, 35, 46);
+}
+
+.nav-selected {
+    color:rgb(213, 245, 255);
+}
+
+div.navontop {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+div.navontopAbout {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: rgb(22, 35, 46);
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+    padding-right: 15px;
+    float: right;
+}
+
+li.navright {
+    padding-right: 15px;
+    float: left;
+}
+
+li a {
+    display: block;
+    color: rgb(202, 202, 202);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: white;
+}
+
+body {
+    height: 100%;
+    color: white;
+}
+
+footer {
+    background-color:rgb(20, 47, 58);
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 26px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 4vw;
+    text-align: center;
+}
+
+.aboutme-overview {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 25px;
+}
+
+h1.Sub-about {
+    font-size: 5vmin;
+    letter-spacing: 0.03em;
+}
+
+.Sub-about {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 25px;
+    letter-spacing: 0.03em;
+}
+
+.AboutMeClass {
+    padding-top: 100px;
+}
