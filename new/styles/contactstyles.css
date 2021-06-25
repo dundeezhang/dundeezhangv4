@@ -7,16 +7,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
     background: transparent;
     font-family: 'Noto Sans JP', sans-serif;
-    text-decoration: none;
 }
 
 html {
     height: 100%;
-    background-color: rgb(53, 53, 53);
-}
-
-a.nav-selected {
-    color:rgb(212, 154, 154);
+    background-color: rgb(22, 35, 46);
 }
 
 div.navontop {
@@ -33,7 +28,17 @@ ul.navbar {
     background-color: transparent;
 }
 
-li a.stylelinks {
+li {
+    padding-right: 15px;
+    float: right;
+}
+
+li.navright {
+    padding-right: 15px;
+    float: left;
+}
+
+li a {
     display: block;
     color: rgb(202, 202, 202);
     text-align: center;
@@ -41,9 +46,21 @@ li a.stylelinks {
     text-decoration: none;
 }
 
+li a:hover {
+    color: white;
+}
+
 body {
     height: 100%;
     color: white;
+}
+
+footer {
+    background-color:rgb(20, 47, 58);
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 26px;
 }
 
 h1 {
@@ -52,41 +69,42 @@ h1 {
     text-align: center;
 }
 
-footer {
-    background-color:transparent;
-    height: 20px;
-    color: white;
-    text-align: center;
-    padding-top: 0px;
-    padding-bottom: 5px;
-}
-
-ul.footerlinks {
-    font-size: 10px;
+ul.socialcons {
     list-style-type: none;
-    display:flex;
-    justify-content: center;   
     overflow: hidden;
     background-color: transparent;
+    display: table;
+    margin: 0 auto;
 }
 
-li.footerlinks {
-    list-style: none;
-    padding: 5px;
-    display: inline-block;
+img.socialcons {
+    width: 6vw;
+    height: 6vw;
+    object-fit: contain;
+
 }
 
-li a.footerlinks {
-    color: rgb(83, 83, 83);
-    padding-top: 8px;
-    padding-bottom: 0px;
-    padding-right: 15px;
-    padding-left: 15px;
+div.Links {
+    background-color:rgb(4, 13, 19);
+    height: 500px;
+    background-size: cover;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 2.7vmin;
+}
+
+img.socialcons:hover {
+    -webkit-filter: brightness(70%);
+}
+
+a.emaillink {
+    color: white;
+    font-size: 2vw;
     text-decoration: none;
-    font-family: 'Space Mono', monospace;
-
 }
 
-li a.footerlinks:hover {
-    color: rgb(177, 96, 96);
+a.emaillink:hover {
+    color: rgb(219, 219, 219);
 }
