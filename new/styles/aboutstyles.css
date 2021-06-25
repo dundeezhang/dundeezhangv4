@@ -6,29 +6,15 @@ h1, h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
-.nav-selected {
-    color:rgb(213, 245, 255);
-}
-
-div.navontop {
-    position: fixed;
-    width: 100%;
-    z-index: 240;
-}
-
-div.navontopAbout {
-    position: fixed;
-    width: 100%;
-    z-index: 240;
-    background-color: rgb(34, 34, 34);
-    
-}
-
 .chapters {
     display: flex;
     justify-content: space-between;
     background-color: transparent;
 
+}
+
+.navbar-links ul li a:hover {
+    color: rgb(255, 129, 129);
 }
 
 div.small-chapter {
@@ -105,7 +91,7 @@ li a {
 }
 
 li a:hover {
-    color: white;
+    color: rgb(255, 129, 129);
 }
 
 .aboutme-overview {
@@ -142,27 +128,6 @@ a:hover {
         color: rgb(255, 129, 129);
 }
 
-.toggle-button {
-    position: absolute;
-    top: .75rem;
-    left: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: auto;
-    background-color: white;
-    border-radius: 100px;
-    z-index: 101;
-    color: transparent;
-    text-decoration: none;
-}
-
 @media (max-width: 1050px) {
     .chapters {
         display: none;
@@ -181,4 +146,39 @@ a:hover {
     div.small-chapter ul li a:hover {
         color:rgb(197, 93, 93)
     }
+}
+
+@media (max-width: 620px) {
+    a.hidesmall {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: none;
+        background-color: transparent;
+    }
+    li.navright {
+        padding-right: 0px;
+        display: block;
+        float: none;
+        font-size: 20px;
+    }
+
+    li.hidesmall {
+        display: none;
+    }
+    
+    li.hidesmall a {
+        display: block;
+        color: rgb(202, 202, 202);
+        text-align: none;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    li a:hover {
+        color: rgb(255, 129, 129);
+    }
+
 }

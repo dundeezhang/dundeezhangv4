@@ -76,65 +76,7 @@ div.navbar-links {
     text-decoration: none;
 }
 
-@media (max-width: 1000px) {
-
-    div.navbar-links {
-        position: fixed;
-        width: 100%;
-        z-index: 100;
-        text-align: center;
-    }
-
-    .navbar-links ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(8, 18, 27, 0);
-    text-align: center;
-    }
-    
-    .navbar-links ul li {
-        padding-right: 15px;
-        float: left;
-        text-align: center;
-    }
-    
-    .navbar-links ul li a {
-        display: block;
-        color: rgb(236, 236, 236);
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    
-    .navbar-links ul li a:hover {
-        color: rgb(255, 129, 129);
-    }
-    
-    .toggle-button {
-        position: absolute;
-        top: .75rem;
-        left: 1rem;
-        display: none;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 30px;
-        height: 21px;
-    }
-    
-    .toggle-button .bar {
-        height: 3px;
-        width: auto;
-        background-color: white;
-        border-radius: 100px;
-        z-index: 150;
-        color: transparent;
-        text-decoration: none;
-    }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     div.navbar-links {
         position: fixed;
         width: 100%;
