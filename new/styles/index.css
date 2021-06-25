@@ -138,7 +138,7 @@ p.hobbies {
     position: absolute;
     font-size: 2vw;
     text-align: center;
-    padding-top: 300px;
+    padding-top: 40vmin;
     letter-spacing: 0.04em;
     top: 450px;
     left: 50%;
@@ -207,6 +207,12 @@ footer {
 }
 
 @media (max-width: 700px) {
+    .Links {
+        display: none;
+    }
+}
+
+@media (max-width: 15cm) {
     .Links {
         display: none;
     }
