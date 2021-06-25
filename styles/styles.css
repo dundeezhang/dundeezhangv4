@@ -7,12 +7,19 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
     background: transparent;
     font-family: 'Noto Sans JP', sans-serif;
+    text-decoration: none;
 }
 
 html {
     height: 100%;
-    background-color: rgb(22, 35, 46);
+    background-color: rgb(53, 53, 53);
 }
+
+a.nav-selected {
+    color:rgb(212, 154, 154);
+}
+
+
 
 div.navontop {
     position: fixed;
@@ -25,15 +32,10 @@ ul.navbar {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(8, 18, 27, 0.089);
+    background-color: transparent;
 }
 
-li {
-    padding-right: 15px;
-    float: right;
-}
-
-li a {
+li a.stylelinks {
     display: block;
     color: rgb(202, 202, 202);
     text-align: center;
@@ -41,75 +43,52 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
-    color: white;
-}
-
 body {
     height: 100%;
     color: white;
 }
 
-footer {
-    background-color:rgb(20, 47, 58);
-    height: 50px;
-    color: white;
-    text-align: center;
-    padding-top: 26px;
-}
-
-.cover-image {
-
-    background-image: url("images/coverbanner.jpg");
-    position: relative;
-
-    height: 100%;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    letter-spacing: 0.3em;
-    color: rgb(195, 203, 209);
-    text-align: center;
-
-}
-
-.Name {
-    font-size: 10vmin;
-    padding-top: 34vmin;
-    letter-spacing: 0.05em;
-}
 h1 {
     color: rgb(255, 255, 255);
     font-size: 4vw;
     text-align: center;
 }
 
-div.About-Overview {
-    height: 450px;
-    background-color: rgb(31, 53, 71);
-    background-size: cover;
-}
-
-h2.About-Overview {
-    padding-top: 10vmin;
-    font-size: 4.5vmin;
-    text-align: center;
-    letter-spacing: 0.05em;
-}
-
-p.About-Overview {
-    padding-top: 20px;
-    padding-left: 30%;
-    padding-right: 30%;
-    text-align: center;
-    letter-spacing: 0.03em;
-    font-size: 3vmin;
-}
-
-.read-more {
-    padding-top: 10px;
-    font-size: 3vmin;
+footer {
+    background-color:transparent;
+    height: 20px;
     color: white;
     text-align: center;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+
+ul.footerlinks {
+    font-size: 10px;
+    list-style-type: none;
+    display:flex;
+    justify-content: center;   
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li.footerlinks {
+    list-style: none;
+    padding: 5px;
+    display: inline-block;
+}
+
+li a.footerlinks {
+    color: rgb(83, 83, 83);
+    padding-top: 8px;
+    padding-bottom: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    font-family: 'Space Mono', monospace;
+
+}
+
+li a.footerlinks:hover {
+    color: rgb(177, 96, 96);
 }

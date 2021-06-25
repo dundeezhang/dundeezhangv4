@@ -10,12 +10,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 html {
-    height: 100%;
-    background-color: rgb(22, 35, 46);
-}
-
-.nav-selected {
-    color:rgb(213, 245, 255);
+    background-color: rgb(34, 34, 34);
 }
 
 div.navontop {
@@ -36,7 +31,7 @@ ul.navbar {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(14, 19, 37, 0.61);
+    background-color: rgba(14, 14, 14, 0.904);
 }
 
 li {
@@ -66,14 +61,6 @@ body {
     color: white;
 }
 
-footer {
-    background-color:rgb(20, 47, 58);
-    height: 50px;
-    color: white;
-    text-align: center;
-    padding-top: 26px;
-}
-
 .Name {
     font-size: 10vmin;
     padding-top: 34vmin;
@@ -85,6 +72,29 @@ h1 {
     text-align: center;
 }
 
+.navbar li {
+    padding-right: 15px;
+    float: right;  
+}
+
+li.navright {
+    padding-right: 15px;
+    float: left;  
+}
+
+li a {
+    display: block;
+    color: rgb(202, 202, 202);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li a:hover {
+    color: rgb(255, 129, 129);
+}
+
 .cover-Project {
     background-image: url("images/banner-cover.jpg");
     position: relative;
@@ -92,7 +102,7 @@ h1 {
     height: 100%;
     background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     background-size: cover;
     letter-spacing: 0.3em;
     color: rgb(195, 203, 209);
@@ -100,28 +110,9 @@ h1 {
 
 }
 
-.project-one {  
-    background-color:rgb(27, 89, 131);
-    height: 118%;
-    min-height: 500px;
-    background-size: cover;
-    letter-spacing: 0.1em;
-    color: rgb(195, 203, 209);
-    text-align: center;
-    padding-left: 20%;
-    padding-right: 20%;
-    font-size: 3vmin;
-}
-
-a.project-one {
-    text-decoration: none;
-    color: white;
-}
-
 .project-two {  
-    background-color:rgb(12, 48, 71);
-    height: 100%;
-    min-height: 300px;
+    background-color:rgb(46, 46, 46);
+    height: 115vmin;
     background-size: cover;
     letter-spacing: 0.1em;
     color: rgb(195, 203, 209);
@@ -136,10 +127,26 @@ a.project-two {
     color: white;
 }
 
+.project-one {  
+    background-color:rgb(31, 31, 31);
+    height: 123vmin;
+    background-size: cover;
+    letter-spacing: 0.1em;
+    color: rgb(195, 203, 209);
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 3vmin;
+}
+
+a.project-one {
+    text-decoration: none;
+    color: white;
+}
+
 .project-three {  
-    background-color:rgb(12, 48, 71);
-    height: 130%;
-    min-height: 500px;
+    background-color:rgb(46, 46, 46);
+    height: 150vmin;
     background-size: cover;
     letter-spacing: 0.1em;
     color: rgb(195, 203, 209);
@@ -152,4 +159,39 @@ a.project-two {
 a.project-three {
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 620px) {
+    a.hidesmall {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: none;
+        background-color: transparent;
+    }
+    li.navright {
+        padding-right: 0px;
+        display: block;
+        float: none;
+        font-size: 20px;
+    }
+
+    li.hidesmall {
+        display: none;
+    }
+    
+    li.hidesmall a {
+        display: block;
+        color: rgb(202, 202, 202);
+        text-align: none;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    li a:hover {
+        color: rgb(255, 129, 129);
+    }
+
 }

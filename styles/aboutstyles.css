@@ -1,52 +1,84 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
 html {
+    background-color: rgb(34, 34, 34);
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.chapters {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+
+}
+
+.navbar-links ul li a:hover {
+    color: rgb(255, 129, 129);
+}
+
+div.small-chapter {
+    display: none;
+}
+
+div.chapter-links {
+    position: fixed;
+    z-index: 101;
+    padding-top: 15%;
+    padding-left: 5%;
+}
+
+.chapter-links {
+    width: auto;
     height: 100%;
-    background-color: rgb(22, 35, 46);
-}
-
-.nav-selected {
-    color:rgb(213, 245, 255);
-}
-
-div.navontop {
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-}
-
-div.navontopAbout {
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    background-color: rgb(22, 35, 46);
-}
-
-ul.navbar {
+    font-size: 18px;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding-top: 32px;
+    padding-left: 7px;
     overflow: hidden;
     background-color: transparent;
 }
 
-li {
+.chapter-links ul li {
+    padding-right: 0px;
+    list-style-type: disc;
+    text-decoration: none;
+    float: none;
+}
+
+.chapter-links ul li a {
+    display: block;
+    color: rgb(236, 236, 236);
+    text-align: left;
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-left: 30px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.chapter-links ul li a:hover {
+    color: rgb(255, 129, 129);
+}
+
+ul.chapter-stuff {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;  
+}
+
+.navbar li {
     padding-right: 15px;
-    float: right;
+    float: right;  
 }
 
 li.navright {
     padding-right: 15px;
-    float: left;
+    float: left;  
 }
 
 li a {
@@ -55,29 +87,11 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 li a:hover {
-    color: white;
-}
-
-body {
-    height: 100%;
-    color: white;
-}
-
-footer {
-    background-color:rgb(20, 47, 58);
-    height: 50px;
-    color: white;
-    text-align: center;
-    padding-top: 26px;
-}
-
-h1 {
-    color: rgb(255, 255, 255);
-    font-size: 4vw;
-    text-align: center;
+    color: rgb(255, 129, 129);
 }
 
 .aboutme-overview {
@@ -87,6 +101,7 @@ h1 {
 }
 
 h1.Sub-about {
+    padding-top: 10%;
     font-size: 5vmin;
     letter-spacing: 0.03em;
 }
@@ -100,4 +115,70 @@ h1.Sub-about {
 
 .AboutMeClass {
     padding-top: 100px;
+    font-size: 5.5vmin;
+    letter-spacing: 0.03em;
+}
+
+a {
+    letter-spacing: 0.03em;
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+        color: rgb(255, 129, 129);
+}
+
+@media (max-width: 1050px) {
+    .chapters {
+        display: none;
+    }
+    div.small-chapter {
+        display: block;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    div.small-chapter ul {
+        list-style-type: none;
+    }
+    div.small-chapter ul li a {
+        padding: 10px;
+    }
+    div.small-chapter ul li a:hover {
+        color:rgb(197, 93, 93)
+    }
+}
+
+@media (max-width: 620px) {
+    a.hidesmall {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: none;
+        background-color: transparent;
+    }
+    li.navright {
+        padding-right: 0px;
+        display: block;
+        float: none;
+        font-size: 20px;
+    }
+
+    li.hidesmall {
+        display: none;
+    }
+    
+    li.hidesmall a {
+        display: block;
+        color: rgb(202, 202, 202);
+        text-align: none;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    li a:hover {
+        color: rgb(255, 129, 129);
+    }
+
 }
