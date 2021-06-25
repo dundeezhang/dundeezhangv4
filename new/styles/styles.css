@@ -30,20 +30,17 @@ ul.navbar {
 }
 
 li {
+    display: inline;
     padding-right: 15px;
     float: right;
 }
 
-li a {
+li a.stylelinks {
     display: block;
     color: rgb(202, 202, 202);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-li a:hover {
-    color: white;
 }
 
 body {
