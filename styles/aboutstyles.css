@@ -148,7 +148,7 @@ a:hover {
     }
 }
 
-@media (max-width: 620px) {
+@media screen and (max-width: 620px) {
     a.hidesmall {
         list-style-type: none;
         margin: 0;
@@ -157,6 +157,7 @@ a:hover {
         display: none;
         background-color: transparent;
     }
+    
     li.navright {
         padding-right: 0px;
         display: block;
@@ -164,21 +165,7 @@ a:hover {
         font-size: 20px;
     }
 
-    li.hidesmall {
+    .hidesmall {
         display: none;
     }
-    
-    li.hidesmall a {
-        display: block;
-        color: rgb(202, 202, 202);
-        text-align: none;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    li a:hover {
-        color: rgb(255, 129, 129);
-    }
-
 }

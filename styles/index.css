@@ -29,6 +29,7 @@ div.navbar-links {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding-bottom: 30px;
     padding-top: 32px;
     padding-left: 7px;
     overflow: hidden;
@@ -212,9 +213,9 @@ footer {
     }
 }
 
-@media (max-width: 15cm) {
+@media screen and (max-width: 480px) {
     .Links {
-        display: none;
+        display:none;
     }
 }
 
