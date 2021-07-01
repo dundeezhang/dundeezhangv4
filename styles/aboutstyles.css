@@ -38,7 +38,7 @@ div.chapter-links {
     padding-top: 32px;
     padding-left: 7px;
     overflow: hidden;
-    background-color: transparent;
+    background-color: transparent; 
 }
 
 .chapter-links ul li {

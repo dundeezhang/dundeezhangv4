@@ -7,7 +7,7 @@ h1, h2 {
 } 
 
 .navbar-links ul li a:hover {
-    color: rgb(255, 129, 129);
+    color: rgb(255, 129, 129); 
 }
 
 ul.navbar {
