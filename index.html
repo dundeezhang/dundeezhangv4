@@ -3,8 +3,15 @@
 	<head>
 		<meta charset = "utf-8">
 	  	<title>Dundee Zhang</title>
-		<link rel="stylesheet" type="text/css" href="styles/styles.css" />
-        <link rel="stylesheet" type="text/css" href="styles/index.css" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:800px)" href="styles/styles.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:800px)" href="styles/index.css" />
+
+		<link rel="stylesheet" type="text/css" media="only screen and (max-width:799px)" href="mstyles/styles.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (max-width:799px)" href="mstyles/index.css" />
+		
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
@@ -31,7 +38,7 @@
 		<meta name="theme-color" content="#ffffff">
 
 		<meta name="author" content="Dundee Zhang">
-		<meta name="description" content="This is my personal website. Here you can find my projects and everything about me.">
+		<meta name="description" content="My stuff.">
 
 		<!-- Facebook Meta Data -->
 		<meta property="og:image" content="images/logo-pfp.jpg">
@@ -41,23 +48,14 @@
 		<!-- Twitter Meta Data -->
 		<meta name="twitter:title" content="Dundee Zhang">
 
-        <script src="script.js" defer></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   	</head>
 	<header>
         <nav class="navbar">
-            <a href="#" class="toggle-button">
-                <span class="bar">Menu</span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
 			<div class="navbar-links">
 				<ul>
 					<li><a href="about.html" class="stylelinks">About</a></li>
 					<li><a href="blog.html" class="stylelinks">Blog</a></li>
 					<li><a href="projects.html" class="stylelinks">Projects</a></li>
-					<li><a href="pages.html" class="stylelinks">Pages</a></li>
 					<li><a href="contact.html" class="stylelinks">Contact</a></li>
 				</ul> 
 			</div>
@@ -66,19 +64,34 @@
   	<body>
 		<div class="Links">
 			<ul class="socialcons">
-				<li>
+				<li class="m-hide">
+					<a target="_blank" href="https://www.instagram.com/dundee_zhang">
+						<img src="icons/instagram.png" class="socialcons">.
+					</a>
+				</li>
+				<li class="m-hide">
+					<a target="_blank" href="https://www.linkedin.com/in/dundee-zhang-383649214/">
+						<img src="icons/linkedin.png" class="socialcons">.
+					</a>
+				</li>
+				<li class="m-hide">
+					<a target="_blank" href="https://www.youtube.com/channel/UChgp1yPfhxy0gT2sw9LK_Og/">
+						<img src="icons/youtube.png" class="socialcons">.
+					</a>
+				</li>
+				<li class="main">
+					<a target="_blank" href="mailto:dundeez124@gmail.com">
+						<img src="icons/email.png" class="socialcons">.
+					</a>
+				</li>
+				<li class="main">
 					<a target="_blank" href="https://twitter.com/dundee_zhang/">
 						<img src="icons/twitter.png" class="socialcons">.
 					</a>
 				</li>
-				<li>
+				<li class="main">
 					<a target="_blank" href="https://github.com/dundee-zhang/">
 						<img src="icons/github.png" class="socialcons">.
-					</a>
-				</li>
-				<li>
-					<a target="_blank" href="https://www.youtube.com/channel/UChgp1yPfhxy0gT2sw9LK_Og/">
-						<img src="icons/youtube.png" class="socialcons">.
 					</a>
 				</li>
 			</ul>
