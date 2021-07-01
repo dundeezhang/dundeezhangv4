@@ -19,7 +19,7 @@
 
 div.navbar-links {
     position: absolute;
-    z-index: 101;
+    z-index: 1001;
 }
 
 .navbar-links ul li a:hover {
