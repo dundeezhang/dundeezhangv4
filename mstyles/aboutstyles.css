@@ -4,17 +4,23 @@ html {
 
 h1, h2 {
     font-family: 'Montserrat', sans-serif;
-}
-
-.chapters {
-    display: flex;
-    justify-content: space-between;
-    background-color: transparent;
-
-}
+} 
 
 .navbar-links ul li a:hover {
     color: rgb(255, 129, 129);
+}
+
+ul.navbar {
+    display: inline-block;
+}
+
+div.navbar-links {
+    text-align: center;
+}
+
+.navbar li {
+    padding-right: 15px;
+    float: right;  
 }
 
 div.small-chapter {
@@ -71,16 +77,6 @@ ul.chapter-stuff {
     background-color: transparent;  
 }
 
-.navbar li {
-    padding-right: 15px;
-    float: right;  
-}
-
-li.navright {
-    padding-right: 15px;
-    float: left;  
-}
-
 li a {
     display: block;
     color: rgb(202, 202, 202);
@@ -128,44 +124,24 @@ a:hover {
         color: rgb(255, 129, 129);
 }
 
-@media (max-width: 1050px) {
-    .chapters {
-        display: none;
-    }
-    div.small-chapter {
-        display: block;
-        padding-left: 25%;
-        padding-right: 25%;
-    }
-    div.small-chapter ul {
-        list-style-type: none;
-    }
-    div.small-chapter ul li a {
-        padding: 10px;
-    }
-    div.small-chapter ul li a:hover {
-        color:rgb(197, 93, 93)
-    }
+.chapters {
+    display: none;
 }
 
-@media screen and (max-width: 620px) {
-    a.hidesmall {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        display: none;
-        background-color: transparent;
-    }
-    
-    li.navright {
-        padding-right: 0px;
-        display: block;
-        float: none;
-        font-size: 20px;
-    }
+div.small-chapter {
+    display: block;
+    padding-left: 25%;
+    padding-right: 25%;
+}
 
-    .hidesmall {
-        display: none;
-    }
+div.small-chapter ul {
+    list-style-type: none;
+}
+
+div.small-chapter ul li a {
+    padding: 10px;
+}
+
+div.small-chapter ul li a:hover {
+    color:rgb(197, 93, 93)
 }
