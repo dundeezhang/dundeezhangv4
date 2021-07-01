@@ -3,8 +3,14 @@
 	<head>
 		<meta charset = "utf-8">
 	  	<title>About Me | Dundee Zhang</title>
-		<link rel="stylesheet" type="text/css" href="styles/styles.css" />
-        <link rel="stylesheet" type="text/css" href="styles/aboutstyles.css" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:1000px)" href="styles/styles.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:1000px)" href="styles/aboutstyles.css" />
+  
+		<link rel="stylesheet" type="text/css" media="only screen and (max-width:999px)" href="mstyles/styles.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (max-width:999px)" href="mstyles/aboutstyles.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
@@ -31,34 +37,29 @@
 		<meta name="theme-color" content="#ffffff">
 
 		<meta name="author" content="Dundee Zhang">
-		<meta name="description" content="This is my personal website. Here you can find my projects and everything about me.">
+		<meta name="description" content="About me. This is my personal website. Here you can find my projects and everything about me.">
 
 		<!-- Facebook Meta Data -->
 		<meta property="og:image" content="images/logo-pfp.jpg">
-		<meta property="og:description" content="This is my personal website. Here you can find my projects and everything about me.">
+		<meta property="og:description" content="About me.">
 		<meta property="og:title" content="Dundee Zhang">
 
 		<!-- Twitter Meta Data -->
 		<meta name="twitter:title" content="Dundee Zhang">
-
-		<script src="script.js" defer></script>
 
   	</head>
 	<header>
 		<nav>
 			<div class="navbar-links">
 				<ul class="navbar">
-					<li class="hidesmall"><a href="contact">Contact</a></li>
-					<li class="hidesmall"><a href="blog.html" class="stylelinks">Blog</a></li>
-					<li class="hidesmall"><a href="projects.html" class="stylelinks">Projects</a></li>
-					<li class="hidesmall"><a href="pages.html" class="stylelinks">Pages</a></li>
-					<li class="hidesmall"><a href="about" class="nav-selected">About</a></li>
+					<li><a href="contact">Contact</a></li>
+					<li><a href="blog.html" class="stylelinks">Blog</a></li>
+					<li><a href="projects.html" class="stylelinks">Projects</a></li>
+					<li><a href="about" class="nav-selected">About</a></li>
 					<li class="navright"><a href="/">Home</a></li>
 				</ul> 
 			</div>
 		</nav>
-				
-
 		<nav class="chapters">
 			<div class="chapter-links">
 				<ul class="chapter-stuff">
@@ -71,6 +72,21 @@
         </nav>
 	</header>
   	<body>
+		<div class="small-chapter">
+			<h1 class="Sub-about">
+				Chapters
+			</h1>
+			<p>
+				<hr>
+				<br>
+			</p>
+			<ul>
+				<li><a href="#Intro">Introduction</a></li>
+				<li><a href="#Piano">Piano</a></li>
+				<li><a href="#Code">Code</a></li>
+				<li><a href="#Swimming">Swimming</a></li>
+			</ul> 
+		</div>
 		<h1 class="AboutMeClass" id="Intro">
 			About Me
 		</h1>
@@ -126,21 +142,6 @@
 			<br>
 		</p>
   	</div>
-	<div class="small-chapter">
-		<h1 class="Sub-about">
-			Chapters
-		</h1>
-		<p>
-			<hr>
-			<br>
-		</p>
-		<ul>
-			<li><a href="#Intro">Introduction</a></li>
-			<li><a href="#Piano">Piano</a></li>
-			<li><a href="#Code">Code</a></li>
-			<li><a href="#Swimming">Swimming</a></li>
-		</ul> 
-	</div>
 	<p>
 		<br>
 		<br>
