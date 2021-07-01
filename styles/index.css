@@ -2,6 +2,9 @@
     background-image: url("images/coverbanner.jpg");
     position: relative;
     height: 100%;
+    min-height: 700px;
+    width: 100%;
+    min-width: 900px;
     background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -56,80 +59,13 @@ div.navbar-links {
     color: rgb(255, 129, 129);
 }
 
-.toggle-button {
-    position: absolute;
-    top: .75rem;
-    left: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: auto;
-    background-color: white;
-    border-radius: 100px;
-    z-index: 101;
-    color: transparent;
-    text-decoration: none;
-}
-
-@media (max-width: 800px) {
-    div.navbar-links {
-        position: fixed;
-        width: 100%;
-        z-index: 100;
-        text-align: center;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar-links {
-        display: none;
-        width: 100%;
-        background-color: rgba(53, 53, 53, 0.808);
-        height: auto;
-    }
-
-    .toggle-button {
-        display: flex;
-    }
-
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navbar-links ul li {
-        text-align: center;
-    }
-
-    .navbar-links ul li a {
-        padding: .8rem 1rem;
-        margin-top: 10px;
-        z-index: 160;
-        font-size: 2.3vw;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
-}
-
-
 .Name {
     position: absolute;
-    font-size: 9.5vmin;
+    font-size: 75px;
     text-align: center;
-    padding-top: 40vmin;
+    padding-top: 275px;
     letter-spacing: 0.02em;
-    top: 20vmin;
+    top: 136px;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Montserrat', sans-serif;
@@ -137,9 +73,9 @@ div.navbar-links {
 
 p.hobbies {
     position: absolute;
-    font-size: 2vw;
+    font-size: 20px;
     text-align: center;
-    padding-top: 40vmin;
+    padding-top: 100px;
     letter-spacing: 0.04em;
     top: 450px;
     left: 50%;
@@ -151,9 +87,10 @@ div.Links {
     height: auto;
     background-size: cover;
     position: absolute;
-    padding-top: 60vmin;
+    padding-top: 400px;
     z-index: 100;
     width: 100%;
+    min-width: 900px;
     text-align: right;
 }
 
@@ -162,18 +99,19 @@ div.Links {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(8, 18, 27, 0.089);
+    background-color: transparent;
 }
 
 .Links ul li {
-    padding-right: 15px;
+    padding-right: 4px;
+    padding-left: 4px;
     float: right;
 }
 
 .Links ul li a {
     display: block;
     text-align: right;
-    padding: 14px 16px;
+    padding: 0px;
     color: transparent;
     text-decoration: none;
     float: right;
@@ -205,25 +143,4 @@ footer {
     text-align: center;
     padding-top: 0px;
     padding-bottom: 5px;
-}
-
-@media (max-width: 700px) {
-    .Links {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .Links {
-        display:none;
-    }
-}
-
-@media (max-height: 650px) {
-    .Links {
-        display: none;
-    }
-    p.hobbies {
-        display: none;
-    }
 }
