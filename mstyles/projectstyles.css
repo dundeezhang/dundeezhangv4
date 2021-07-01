@@ -1,0 +1,197 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+html {
+    background-color: rgb(34, 34, 34);
+}
+
+div.navontop {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+div.navontopProj {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: transparent;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(14, 14, 14, 0.904);
+}
+
+li {
+    padding-right: 15px;
+    float: right;
+}
+
+li.navright {
+    padding-right: 15px;
+    float: left;
+}
+
+li a {
+    display: block;
+    color: rgb(202, 202, 202);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: white;
+}
+
+body {
+    height: 100%;
+    color: white;
+}
+
+.Name {
+    font-size: 10vmin;
+    padding-top: 34vmin;
+    letter-spacing: 0.05em;
+}
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 4vw;
+    text-align: center;
+}
+
+.navbar li {
+    padding-right: 15px;
+    float: right;  
+}
+
+li.navright {
+    padding-right: 15px;
+    float: left;  
+}
+
+li a {
+    display: block;
+    color: rgb(202, 202, 202);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li a:hover {
+    color: rgb(255, 129, 129);
+}
+
+.cover-Project {
+    background-image: url("images/banner-cover.jpg");
+    position: relative;
+
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    letter-spacing: 0.3em;
+    color: rgb(195, 203, 209);
+    text-align: center;
+
+}
+
+.project-two {  
+    background-color:rgb(46, 46, 46);
+    height: 115vmin;
+    background-size: cover;
+    letter-spacing: 0.1em;
+    color: rgb(195, 203, 209);
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 3vmin;
+}
+
+a.project-two {
+    text-decoration: none;
+    color: white;
+}
+
+.project-one {  
+    background-color:rgb(31, 31, 31);
+    height: 123vmin;
+    background-size: cover;
+    letter-spacing: 0.1em;
+    color: rgb(195, 203, 209);
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 3vmin;
+}
+
+a.project-one {
+    text-decoration: none;
+    color: white;
+}
+
+.project-three {  
+    background-color:rgb(46, 46, 46);
+    height: 150vmin;
+    background-size: cover;
+    letter-spacing: 0.1em;
+    color: rgb(195, 203, 209);
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 3vmin;
+}
+
+a.project-three {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 620px) {
+    a.hidesmall {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: none;
+        background-color: transparent;
+    }
+    li.navright {
+        padding-right: 0px;
+        display: block;
+        float: none;
+        font-size: 20px;
+    }
+
+    li.hidesmall {
+        display: none;
+    }
+    
+    li.hidesmall a {
+        display: block;
+        color: rgb(202, 202, 202);
+        text-align: none;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    li a:hover {
+        color: rgb(255, 129, 129);
+    }
+
+}
