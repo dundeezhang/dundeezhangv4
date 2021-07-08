@@ -67,7 +67,7 @@ ul.footerlinks {
     font-size: 10px;
     list-style-type: none;
     display:flex;
-    justify-content: center;   
+    justify-content: center;
     overflow: hidden;
     background-color: transparent;
 }
