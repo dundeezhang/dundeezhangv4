@@ -4,10 +4,10 @@ html {
 
 h1, h2 {
     font-family: 'Montserrat', sans-serif;
-} 
+}
 
 .navbar-links ul li a:hover {
-    color: rgb(255, 129, 129); 
+    color: rgb(255, 129, 129);
 }
 
 ul.navbar {
@@ -20,7 +20,7 @@ div.navbar-links {
 
 .navbar li {
     padding-right: 15px;
-    float: right;  
+    float: right;
 }
 
 div.small-chapter {
@@ -74,7 +74,7 @@ ul.chapter-stuff {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: transparent;  
+    background-color: transparent;
 }
 
 li a {
@@ -144,4 +144,13 @@ div.small-chapter ul li a {
 
 div.small-chapter ul li a:hover {
     color:rgb(197, 93, 93)
+}
+
+@media (max-width: 540px) {
+    li a.navhide {
+        display: none;
+    }
+    li a.stylelinks {
+        display: none;
+    }
 }
