@@ -1,3 +1,18 @@
+div.nav {
+    position: absolute;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 320px;
+}
+
+li.nav {
+    margin: 0px 10px 0px 10px;
+}
+
+a:hover {
+    color: #FFD369;
+}
+
 div.content {
     display: block;
     margin-left: 350px;
