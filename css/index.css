@@ -89,3 +89,11 @@ div.Links ul li a img:hover {
     height: 100%;
     right: 0;
 }
+
+.footer {
+    margin-bottom: 0;
+    margin-top: 90px;
+    text-align: center;
+    font-size: 10px;
+    background-color: #393E46;
+}
