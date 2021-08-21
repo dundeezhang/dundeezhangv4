@@ -1,4 +1,76 @@
+div.content {
+    display: block;
+    margin-left: 350px;
+    justify-content: center;
+}
+
 div.title {
+    display: inline-block;
+    width: auto;
     text-align: center;
     color: #EEEEEE;
+}
+
+div.title h1{
+    display: inline-block;
+    width: auto;
+    font-family: 'Kaushan Script', cursive;
+    margin-top: 170px;
+    font-size: 93px;
+    color: #EEEEEE;
+}
+
+p {
+    margin-top: -10px;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.welcome {
+    font-family: 'Neucha', cursive;
+    font-size: 30px;
+    margin-bottom: 0px;
+    color: #FFD369;
+}
+
+div.Links {
+    display: flex;
+    width: max-content;
+    justify-content: center;
+    
+}
+
+ul {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    display: inline-block;
+    width: auto;
+    font-size: 20px;
+    text-decoration: none;
+    color: #EEEEEE;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    width: auto;
+    padding: 0px 10px 0px 10px;
+
+}
+
+div.Links ul li a img:hover {
+    -webkit-filter: brightness(70%);
+}
+
+.moose {
+    position: absolute;
+    margin: 0px;
+    height: 100%;
+    right: 0;
 }
