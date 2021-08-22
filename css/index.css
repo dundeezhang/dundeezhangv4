@@ -1,8 +1,14 @@
+body {
+    background-image: url("images/moose.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+}
 div.nav {
-    position: absolute;
+    width: max-content;
     padding: 10px;
     margin: 10px;
-    margin-left: 320px;
 }
 
 li.nav {
@@ -14,14 +20,16 @@ a:hover {
 }
 
 div.content {
+    margin-left: 18%;
+    position: absolute;
     display: block;
-    margin-left: 350px;
     justify-content: center;
 }
 
 div.title {
-    display: inline-block;
-    width: auto;
+    display: block;
+    margin: 0 auto;
+    height: auto;
     text-align: center;
     color: #EEEEEE;
 }
@@ -30,13 +38,13 @@ div.title h1{
     display: inline-block;
     width: auto;
     font-family: 'Kaushan Script', cursive;
-    margin-top: 170px;
+    margin-top: 14vh;
     font-size: 93px;
     color: #EEEEEE;
 }
 
 p {
-    margin-top: -10px;
+    margin-top: 4vh;
     font-size: 30px;
     margin-bottom: 15px;
 }
@@ -49,20 +57,21 @@ p {
 }
 
 div.Links {
-    display: flex;
+    display: block;
+    margin: 0 auto;
     width: max-content;
     justify-content: center;
     
 }
 
 ul {
-    display: inline-block;
+    display: block;
     margin: 0px;
     padding: 0px;
 }
 
 a {
-    display: inline-block;
+    display: block;
     width: auto;
     font-size: 20px;
     text-decoration: none;
@@ -75,6 +84,7 @@ li {
     list-style-type: none;
     display: inline-block;
     width: auto;
+
     padding: 0px 10px 0px 10px;
 
 }
@@ -83,17 +93,20 @@ div.Links ul li a img:hover {
     -webkit-filter: brightness(70%);
 }
 
-.moose {
+.background {
     position: absolute;
     margin: 0px;
     height: 100%;
-    right: 0;
+    width: 100%;
+    left: 0;
 }
 
 .footer {
+    width: max-content;
+    position: absolute;
+    margin-top: 0;
     margin-bottom: 0;
-    margin-top: 90px;
+    bottom: 0;
     text-align: center;
     font-size: 10px;
-    background-color: #393E46;
 }
