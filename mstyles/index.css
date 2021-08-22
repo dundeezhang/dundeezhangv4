@@ -1,0 +1,153 @@
+.cover-image {
+    background-image: url("images/coverbanner.jpg");
+    position: relative;
+    height: 100%;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    letter-spacing: 0.3em;
+    color: rgb(195, 203, 209);
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+div.navbar-links {
+    position: absolute;
+    z-index: 101;
+}
+
+.navbar-links ul li a:hover {
+    color: rgb(255, 129, 129);
+}
+
+div.navbar-links {
+    position: fixed;
+    width: 100%;
+    z-index: 1001;
+    text-align: center;
+}
+
+.navbar {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar-links {
+    width: 100%;
+    background-color: transparent;
+    height: auto;
+}
+
+.navbar-links ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.navbar-links ul li {
+    text-align: center;
+    float: left;
+}
+
+.navbar-links ul li a {
+    z-index: 160;
+    font-size: 2.3vw;
+}
+
+li.main {
+    display: block;
+}
+
+.Name {
+    position: absolute;
+    font-size: 9.5vmin;
+    text-align: center;
+    padding-top: 40vmin;
+    letter-spacing: 0.02em;
+    top: 20vmin;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+p.hobbies {
+    position: absolute;
+    font-size: 2vw;
+    text-align: center;
+    padding-top: 40vmin;
+    letter-spacing: 0.04em;
+    top: 40vmin;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.m-hide {
+    display: none;
+}
+
+div.Links {
+    height: auto;
+    background-size: cover;
+    position: absolute;
+    padding-top: 80vmin;
+    z-index: 100;
+    width: 100%;
+    text-align: right;
+}
+
+.Links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.Links ul li {
+    padding-right: 4px;
+    padding-left: 4px;
+    float: right;
+}
+
+.Links ul li a {
+    display: block;
+    text-align: right;
+    padding: 0px;
+    color: transparent;
+    text-decoration: none;
+    float: right;
+}
+
+ul.socialcons {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: transparent;
+    display: table;
+    margin: 0 auto;
+}
+
+img.socialcons {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+
+}
+
+img.socialcons:hover {
+    -webkit-filter: brightness(70%);
+}
+
+footer {
+    background-color: rgb(39, 39, 39);
+    height: 20px;
+    color: white;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}

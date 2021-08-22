@@ -1,0 +1,304 @@
+.cover-image {
+    background-image: url("images/coverbanner.jpg");
+    position: relative;
+    height: 100%;
+    min-height: 700px;
+    width: 100%;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    letter-spacing: 0.3em;
+    color: rgb(195, 203, 209);
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+div.navbar-links {
+    position: absolute;
+    z-index: 1001;
+}
+
+.navbar-links {
+    width: auto;
+    height: 100%;
+    font-size: 18px;
+    list-style-type: none;
+    margin: 0;
+    padding: none;
+    margin-bottom: 30px;
+    margin-top: 32px;
+    margin-left: 7px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.navbar-links ul li {
+    padding-right: 0px;
+    float: none;
+}
+
+.navbar-links ul li a {
+    display: block;
+    color: rgb(236, 236, 236);
+    text-align: left;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-links ul li a:hover {
+    color: rgb(255, 129, 129);
+}
+
+.Name {
+    position: absolute;
+    font-size: 75px;
+    text-align: center;
+    padding-top: 275px;
+    letter-spacing: 0.02em;
+    top: 136px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+p.hobbies {
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 0px;
+    letter-spacing: 0.04em;
+    top: 380px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+div.Links {
+    height: auto;
+    background-size: cover;
+    position: absolute;
+    padding-top: 625px;
+    z-index: 100;
+    width: 100%;
+    text-align: center;
+}
+
+.Links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.Links ul li {
+    padding-right: 9px;
+    padding-left: 9px;
+    float: right;
+}
+
+.Links ul li a {
+    display: block;
+    text-align: right;
+    padding: 0px;
+    color: transparent;
+    text-decoration: none;
+    float: right;
+}
+
+ul.socialcons {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: transparent;
+    display: table;
+    margin: 0 auto;
+}
+
+img.socialcons {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+
+}
+
+img.socialcons:hover {
+    -webkit-filter: brightness(70%);
+}
+
+footer {
+    background-color: rgb(39, 39, 39);
+    height: 20px;
+    color: white;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+
+@media (max-width: 1194px) {
+    .Name {
+        position: absolute;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 275px;
+        letter-spacing: 0.02em;
+        top: 136px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    p.hobbies {
+        position: absolute;
+        font-size: 27px;
+        text-align: center;
+        padding-top: 0px;
+        letter-spacing: 0.04em;
+        top: 380px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+@media (max-width: 1082px) {
+    .navbar {
+        justify-content: space-between;
+        background-color: transparent;
+    }
+    
+    div.navbar-links {
+        position: absolute;
+        z-index: 101;
+    }
+    
+    .navbar-links ul li a:hover {
+        color: rgb(255, 129, 129);
+    }
+    
+    div.navbar-links {
+        width: 100%;
+        z-index: 1001;
+        text-align: center;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar-links {
+        width: 100%;
+        background-color: transparent;
+        height: auto;
+    }
+    
+    .navbar-links ul {
+        display: inline-block;
+        list-style-type: none;
+    }
+    
+    .navbar-links ul li {
+        text-align: center;
+        float: left;
+    }
+    
+    .navbar-links ul li a {
+        z-index: 160;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    li.main {
+        display: block;
+    }
+}
+
+@media (max-width: 960px) {
+    .Name {
+        position: absolute;
+        font-size: 55px;
+        text-align: center;
+        padding-top: 275px;
+        letter-spacing: 0.02em;
+        top: 136px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    p.hobbies {
+        position: absolute;
+        font-size: 25px;
+        text-align: center;
+        padding-top: 0px;
+        letter-spacing: 0.04em;
+        top: 380px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+@media (max-width: 880px) {
+    .Name {
+        position: absolute;
+        font-size: 53px;
+        text-align: center;
+        padding-top: 275px;
+        letter-spacing: 0.02em;
+        top: 136px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    p.hobbies {
+        position: absolute;
+        font-size: 22px;
+        text-align: center;
+        padding-top: 0px;
+        letter-spacing: 0.04em;
+        top: 380px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+@media (max-width: 847px) {
+    .Name {
+        position: absolute;
+        font-size: 50px;
+        text-align: center;
+        padding-top: 275px;
+        letter-spacing: 0.02em;
+        top: 136px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    p.hobbies {
+        position: absolute;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 0px;
+        letter-spacing: 0.04em;
+        top: 380px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Montserrat', sans-serif;
+    }
+}
