@@ -7,12 +7,13 @@ body {
 }
 div.nav {
     width: max-content;
-    padding: 10px;
-    margin: 10px;
+    padding: 0.5vh;
+    margin: 0.5vh;
 }
 
 li.nav {
-    margin: 0px 10px 0px 10px;
+    margin: 0px 0.7vh 0px 0.7vh;
+
 }
 
 a:hover {
@@ -39,20 +40,20 @@ div.title h1{
     width: auto;
     font-family: 'Kaushan Script', cursive;
     margin-top: 14vh;
-    font-size: 93px;
+    font-size: 15vh;
     color: #EEEEEE;
 }
 
 p {
     margin-top: 4vh;
-    font-size: 30px;
-    margin-bottom: 15px;
+    font-size: 3.5vh;
+    margin-bottom: 1.9vh;
 }
 
 .welcome {
     font-family: 'Neucha', cursive;
-    font-size: 30px;
-    margin-bottom: 0px;
+    font-size: 4vh;
+    margin-bottom: 0;
     color: #FFD369;
 }
 
@@ -66,18 +67,18 @@ div.Links {
 
 ul {
     display: block;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 a {
     display: block;
     width: auto;
-    font-size: 20px;
+    font-size: 2.7vh;
     text-decoration: none;
     color: #EEEEEE;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 li {
@@ -85,9 +86,15 @@ li {
     display: inline-block;
     width: auto;
 
-    padding: 0px 10px 0px 10px;
+    padding: 1.5vh 1.9vh 0 1.9vh;
 
 }
+
+div.Links ul li a img {
+    min-width: 5.3vh;
+    max-width: 5.3vh;
+}
+
 
 div.Links ul li a img:hover {
     -webkit-filter: brightness(70%);
@@ -95,7 +102,7 @@ div.Links ul li a img:hover {
 
 .background {
     position: absolute;
-    margin: 0px;
+    margin: 0;
     height: 100%;
     width: 100%;
     left: 0;
@@ -108,5 +115,5 @@ div.Links ul li a img:hover {
     margin-bottom: 0;
     bottom: 0;
     text-align: center;
-    font-size: 10px;
+    font-size: 1vh;
 }
