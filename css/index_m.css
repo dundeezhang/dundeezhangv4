@@ -1,0 +1,234 @@
+div.nav {
+    width: max-content;
+    padding: 0.5vh;
+    margin: 0.5vh;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+li.nav {
+    margin: 0px 0.7vh 0px 0.7vh;
+
+}
+
+a:hover {
+    color: #FFD369;
+}
+
+div.content {
+    position: absolute;
+    display: block;
+    justify-content: center;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+div.title {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+    color: #EEEEEE;
+}
+
+div.title h1{
+    display: inline-block;
+    width: auto;
+    font-family: 'Kaushan Script', cursive;
+    margin-top: 14vh;
+    font-size: 15vh;
+    color: #EEEEEE;
+}
+
+p {
+    margin-top: 4vh;
+    font-size: 3.5vh;
+    margin-bottom: 1.9vh;
+}
+
+.welcome {
+    font-family: 'Neucha', cursive;
+    font-size: 4vh;
+    margin-bottom: 0;
+    color: #FFD369;
+}
+
+div.Links {
+    display: block;
+    margin: 0 auto;
+    width: max-content;
+    justify-content: center;
+    
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 0.5vh;
+}
+
+a {
+    display: block;
+    width: auto;
+    font-size: 2.7vw;
+    text-decoration: none;
+    color: #EEEEEE;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    width: auto;
+
+    padding: 1.5vh 1.9vh 0 1.9vh;
+
+}
+
+div.Links ul li a img {
+    min-width: 5.3vh;
+    max-width: 5.3vh;
+}
+
+
+div.Links ul li a img:hover {
+    -webkit-filter: brightness(70%);
+}
+
+.background {
+    display: none;
+}
+
+.footer {
+    width: max-content;
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 1vh;
+}
+
+@media (max-width: 530px) {
+    div.nav {
+        width: max-content;
+        padding: 0.5vh;
+        margin: 0.5vh;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+    
+    li.nav {
+        margin: 0px 0.7vw 0px 0.7vw;
+    
+    }
+    
+    a:hover {
+        color: #FFD369;
+    }
+    
+    div.content {
+        position: absolute;
+        display: block;
+        justify-content: center;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+    
+    div.title {
+        display: block;
+        margin: 0 auto;
+        height: auto;
+        text-align: center;
+        color: #EEEEEE;
+    }
+    
+    div.title h1{
+        display: inline-block;
+        width: auto;
+        font-family: 'Kaushan Script', cursive;
+        margin-top: 14vh;
+        font-size: 20vw;
+        color: #EEEEEE;
+    }
+    
+    p {
+        margin-top: 4vh;
+        font-size: 3.5vh;
+        margin-bottom: 1.9vh;
+    }
+    
+    .welcome {
+        font-family: 'Neucha', cursive;
+        font-size: 8vw;
+        margin-bottom: 0;
+        color: #FFD369;
+    }
+    
+    div.Links {
+        display: block;
+        margin: 0 auto;
+        width: max-content;
+        justify-content: center;
+        
+    }
+    
+    ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        font-size: 0.5vw;
+    }
+    
+    a {
+        display: block;
+        width: auto;
+        font-size: 2.7vh;
+        text-decoration: none;
+        color: #EEEEEE;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
+    li {
+        list-style-type: none;
+        display: inline-block;
+        width: auto;
+        padding: 1.5vw 1.9vh;
+    
+    }
+    
+    div.Links ul li a img {
+        min-width: 5.3vh;
+        max-width: 5.3vh;
+    }
+    
+    
+    div.Links ul li a img:hover {
+        -webkit-filter: brightness(70%);
+    }
+    
+    .background {
+        display: none;
+    }
+    
+    .footer {
+        width: max-content;
+        position: absolute;
+        margin-top: 0;
+        margin-bottom: 0;
+        bottom: 0;
+        text-align: center;
+        font-size: 1vh;
+    }
+}
