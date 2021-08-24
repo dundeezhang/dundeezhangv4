@@ -91,16 +91,6 @@ li {
 
 }
 
-div.Links ul li a img {
-    min-width: 5.3vh;
-    max-width: 5.3vh;
-}
-
-
-div.Links ul li a img:hover {
-    -webkit-filter: brightness(70%);
-}
-
 .background {
     display: none;
 }
@@ -206,16 +196,6 @@ div.Links ul li a img:hover {
         width: auto;
         padding: 1.5vw 1.9vh;
     
-    }
-    
-    div.Links ul li a img {
-        min-width: 5.3vh;
-        max-width: 5.3vh;
-    }
-    
-    
-    div.Links ul li a img:hover {
-        -webkit-filter: brightness(70%);
     }
     
     .background {
