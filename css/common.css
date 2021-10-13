@@ -1,9 +1,16 @@
 html {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
     color: #EEEEEE;
+    overflow-x: hidden
 }
 
 body {
-    background-color: #222831;
-    margin: 0;
+    background-color: rgb(34, 34, 34);
+    justify-content: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }

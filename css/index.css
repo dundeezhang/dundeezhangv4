@@ -1,117 +1,57 @@
-body {
-    background-image: url("images/moose.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: right;
-}
-div.nav {
-    width: max-content;
-    padding: 0.5vh;
-    margin: 0.5vh;
+.name {
+    font-family: 'IBM Plex Mono', monospace;
+    color:rgb(221, 221, 221);
+    margin-top: 3.5%;
+    font-size: 3vw;
 }
 
-li.nav {
-    margin: 0px 0.7vh 0px 0.7vh;
-
+.title {
+    margin-top: 3%;
 }
 
-a:hover {
-    color: #FFD369;
-}
-
-div.content {
-    margin-left: 18%;
-    position: absolute;
-    display: block;
-    justify-content: center;
-}
-
-div.title {
-    display: block;
-    margin: 0 auto;
-    height: auto;
-    text-align: center;
-    color: #EEEEEE;
-}
-
-div.title h1{
-    display: inline-block;
-    width: auto;
-    font-family: 'Kaushan Script', cursive;
-    margin-top: 14vh;
-    font-size: 15vh;
-    color: #EEEEEE;
-}
-
-p {
-    margin-top: 4vh;
-    font-size: 3.5vh;
-    margin-bottom: 1.9vh;
-}
-
-.welcome {
-    font-family: 'Neucha', cursive;
-    font-size: 4vh;
-    margin-bottom: 0;
-    color: #FFD369;
-}
-
-div.Links {
-    display: block;
-    margin: 0 auto;
-    width: max-content;
-    justify-content: center;
-    
-}
-
-ul {
-    display: block;
-    margin: 0;
-    padding: 0;
-    font-size: 0.5vh;
-}
-
-a {
+/* The Social Links */
+a.socialcons {
     display: block;
     width: auto;
-    font-size: 2.7vh;
+    font-size: 2.8vh;
     text-decoration: none;
     color: #EEEEEE;
     padding-bottom: 0;
     margin-bottom: 0;
 }
 
+a.emailcon:hover {
+    color: #6cc644;
+}
+
+a.githubcon:hover {
+    color: #6e5494;
+}
+
+a.linkedincon:hover {
+    color: #2867b2;
+}
+
+a.twittercon:hover {
+    color: #1DA1F2;
+}
+
+.email-link {
+    font-size: 1.5vw;
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.1em;
+}
+
+.Links {
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+    padding-top: 7px;
+}
+
 li {
     list-style-type: none;
     display: inline-block;
     width: auto;
-
-    padding: 1.5vh 1.9vh 0 1.9vh;
-
-}
-
-.background {
-    position: absolute;
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    left: 0;
-}
-
-.footer {
-    width: max-content;
-    position: absolute;
-    margin-top: 0;
-    margin-bottom: 0;
-    bottom: 0;
-    text-align: center;
-    font-size: 1vh;
-}
-
-.fa-spin-hover:hover {
-    -webkit-animation: fa-spin 2s infinite linear;
-    -moz-animation: fa-spin 2s infinite linear;
-    -o-animation: fa-spin 2s infinite linear;
-    animation: fa-spin 2s infinite linear;
+    padding: 1.5vh 1.8vh 0 1.8vh;
 }
