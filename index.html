@@ -17,80 +17,68 @@
 	<meta name="msapplication-config" content="/images/icons/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
 
-	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" type="text/css" media="only screen and (min-width:1001px)" href="css/index.css">
-  	<link rel="stylesheet" type="text/css" media="only screen and (max-width:1000px)" href="css/index_m.css" />
+	
 
-	<script src="https://kit.fontawesome.com/244b9268fb.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Neucha&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet"> 
+
+	<script src="https://kit.fontawesome.com/244b9268fb.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" type="text/css" media="only screen and (min-width:1001px)" href="css/index.css">
+  	<link rel="stylesheet" type="text/css" media="only screen and (max-width:1000px)" href="css/index_m.css" />
 
 	<title>Dundee Zhang</title>
 </head>
 
 <body>
-	<img src="images/background.png" alt="background" class="background">
 	<div class="content">
-		<div class="nav">
-			<ul>
-				<li class="nav">
-					<a href="index.html">Home</a>
-				</li>
-				<li class="nav">
-					<a href="works.html">Works</a>
-				</li>
-				<li class="nav">
-					<a href="about.html">About</a>
-				</li>
-				<li class="nav">
-					<a href="blog.html">Blog</a>
-				</li>
-			</ul>
+		<div class="row">
+			<div class="Links">
+				<ul class="list-group list-group-horizontal">
+					<li class="">
+						<a target="_blank" href="mailto:dundee_zhang@hotmail.com" class="socialcons emailcon">
+							<i class="fas fa-inbox fa-lg"></i>
+						</a>
+					</li>
+					<li class="">
+						<a target="_blank" href="https://github.com/dundee-zhang/" class="socialcons githubcon">
+							<i class="fab fa-github fa-lg"></i>
+						</a>
+					</li>
+					<li class="">
+						<a target="_blank" href="https://www.linkedin.com/in/dundee-zhang/" class="socialcons linkedincon">
+							<i class="fab fa-linkedin-in fa-lg"></i>
+						</a>
+					</li>
+					<li class="">
+						<a target="_blank" href="https://twitter.com/dundee_zhang/" class="socialcons twittercon">
+							<i class="fab fa-twitter fa-lg"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<div class="title">
-			<h1>
-				<strong>Hello!</strong>
-				<br>
-				<span class="welcome">I'm Dundee, a human.</span>
-			</h1>
-			<p class="height-100"></p>
-			<p style="margin-bottom: 2.8vh; display: inline-block; width: auto; margin-top: 0;">
-				<a href="mailto:dundeez124+website@gmail.com">dundeez124@gmail.com</a>
-			</p>
-				<div class="Links">
-					<ul>
-						<li>
-							<a target="_blank" href="https://github.com/dundee-zhang/">
-								<i class="fab fa-github fa-lg fa-spin-hover"></i>
-							</a>
-						</li>
-						<li>
-							<a target="_blank" href="https://www.linkedin.com/in/dundee-zhang/">
-								<i class="fab fa-linkedin-in fa-lg fa-spin-hover"></i>
-							</a>
-						</li>
-						<li>
-							<a target="_blank" href="https://twitter.com/dundee_zhang/">
-								<i class="fab fa-twitter fa-lg fa-spin-hover"></i>
-							</a>
-						</li>
-						<li>
-							<a target="_blank" href="https://www.instagram.com/dundee_zhang">
-								<i class="fab fa-instagram fa-lg fa-spin-hover"></i>
-							</a>
-						</li>
-						<li>
-							<a target="_blank" href="https://www.youtube.com/channel/UChgp1yPfhxy0gT2sw9LK_Og/">
-								<i class="fab fa-youtube fa-lg fa-spin-hover"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
+			<div class="row">
+				<img src="images/profilePic.png" alt="Profile Picture" class="col-4 offset-4">	
+				<h1 class="name col-12 text-center">
+					Hello, I'm Dundee Zhang
+					<br>
+				</h1>
+			</div>
 		</div>
+			<i class="fas fa-chevron-down col-4 offset-4 text-center" style="color: rgb(53, 53, 53); font-size: 4vw; padding-top: 1%;"></i>
 	</div>
 
 	<div class="footer">
