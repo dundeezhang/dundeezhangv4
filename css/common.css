@@ -1,16 +1,25 @@
 html {
     font-family: 'IBM Plex Mono', monospace;
     color: #EEEEEE;
-    overflow-x: hidden
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
 }
 
 body {
     background-color: rgb(34, 34, 34);
     justify-content: center;
+    height: 100%;
+    margin: 0;
 }
 
 img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.footer {
+    font-family: 'IBM Plex Mono', monospace;
+    color: rgb(95, 95, 95);
 }
