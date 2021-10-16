@@ -1,0 +1,24 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+.blogTitle {
+    padding: 50px;
+    background-color: rgb(255, 250, 220);
+}
+
+a {
+    font-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(58, 99, 126)
+}
+
+.card-title {
+    margin-top: 20px;
+}
