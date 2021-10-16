@@ -2,7 +2,9 @@
     font-family: 'IBM Plex Mono', monospace;
     color:rgb(221, 221, 221);
     margin-top: 3.5%;
-    font-size: 2.3vw;
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 3.5vh;
 }
 
 .title {
@@ -66,3 +68,47 @@ li {
     color:rgb(221, 221, 221);
 }
 
+#about {
+    margin-top: 10%;
+}
+
+.mobileSocials {
+    display: block;
+    margin: 0 auto;
+    width: max-content;
+    justify-content: center;
+}
+
+.phoneSocials {
+    margin-top: 10vh;
+}
+
+@media(max-width: 1000px) {
+    .topLinks {
+        display: none;
+    }
+}
+
+@media(min-width: 600px) {
+    .tablet-hidden {
+        display: none;
+    }
+}
+
+@media(max-width: 600px) {
+    .desktop-hidden {
+        display: none;
+    }
+}
+
+@media(min-width: 1000px) {
+    .desktop-hidden {
+        display: none;
+    }
+}
+
+@media(max-width: 1300px) {
+    .title {
+        margin-top: 10%;
+    }
+}
