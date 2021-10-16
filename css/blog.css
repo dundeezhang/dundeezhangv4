@@ -3,9 +3,18 @@ body {
     color: black;
 }
 
+.titlebar {
+    background: rgb(221, 221, 221);
+}
+
+.goHome {
+    padding: 10px;
+}
+
 .blogTitle {
     padding: 50px;
-    background-color: rgb(255, 250, 220);
+    background-color: rgb(35, 85, 114);
+    color: white;
 }
 
 a {
