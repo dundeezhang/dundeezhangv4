@@ -36,15 +36,14 @@
 
 	<!--CSS Sheets-->
 	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" type="text/css" media="only screen and (min-width:1001px)" href="css/index.css">
-  	<link rel="stylesheet" type="text/css" media="only screen and (max-width:1000px)" href="css/index_m.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 
 	<title>Dundee Zhang</title>
 </head>
 
 <body>
 	<div class="content" id="frontpage">
-		<div class="row">
+		<div class="row topLinks">
 			<div class="Links">
 				<ul class="list-group list-group-horizontal">
 					<li class="">
@@ -72,26 +71,81 @@
 		</div>
 		<div class="title">
 			<div class="row">
-				<img src="images/profilePic.png" alt="Profile Picture" class="col-4 offset-4">	
+				<img src="images/profilePic.png" alt="Profile Picture" class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-10 offset-1">	
 				<h1 class="name col-12 text-center">
 					Hello, I'm Dundee Zhang
 					<br>
 				</h1>
+				<div class="tablet-hidden align-items-center mobileSocials phoneSocials">
+					<div style="width: min-content;">
+						<ul class="list-group list-group-horizontal">
+							<li class="">
+								<a target="_blank" href="mailto:dundee_zhang@hotmail.com" class="socialcons emailcon">
+									<i class="fas fa-inbox fa-lg"></i>
+								</a>
+							</li>
+							<li class="">
+								<a target="_blank" href="https://github.com/dundee-zhang/" class="socialcons githubcon">
+									<i class="fab fa-github fa-lg"></i>
+								</a>
+							</li>
+							<li class="">
+								<a target="_blank" href="https://www.linkedin.com/in/dundee-zhang/" class="socialcons linkedincon">
+									<i class="fab fa-linkedin-in fa-lg"></i>
+								</a>
+							</li>
+							<li class="">
+								<a target="_blank" href="https://twitter.com/dundee_zhang/" class="socialcons twittercon">
+									<i class="fab fa-twitter fa-lg"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 			<i class="fas fa-chevron-down col-4 offset-4 text-center" style="color: rgb(53, 53, 53); font-size: 2vw; padding-top: 1.5%;"></i>
 	</div>
+	<div class="desktop-hidden">
+		<div class="align-items-center mobileSocials">
+			<ul class="list-group list-group-horizontal">
+				<li class="">
+					<a target="_blank" href="mailto:dundee_zhang@hotmail.com" class="socialcons emailcon">
+						<i class="fas fa-inbox fa-lg"></i>
+					</a>
+				</li>
+				<li class="">
+					<a target="_blank" href="https://github.com/dundee-zhang/" class="socialcons githubcon">
+						<i class="fab fa-github fa-lg"></i>
+					</a>
+				</li>
+				<li class="">
+					<a target="_blank" href="https://www.linkedin.com/in/dundee-zhang/" class="socialcons linkedincon">
+						<i class="fab fa-linkedin-in fa-lg"></i>
+					</a>
+				</li>
+				<li class="">
+					<a target="_blank" href="https://twitter.com/dundee_zhang/" class="socialcons twittercon">
+						<i class="fab fa-twitter fa-lg"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 	<div class="blog" style="display: block; text-align: center;">
 		<a href="blog" class="text-center" style="font-family: 'IBM Plex Mono', monospace; color: rgb(153, 153, 153); margin-top: 20px; display: inline-block;">
-				Check out my blog here
+				Check out my blog here <span style="color: yellow;">(WIP)</span>
 		</a>
 		
 	</div>
 	<div class="aboutme">
-		<h2 class="text-center" id="about">Who am I?</h2>
+		<h2 class="text-center phoneSocials" id="about">Who am I?</h2>
+		<p class="text-center" style="padding: 20px; margin-bottom: 5%">
+			I am a high school <span style="color: greenyellow">student</span> with <span style="color: rgb(255, 23, 23);">no</span> particular hobbies.
+		</p>
 	</div>
 	<div class="footer">
-		<p class="footer">
+		<p class="footer text-center">
 			© Dundee Zhang 2021
 		</p>
 	</div>
