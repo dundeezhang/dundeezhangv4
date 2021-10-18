@@ -65,7 +65,7 @@ a:hover {
 }
 
 .card {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Azeret Mono', monospace;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0),  0 6px 20px 0 rgb(0, 0, 0);
     background: rgb(36, 36, 36);
@@ -74,8 +74,19 @@ a:hover {
 
 h3 {
     font-size: 23px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 p {
     font-size: 18;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+h6 {
+    text-align: center;
+    color:rgb(151, 151, 151);
+    margin-left: 15px;
+    margin-right: 15px;
 }
