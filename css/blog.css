@@ -1,3 +1,7 @@
+html {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
 body {
     background-color: rgb(29, 29, 29);
     color: rgb(231, 231, 231);
@@ -22,6 +26,7 @@ a.goHome {
 }
 
 .blogTitle {
+    font-family: 'IBM Plex Mono', monospace;
     padding: 50px;
     background-color: rgb(36, 36, 36);
     color: rgb(241, 241, 241);
@@ -60,8 +65,17 @@ a:hover {
 }
 
 .card {
+    font-family: 'IBM Plex Mono', monospace;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0),  0 6px 20px 0 rgb(0, 0, 0);
     background: rgb(36, 36, 36);
     border-color: transparent;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+p {
+    font-size: 18;
 }
