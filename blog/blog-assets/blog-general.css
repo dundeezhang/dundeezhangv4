@@ -70,9 +70,11 @@ a:hover {
 }
 
 h2 {
-    margin-top: 20px;
     font-family: 'Azeret Mono', monospace;
     font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 p {
@@ -80,8 +82,30 @@ p {
     margin: 0 20px 0 20px;
 }
 
-.images {
-    margin: 20px;
-    border-radius: 10px;
-    width: inherit;
+
+
+
+@media(min-width: 600px) {
+    .tablet-hidden {
+        display: none;
+    }
 }
+
+@media(max-width: 767px) {
+    .images {
+        border-radius: 10px;
+        width: 90%;
+        object-fit: contain;
+        margin: auto;    
+        display: block;
+    }
+}
+
+@media(min-width: 768px) {
+    .images {
+
+        border-radius: 10px;
+        width: inherit;
+        object-fit: contain;
+        margin: 20px 20px;    
+    }
