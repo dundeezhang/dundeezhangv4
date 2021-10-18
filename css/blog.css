@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(29, 29, 29);
     color: rgb(231, 231, 231);
 }
 
@@ -12,29 +12,32 @@ body {
 a.goHome {
     padding: 10px;
     border-radius: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 20px;
-    background: rgb(34, 34, 34);
+    background: rgb(27, 27, 27);
+    border-color: transparent;
     color: white;
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0),  0 6px 20px 0 rgb(0, 0, 0);
 }
 
 .blogTitle {
     padding: 50px;
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(36, 36, 36);
     color: rgb(241, 241, 241);
     border-radius: 10px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    border-color: transparent;
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0),  0 6px 20px 0 rgb(0, 0, 0);
 }
 
 a {
     font-style: none;
     text-decoration: none;
+    color: white;
 }
 
 a:hover {
@@ -58,5 +61,7 @@ a:hover {
 
 .card {
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgb(148, 148, 148),  0 6px 20px 0 rgb(148, 148, 148);
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0),  0 6px 20px 0 rgb(0, 0, 0);
+    background: rgb(36, 36, 36);
+    border-color: transparent;
 }
