@@ -82,8 +82,10 @@ p {
     margin: 0 20px 0 20px;
 }
 
-
-
+.footer {
+    font-family: 'IBM Plex Mono', monospace;
+    color: rgb(95, 95, 95);
+}
 
 @media(min-width: 600px) {
     .tablet-hidden {
@@ -109,3 +111,4 @@ p {
         object-fit: contain;
         margin: 20px 20px;    
     }
+}
