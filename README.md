@@ -1,3 +1,3 @@
 # Personal Website
 
-This website is a WIP.
+Stuff is to come.
