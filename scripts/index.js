@@ -8,5 +8,9 @@ $(".cover-page").click(function() {
     $('html, body').animate({
         scrollTop: $(".content").offset().top
     }, 100);
-    
+
+    $("html, body").css({
+        "overflow":"visible"
+    });
 });
+
