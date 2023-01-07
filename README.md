@@ -1,3 +1,3 @@
-# Personal Website
+# Portfolio / Blog Website
 
-Stuff is to come.
+Curently, a heavy WIP. Much more stuff is to come.
