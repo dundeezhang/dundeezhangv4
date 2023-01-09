@@ -1,10 +1,11 @@
 html body {
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(35, 48, 63);
     overflow: hidden;
+    color: white;
 }
 
 .name {
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(35, 48, 63);
     font-family: 'Roboto Mono', monospace;
     color: white;
     text-align: center;
@@ -22,11 +23,25 @@ html body {
 }
 
 .profile-picture {
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(35, 48, 63);
     width: 30vmax;
 }
 
 .see-more {
     font-size: 1vmax;
     color:rgb(212, 212, 212);
+}
+
+.introduction {
+    text-align: center;
+}
+
+.who-am-i {
+    background-color: rgb(48, 66, 87);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+p {
+    font-size: larger;
 }
