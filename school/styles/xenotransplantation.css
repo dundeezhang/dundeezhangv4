@@ -1,0 +1,41 @@
+html body {
+    background-color: rgb(35, 48, 63);
+    overflow: hidden;
+    color: white;
+}
+
+.name {
+    background-color: rgb(35, 48, 63);
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    text-align: center;
+    font-size: 3.8vmax;
+    margin-left: 3vmax;
+}
+
+.cover-page {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.header-picture {
+    margin-top: 5vmax;
+    background-color: rgb(35, 48, 63);
+    width: 30vmax;
+}
+
+.see-more {
+    font-size: 1vmax;
+    color:rgb(212, 212, 212);
+}
+
+.introduction {
+    text-align: center;
+}
+
+p {
+    font-size: larger;
+}
