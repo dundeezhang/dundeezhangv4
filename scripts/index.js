@@ -12,6 +12,10 @@ $(".cover-page").click(function () {
     $(".see-more").animate({
         opacity: 0
     }, 100);
+/*
+    $(".navlist").animate({
+        opacity: 1
+    }, 50);*/
 
     $(".profile-picture").animate({
         width: pictureNewSize
@@ -22,7 +26,7 @@ $(".cover-page").click(function () {
     }, 100);
 
     $('html, body').animate({
-        scrollTop: $(".introduction").offset().top
+        scrollTop: $("#introduction").offset().top
     }, 100);
 
     $("html, body").css({

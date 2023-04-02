@@ -32,7 +32,7 @@ html body {
     color:rgb(212, 212, 212);
 }
 
-.introduction {
+#introduction {
     text-align: center;
 }
 
@@ -44,4 +44,33 @@ html body {
 
 p {
     font-size: larger;
+}
+
+#contact {
+    text-align: center;
+}
+
+.navlist {
+    font-size: 2vmax;
+    margin-top: 4vw;
+    margin-left: 4vw;
+    position: fixed;
+    display: block;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.link-one:hover {
+    color: #c5c5c5;
+}
+
+.link-two:hover {
+    color: #c5c5c5;
 }
