@@ -1,4 +1,4 @@
-import pfp from './img/cropped_image.png'
+import pfp from './img/cropped_image.png';
 import './css/App.css';
 
 function App() {
