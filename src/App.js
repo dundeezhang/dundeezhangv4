@@ -32,8 +32,8 @@ function App() {
                         </a>
                     </li>
                 </ul>
-                <p  className="ibm-plex-mono-regular resume">
-                    <a href="https://drive.google.com/file/d/1bEVO4IF-KCmf9nbOUBesm1kiag_9tWOq/view?usp=sharing" target="_blank" rel="noreferrer">--{'>'} Resume {'<'}--</a>
+                <p  className="ibm-plex-mono-regular resume resume-hover">
+                    <a className="resume-hover" href="https://drive.google.com/file/d/1bEVO4IF-KCmf9nbOUBesm1kiag_9tWOq/view?usp=sharing" target="_blank" rel="noreferrer">--{'>'} Resume {'<'}--</a>
                 </p>
             </header>
         </div>
