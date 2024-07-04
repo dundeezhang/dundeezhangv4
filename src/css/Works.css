@@ -1,0 +1,27 @@
+.App-content {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+h2 {
+    margin: 4vmin;
+}
+
+a {
+    color:rgb(222, 237, 250);
+    text-decoration: none;
+    font-size: 2vmin;
+}
+a:visited {
+    color:rgb(222, 237, 250);
+}
+
+.resume {
+    margin-top: 6vmin;
+}

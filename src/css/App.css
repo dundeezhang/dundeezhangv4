@@ -6,6 +6,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  margin: 4vmin;
 }
 
 .App-header {
@@ -15,21 +16,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .csText {
@@ -48,6 +36,7 @@ ul > li {
   margin: 0 6vmin 0 0;
   text-align: center;
   color: white;
+  font-size: calc(10px + 2vmin);
 }
 
 a {
@@ -56,4 +45,9 @@ a {
 
 a:visited {
   color: white;
+}
+
+p {
+  font-size: calc(10px + 1vmin);
+  margin: 0 3vmin 1.5vmin 3vmin;
 }
