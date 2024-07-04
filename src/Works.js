@@ -1,5 +1,4 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -35,7 +34,7 @@ function Works() {
                                     <Card.Text>
                                         An introduction website to show my projects and experience.
                                     </Card.Text>
-                                    <a href="https://github.com/dundeezhang/dundeezhang.github.io">View on GitHub</a>
+                                    <a href="https://github.com/dundeezhang/dundeezhang.github.io" target="_blank" rel="noreferrer">View on GitHub</a>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -59,7 +58,7 @@ function Works() {
                                     <Card.Text>
                                         Grade 10 business final project written under time constraints. Front-end.
                                     </Card.Text>
-                                    <a href="https://github.com/dundeezhang/datingdo.single">View on GitHub</a>
+                                    <a href="https://github.com/dundeezhang/datingdo.single" target="_blank" rel="noreferrer">View on GitHub</a>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -83,7 +82,7 @@ function Works() {
                                     <Card.Text>
                                         Repository to store most of my solutions for CS problems.
                                     </Card.Text>
-                                    <a href="https://github.com/dundeezhang/Contests">View on GitHub</a>
+                                    <a href="https://github.com/dundeezhang/Contests" target="_blank" rel="noreferrer">View on GitHub</a>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -109,7 +108,7 @@ function Works() {
                                     <Card.Text>
                                         A CLI password manager written in C++ only. Used OOP principals.
                                     </Card.Text>
-                                    <a href="https://github.com/dundeezhang/dzPass">View on GitHub</a>
+                                    <a href="https://github.com/dundeezhang/dzPass" target="_blank" rel="noreferrer">View on GitHub</a>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -133,7 +132,7 @@ function Works() {
                                     <Card.Text>
                                         A calculator I made to help me do homework, CLI.
                                     </Card.Text>
-                                    <a href="https://github.com/dundeezhang/Better-Calculator">View on GitHub</a>
+                                    <a href="https://github.com/dundeezhang/Better-Calculator" target="_blank" rel="noreferrer">View on GitHub</a>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -157,14 +156,14 @@ function Works() {
                                     <Card.Text>
                                         More projects are WIP. Check out and follow my GitHub to stay updated!
                                     </Card.Text>
-                                    <a href="https://github.com/dundeezhang">View on GitHub</a>
+                                    <a href="https://github.com/dundeezhang" target="_blank" rel="noreferrer">View on GitHub</a>
                                 </Card.Body>
                             </Card>
                         </Col>
                     </Row>
                 </Container>
                 <p  className="ibm-plex-mono-light resume">
-                    <a href="https://drive.google.com/file/d/1bEVO4IF-KCmf9nbOUBesm1kiag_9tWOq/view?usp=sharing" target="_blank">Still interested? Check out my resume here</a>
+                    <a href="https://drive.google.com/file/d/1bEVO4IF-KCmf9nbOUBesm1kiag_9tWOq/view?usp=sharing" target="_blank" rel="noreferrer">Still interested? Check out my resume here</a>
                 </p>
             </body>
         </div>

@@ -16,23 +16,23 @@ function App() {
                 
                 <ul className="social-cons">
                     <li>
-                        <a href="https://www.linkedin.com/in/dundeezhang/" style={{color: "white", fontSize: "calc(10px + 2vmin)"}} target="_blank">
+                        <a rel="noreferrer" href="https://www.linkedin.com/in/dundeezhang/" style={{color: "white", fontSize: "calc(10px + 2vmin)"}} target="_blank">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
                         
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/dundeehz" style={{color: "white", fontSize: "calc(10px + 2vmin)"}} target="_blank">
+                        <a rel="noreferrer" href="https://www.instagram.com/dundeehz" style={{color: "white", fontSize: "calc(10px + 2vmin)"}} target="_blank">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/dundeezhang" style={{color: "white", fontSize: "calc(10px + 2vmin)"}} target="_blank">
+                        <a rel="noreferrer" href="https://github.com/dundeezhang" style={{color: "white", fontSize: "calc(10px + 2vmin)"}} target="_blank">
                         <i class="fa-brands fa-github"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:dundeez124@gmail.com" style={{color: "white", fontSize: "calc(10px + 2vmin)"}} target="_blank">
+                        <a rel="noreferrer" href="mailto:dundeez124@gmail.com" style={{color: "white", fontSize: "calc(10px + 2vmin)"}} target="_blank">
                             <i class="fa-regular fa-envelope"></i>
                         </a>
                     </li>
