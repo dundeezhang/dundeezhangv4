@@ -1,0 +1,114 @@
+html {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #EEEEEE;
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+body {
+    background-color: rgb(29, 29, 29);
+    color: rgb(231, 231, 231);
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.titlebar {
+    background: transparent;
+    margin-bottom: 30px;
+    display: block;
+}
+
+a.goHome {
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background: rgb(27, 27, 27);
+    border-color: transparent;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0),  0 6px 20px 0 rgb(0, 0, 0);
+}
+
+.blogTitle {
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 50px;
+    background-color: rgb(36, 36, 36);
+    color: rgb(241, 241, 241);
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-color: transparent;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0),  0 6px 20px 0 rgb(0, 0, 0);
+}
+
+a {
+    font-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(182, 182, 182)
+}
+
+.card {
+    font-family: 'Azeret Mono', monospace;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0),  0 6px 20px 0 rgb(0, 0, 0);
+    background: rgb(36, 36, 36);
+    border-color: transparent;
+}
+
+h2 {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+p {
+    font-family: 'Azeret Mono', monospace;
+    margin: 0 20px 0 20px;
+}
+
+.footer {
+    font-family: 'IBM Plex Mono', monospace;
+    color: rgb(95, 95, 95);
+}
+
+@media(min-width: 600px) {
+    .tablet-hidden {
+        display: none;
+    }
+}
+
+@media(max-width: 767px) {
+    .images {
+        border-radius: 10px;
+        width: 90%;
+        object-fit: contain;
+        margin: auto;    
+        display: block;
+    }
+}
+
+@media(min-width: 768px) {
+    .images {
+
+        border-radius: 10px;
+        width: inherit;
+        object-fit: contain;
+        margin: 20px 20px;    
+    }
+}
