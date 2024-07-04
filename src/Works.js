@@ -13,7 +13,6 @@ function Works() {
                 <h2 className="ibm-plex-mono-regular">
                     Here are some of my projects:
                 </h2>
-                // cards
                 <Container fluid>
                     <Row>
                         <Col>
