@@ -1,5 +1,5 @@
 import pfp from './img/cropped_image.png'
-import './App.css';
+import './css/App.css';
 
 function App() {
     return (
