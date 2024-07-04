@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import pfp from './img/cropped_image.png'
 import './App.css';
 
