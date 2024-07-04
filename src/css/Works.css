@@ -14,14 +14,12 @@ h2 {
 }
 
 a {
-    color:rgb(222, 237, 250);
+    color: rgb(222, 237, 250);
     text-decoration: none;
-    font-size: 2vmin;
+    font-size: calc(5px + 2vmin);
 }
 a:visited {
-    color:rgb(222, 237, 250);
+    color: rgb(222, 237, 250);
 }
 
-.resume {
-    margin-top: 6vmin;
-}
+

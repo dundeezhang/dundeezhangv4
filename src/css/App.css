@@ -20,13 +20,7 @@
   color: white;
 }
 
-.csText {
-  color: greenyellow;
-}
 
-.schoolText {
-  color: rgb(250, 143, 250);
-}
 
 ul {
   list-style-type: none;
@@ -50,4 +44,26 @@ a:visited {
 p {
   font-size: calc(10px + 1vmin);
   margin: 0 3vmin 1.5vmin 3vmin;
+}
+
+.resume {
+  margin-top: 6vmin;
+}
+
+a.csText {
+  font-size: calc(10px + 1vmin);
+  color: greenyellow;
+}
+
+a.csText:visited {
+  color: greenyellow;
+}
+
+a.schoolText {
+  font-size: calc(10px + 1vmin);
+  color: rgb(250, 143, 250);
+}
+
+a.schoolText:visited {
+  color: rgb(250, 143, 250);
 }

@@ -8,7 +8,7 @@ function App() {
                 <img src={pfp} className="App-logo" alt="profile" />
                 <h1 className="ibm-plex-mono-regular">I'm Dundee</h1>
                 <p>
-                    a <span className="csText">Computer Science</span> student at the <span className="schoolText">University of Waterloo</span>
+                    a <a target="_blank" rel="noreferrer" className="csText" href="https://uwaterloo.ca/future-students/programs/computer-science">Computer Science</a> student at the <a target="_blank" rel="noreferrer" className="schoolText" href="https://uwaterloo.ca">University of Waterloo</a>
                 </p>
                 <p>
                     I am a developer who is passionate about pushing technology forward!
@@ -37,6 +37,9 @@ function App() {
                         </a>
                     </li>
                 </ul>
+                <p  className="ibm-plex-mono-light resume">
+                    <a href="https://drive.google.com/file/d/1bEVO4IF-KCmf9nbOUBesm1kiag_9tWOq/view?usp=sharing" target="_blank" rel="noreferrer">Still interested? Check out my resume here</a>
+                </p>
             </header>
         </div>
     );
