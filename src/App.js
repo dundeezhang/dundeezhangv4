@@ -5,7 +5,7 @@ function App() {
     return (
         <div className="App ibm-plex-mono-light">
             <header className="App-header">
-                <img src={pfp} className="App-logo" alt="profile photo" />
+                <img src={pfp} className="App-logo" alt="profile" />
                 <h1 className="ibm-plex-mono-regular">Dundee Zhang</h1>
                 <p>
                     I am a <span className="csText">Computer Science Student</span> at the <span className="schoolText">University of Waterloo</span>
