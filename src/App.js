@@ -16,29 +16,24 @@ function App() {
                 
                 <ul className="social-cons">
                     <li>
-                        <a rel="noreferrer" href="https://www.linkedin.com/in/dundeezhang/" style={{color: "white", fontSize: "calc(10px + 2vmin)"}} target="_blank">
+                        <a rel="noreferrer" href="https://www.linkedin.com/in/dundeezhang/" style={{color: "black", fontSize: "calc(10px + 2vmin)"}} target="_blank">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
                         
                     </li>
                     <li>
-                        <a rel="noreferrer" href="https://www.instagram.com/dundeehz" style={{color: "white", fontSize: "calc(10px + 2vmin)"}} target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a rel="noreferrer" href="https://github.com/dundeezhang" style={{color: "white", fontSize: "calc(10px + 2vmin)"}} target="_blank">
+                        <a rel="noreferrer" href="https://github.com/dundeezhang" style={{color: "black", fontSize: "calc(10px + 2vmin)"}} target="_blank">
                         <i class="fa-brands fa-github"></i>
                         </a>
                     </li>
                     <li>
-                        <a rel="noreferrer" href="mailto:dundeez124@gmail.com" style={{color: "white", fontSize: "calc(10px + 2vmin)"}} target="_blank">
+                        <a rel="noreferrer" href="mailto:dundeez124@gmail.com" style={{color: "black", fontSize: "calc(10px + 2vmin)"}} target="_blank">
                             <i class="fa-regular fa-envelope"></i>
                         </a>
                     </li>
                 </ul>
-                <p  className="ibm-plex-mono-light resume">
-                    <a href="https://drive.google.com/file/d/1bEVO4IF-KCmf9nbOUBesm1kiag_9tWOq/view?usp=sharing" target="_blank" rel="noreferrer">Still interested? Check out my resume here</a>
+                <p  className="ibm-plex-mono-regular resume">
+                    <a href="https://drive.google.com/file/d/1bEVO4IF-KCmf9nbOUBesm1kiag_9tWOq/view?usp=sharing" target="_blank" rel="noreferrer">--{'>'} Resume {'<'}--</a>
                 </p>
             </header>
         </div>

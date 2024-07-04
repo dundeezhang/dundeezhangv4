@@ -19,8 +19,8 @@ function Works() {
                             <FadeInSection>
                                 <Card
                                     style={{
-                                        backgroundColor: "#414754",
-                                        color: "white",
+                                        backgroundColor: "#ebebeb",
+                                        color: "black",
                                         margin: "1vmin",
                                         minWidth: "400px",
                                     }}
@@ -29,7 +29,7 @@ function Works() {
                                         <Card.Title>This Website</Card.Title>
                                         <Card.Subtitle
                                             className="mb-2"
-                                            style={{ color: "#bdbdbd" }}
+                                            style={{ color: "#9c9c9c" }}
                                         >
                                             React, Bootstrap, HTML, CSS
                                         </Card.Subtitle>
@@ -53,8 +53,8 @@ function Works() {
                             <FadeInSection>
                                 <Card
                                     style={{
-                                        backgroundColor: "#414754",
-                                        color: "white",
+                                        backgroundColor: "#ebebeb",
+                                        color: "black",
                                         margin: "1vmin",
                                         minWidth: "400px",
                                     }}
@@ -65,7 +65,7 @@ function Works() {
                                         </Card.Title>
                                         <Card.Subtitle
                                             className="mb-2"
-                                            style={{ color: "#bdbdbd" }}
+                                            style={{ color: "#9c9c9c" }}
                                         >
                                             Bootstrap, HTML, CSS
                                         </Card.Subtitle>
@@ -90,8 +90,8 @@ function Works() {
                             <FadeInSection>
                                 <Card
                                     style={{
-                                        backgroundColor: "#414754",
-                                        color: "white",
+                                        backgroundColor: "#ebebeb",
+                                        color: "black",
                                         margin: "1vmin",
                                         minWidth: "400px",
                                     }}
@@ -102,7 +102,7 @@ function Works() {
                                         </Card.Title>
                                         <Card.Subtitle
                                             className="mb-2"
-                                            style={{ color: "#bdbdbd" }}
+                                            style={{ color: "#9c9c9c" }}
                                         >
                                             C++, Java, Python
                                         </Card.Subtitle>
@@ -127,8 +127,8 @@ function Works() {
                             <FadeInSection>
                                 <Card
                                     style={{
-                                        backgroundColor: "#414754",
-                                        color: "white",
+                                        backgroundColor: "#ebebeb",
+                                        color: "black",
                                         margin: "1vmin",
                                         minWidth: "400px",
                                     }}
@@ -137,7 +137,7 @@ function Works() {
                                         <Card.Title>dzPass</Card.Title>
                                         <Card.Subtitle
                                             className="mb-2"
-                                            style={{ color: "#bdbdbd" }}
+                                            style={{ color: "#9c9c9c" }}
                                         >
                                             C++, Makefile
                                         </Card.Subtitle>
@@ -161,8 +161,8 @@ function Works() {
                             <FadeInSection>
                                 <Card
                                     style={{
-                                        backgroundColor: "#414754",
-                                        color: "white",
+                                        backgroundColor: "#ebebeb",
+                                        color: "black",
                                         margin: "1vmin",
                                         minWidth: "400px",
                                     }}
@@ -173,7 +173,7 @@ function Works() {
                                         </Card.Title>
                                         <Card.Subtitle
                                             className="mb-2"
-                                            style={{ color: "#bdbdbd" }}
+                                            style={{ color: "#9c9c9c" }}
                                         >
                                             C++, C, Cmake, Makefile
                                         </Card.Subtitle>
@@ -197,8 +197,8 @@ function Works() {
                             <FadeInSection>
                                 <Card
                                     style={{
-                                        backgroundColor: "#414754",
-                                        color: "white",
+                                        backgroundColor: "#ebebeb",
+                                        color: "black",
                                         margin: "1vmin",
                                         minWidth: "400px",
                                     }}
@@ -207,7 +207,7 @@ function Works() {
                                         <Card.Title>Coming Soon</Card.Title>
                                         <Card.Subtitle
                                             className="mb-2"
-                                            style={{ color: "#bdbdbd" }}
+                                            style={{ color: "#9c9c9c" }}
                                         >
                                             More Languages
                                         </Card.Subtitle>
