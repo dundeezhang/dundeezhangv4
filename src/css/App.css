@@ -43,6 +43,11 @@ p {
     margin: 0 3vmin 1.5vmin 3vmin;
 }
 
+p.website-intro {
+    font-size: calc(10px + 1vmin);
+    margin: 0 3vmin 1.5vmin 3vmin;
+}
+
 .resume {
     margin-top: 6vmin;
 }

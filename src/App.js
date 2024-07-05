@@ -7,7 +7,7 @@ function App() {
             <header className="App-header">
                 <img src={pfp} className="App-logo" alt="profile" />
                 <h1 className="ibm-plex-mono-regular">I'm Dundee</h1>
-                <p>
+                <p class="website-intro">
                     a{" "}
                     <a
                         target="_blank"
@@ -27,7 +27,7 @@ function App() {
                         University of Waterloo
                     </a>
                 </p>
-                <p>
+                <p class="website-intro">
                     I am a developer who is passionate about pushing technology
                     forward!
                 </p>
