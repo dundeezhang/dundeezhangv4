@@ -19,7 +19,7 @@ function Works() {
                                 style={{
                                     backgroundColor: "#ebebeb",
                                     color: "black",
-                                    margin: "1vmin",
+                                    margin: "1.5vmin 0.5vmin 1.5vmin 0.5vmin",
                                     minWidth: "400px",
                                 }}
                             >
@@ -51,7 +51,7 @@ function Works() {
                                 style={{
                                     backgroundColor: "#ebebeb",
                                     color: "black",
-                                    margin: "1vmin",
+                                    margin: "1.5vmin 0.5vmin 1.5vmin 0.5vmin",
                                     minWidth: "400px",
                                 }}
                             >
@@ -83,7 +83,7 @@ function Works() {
                                 style={{
                                     backgroundColor: "#ebebeb",
                                     color: "black",
-                                    margin: "1vmin",
+                                    margin: "1.5vmin 0.5vmin 1.5vmin 0.5vmin",
                                     minWidth: "400px",
                                 }}
                             >
@@ -118,7 +118,7 @@ function Works() {
                                 style={{
                                     backgroundColor: "#ebebeb",
                                     color: "black",
-                                    margin: "1vmin",
+                                    margin: "1.5vmin 0.5vmin 1.5vmin 0.5vmin",
                                     minWidth: "400px",
                                 }}
                             >
@@ -150,7 +150,7 @@ function Works() {
                                 style={{
                                     backgroundColor: "#ebebeb",
                                     color: "black",
-                                    margin: "1vmin",
+                                    margin: "1.5vmin 0.5vmin 1.5vmin 0.5vmin",
                                     minWidth: "400px",
                                 }}
                             >
@@ -181,7 +181,7 @@ function Works() {
                                 style={{
                                     backgroundColor: "#ebebeb",
                                     color: "black",
-                                    margin: "1vmin",
+                                    margin: "1.5vmin 0.5vmin 1.5vmin 0.5vmin",
                                     minWidth: "400px",
                                 }}
                             >
@@ -216,7 +216,7 @@ function Works() {
                                 style={{
                                     backgroundColor: "#ebebeb",
                                     color: "black",
-                                    margin: "1vmin",
+                                    margin: "1.5vmin 0.5vmin 1.5vmin 0.5vmin",
                                     minWidth: "400px",
                                 }}
                             >

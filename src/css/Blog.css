@@ -4,7 +4,7 @@
 
 .blog-intro {
     background-color: white;
-    min-height: 30vmin;
+    min-height: 40vmin;
     display: flex;
     flex-direction: column;
     align-items: center;
