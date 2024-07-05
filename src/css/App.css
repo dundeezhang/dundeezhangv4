@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-    height: 40vmin;
+    height: 45vmin;
     pointer-events: none;
     margin: 4vmin;
 }
@@ -80,4 +80,8 @@ a.schoolText:visited {
 
 .resume-hover:hover {
     color: rgb(16, 60, 98);
+}
+
+h1.dundee-name {
+    font-size: calc(10px + 2.5vmin);
 }

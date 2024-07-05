@@ -6,7 +6,7 @@ function App() {
         <div className="App ibm-plex-mono-light">
             <header className="App-header">
                 <img src={pfp} className="App-logo" alt="profile" />
-                <h1 className="ibm-plex-mono-regular">I'm Dundee</h1>
+                <h1 className="dundee-name ibm-plex-mono-regular">I'm Dundee</h1>
                 <p class="website-intro">
                     a{" "}
                     <a
