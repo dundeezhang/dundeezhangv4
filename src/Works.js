@@ -24,7 +24,7 @@ function Works() {
                                 }}
                             >
                                 <Card.Body className="ibm-plex-mono-light">
-                                    <Card.Title>This Website</Card.Title>
+                                    <Card.Title>dundeezhang.com</Card.Title>
                                     <Card.Subtitle
                                         className="mb-2"
                                         style={{ color: "#9c9c9c" }}
@@ -65,7 +65,7 @@ function Works() {
                                     </Card.Subtitle>
                                     <Card.Text>
                                         Grade 10 business final project written
-                                        under time constraints. Front-end.
+                                        under time constraints.
                                     </Card.Text>
                                     <a
                                         href="https://github.com/dundeezhang/datingdo.single"
@@ -176,7 +176,41 @@ function Works() {
                                 </Card.Body>
                             </Card>
                         </Col>
-
+                        <Col>
+                            <Card
+                                style={{
+                                    backgroundColor: "#ebebeb",
+                                    color: "black",
+                                    margin: "1vmin",
+                                    minWidth: "400px",
+                                }}
+                            >
+                                <Card.Body className="ibm-plex-mono-light">
+                                    <Card.Title>
+                                        blog.dundeezhang.com
+                                    </Card.Title>
+                                    <Card.Subtitle
+                                        className="mb-2"
+                                        style={{ color: "#9c9c9c" }}
+                                    >
+                                        HTML, CSS
+                                    </Card.Subtitle>
+                                    <Card.Text>
+                                        My personal blog where I talk about
+                                        whatever! WIP.
+                                    </Card.Text>
+                                    <a
+                                        href="https://github.com/dundeezhang/blog"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        View on GitHub
+                                    </a>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
+                    <Row>
                         <Col>
                             <Card
                                 style={{
