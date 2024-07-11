@@ -1,13 +1,16 @@
 import pfp from "./img/cropped_image.png";
 import "./css/App.css";
+import Works from "./Works";
+import Blog from "./blog";
+import React from "react";
 
-function App() {
+function Intro() {
     return (
-        <div className="App ibm-plex-mono-light">
+        <div>
             <header className="App-header">
-                <img src={pfp} className="App-logo" alt="profile" />
+                <img src={pfp} className="App-logo" alt="profile"/>
                 <h1 className="dundee-name ibm-plex-mono-regular">I'm Dundee</h1>
-                <p class="website-intro">
+                <p className="website-intro">
                     a{" "}
                     <a
                         target="_blank"
@@ -27,7 +30,7 @@ function App() {
                         University of Waterloo
                     </a>
                 </p>
-                <p class="website-intro">
+                <p className="website-intro">
                     I am a developer who is passionate about pushing technology
                     forward!
                 </p>
@@ -43,7 +46,7 @@ function App() {
                             }}
                             target="_blank"
                         >
-                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i className="fa-brands fa-linkedin-in"></i>
                         </a>
                     </li>
                     <li>
@@ -56,7 +59,7 @@ function App() {
                             }}
                             target="_blank"
                         >
-                            <i class="fa-brands fa-github"></i>
+                            <i className="fa-brands fa-github"></i>
                         </a>
                     </li>
                     <li>
@@ -69,7 +72,7 @@ function App() {
                             }}
                             target="_blank"
                         >
-                            <i class="fa-regular fa-envelope"></i>
+                            <i className="fa-regular fa-envelope"></i>
                         </a>
                     </li>
                 </ul>
@@ -84,6 +87,16 @@ function App() {
                     </a>
                 </p>
             </header>
+        </div>
+    );
+}
+
+function App() {
+    return (
+        <div className="App ibm-plex-mono-light">
+            <Intro/>
+            <Works/>
+            <Blog/>
         </div>
     );
 }

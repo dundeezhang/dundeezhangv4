@@ -24,7 +24,7 @@ ul {
 }
 ul > li {
     display: inline-block;
-    margin: 0 6vmin 0 0;
+    margin: 0 5vmin 0 1vmin;
     text-align: center;
     color: black;
     font-size: calc(10px + 2vmin);
@@ -85,3 +85,4 @@ a.schoolText:visited {
 h1.dundee-name {
     font-size: calc(10px + 2.5vmin);
 }
+
