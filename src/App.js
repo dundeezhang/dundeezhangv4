@@ -79,7 +79,7 @@ function Intro() {
                 <p className="ibm-plex-mono-regular resume resume-hover">
                     <a
                         className="resume-hover"
-                        href="https://drive.google.com/file/d/1zDlSGmy38NLBenw6YI7PH3dp9rLW18KH/view?usp=sharing"
+                        href="https://drive.google.com/open?id=14yOpnmKCtu_x_Af-kwLcat63QChgAtfo&usp=drive_fs"
                         target="_blank"
                         rel="noreferrer"
                     >
