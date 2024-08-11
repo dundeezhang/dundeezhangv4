@@ -148,7 +148,7 @@ export default function Intro() {
                     <p className="ibm-plex-mono-regular resume resume-hover">
                         <a
                             className="resume-hover"
-                            href="https://drive.google.com/open?id=14zvMIgo9STMQjtpAS1jOZ2Qb2WOXWliS&usp=drive_fs"
+                            href="https://drive.google.com/open?id=15-bCNtc3CFQpb7Q3yXv5l4WSLursHS3v&usp=drive_fs"
                             target="_blank"
                             rel="noreferrer"
                         >
