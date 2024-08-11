@@ -3,9 +3,8 @@
 }
 
 .App-logo {
-    height: 45vmin;
+    
     pointer-events: none;
-    margin: 4vmin;
 }
 
 .App-header {
@@ -82,7 +81,17 @@ a.schoolText:visited {
     color: rgb(16, 60, 98);
 }
 
-h1.dundee-name {
+.dundee-name {
     font-size: calc(10px + 2.5vmin);
     margin: 0 0 5vmin 0;
+}
+
+.profile-picture {
+    height: 70vmin;
+    width: 70vmin;
+    pointer-events: none;
+    margin: 4vmin;
+    padding: 0;
+    overflow: hidden;
+    height: fit-content;
 }
