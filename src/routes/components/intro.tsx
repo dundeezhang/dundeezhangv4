@@ -22,7 +22,7 @@ export default function Intro() {
                     </div>
                 </motion.div>
                 <TypeAnimation
-                    sequence={[500, "Hi! I'm Dundee"]}
+                    sequence={[500, "Hello! I'm Dundee"]}
                     className="dundee-name ibm-plex-mono-regular"
                 ></TypeAnimation>
                 <motion.div
