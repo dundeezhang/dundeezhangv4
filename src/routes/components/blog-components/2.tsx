@@ -31,7 +31,7 @@ export default function ArtTwo() {
             <p>
                 Namely, there is an anime called <a href="https://myanimelist.net/anime/24833/Ansatsu_Kyoushitsu">Ansatsu Kyoushitsu (Assassination Classroom)</a>. Although it's a little edgy to my liking today, it really set the tone of what high school was going to be like. Ignoring all of the “omg, I need to kill my sensei or else the world blows up” plot, it really was just about highschool students with personal struggles trying to fit into an unwelcome environment. Then throughout the story, their teacher, whom they have to kill, would provide solutions for the problems the students suffered throughout their lives. In addition, the constant reminders of graduation, exams, and field trips in the anime made me more excited about what was to come in high school. I thought there would be more fun field trips and more exciting school topics to learn in the coming years. I'll later come to see that I was wrong.
             </p>
-            <img src="/src/img/blog/ac-gif.gif" alt="gif of a scene from the anime"></img>
+            <img src="./blog/ac-gif.gif" alt="gif of a scene from the anime"></img>
             <p className="desc">Scene from Assassination Classroom</p>
             <p>
                 So throughout the second half of eighth grade, although I was still on the anime grind, I also started to feel worried about school. Most anime I watched at the time such as Assassination Classroom were about students who weren't good enough in their schools, so they got punished. I was probably in a distorted reality realm from watching so much anime, but I seriously got worried about my future. As a consequence, I started a productivity grind.
@@ -39,7 +39,7 @@ export default function ArtTwo() {
             <p>
                 Around that time as well, was when I got my first computer. So during that productivity phase, I would wake up, code, play a game called “osu!”, eat some food, and go back to sleep. Rinse and repeat. There wasn't really anything interesting in my life at the time, but this really set me up for the future. I found out about my interest in computer science during this time period, and that I have really poor time management. Two things that usually go hand in hand…
             </p>
-            <img src="/src/img/blog/new-laptop.JPEG" alt="my new macbook air 2020 intel"></img>
+            <img src="./blog/new-laptop.JPEG" alt="my new macbook air 2020 intel"></img>
             <p className="desc">My New Laptop</p>
             <h3>
                 The Let Down
@@ -59,7 +59,7 @@ export default function ArtTwo() {
             <p>
                 But fear not, I knew I was an academic demon. I think the highlight of that year was when I was sleeping in my math class for an entire unit, and I still aced the test. I remember being more shocked at getting that mark than anything else I remember prior.
             </p>
-            <img className="vert-img" src="/src/img/blog/me-in-functions.JPEG" alt="Me in Math Class"></img>
+            <img className="vert-img" src="./blog/me-in-functions.JPEG" alt="Me in Math Class"></img>
             <p className="desc">Me in Math Class</p>
             <p>
                 In the end, no one really cares about the first three years as they don't really impact your future much.
@@ -79,7 +79,7 @@ export default function ArtTwo() {
             <p>
                 After I got home from the camp, I knew exactly what I needed to do. Since I was basically certain I wanted to do computer science in university, I started doing leetcode, dmoj, and relearning many coding languages I learned during my productivity phase in grade 8. I knew that to get into my dream university program (Waterloo CS), I had to improve myself. So I started to market myself too.
             </p>
-            <img src="/src/img/blog/lakehead-university-campus.jpg" alt="Lakehead University Campus UC Building"></img>
+            <img src="./blog/lakehead-university-campus.jpg" alt="Lakehead University Campus UC Building"></img>
             <p className="desc">Lakehead University Campus Next to Lake</p>
             <h3>
                 Execution and Lesson
@@ -93,7 +93,7 @@ export default function ArtTwo() {
             <p>
                 Regardless, high school may not be what you expect, but it is not as bad as it seems. You'll get to meet many people in school and out of school that will inspire you, and 4 years is a lot of time. Anything can happen, so take every opportunity that arises.
             </p>
-            <img src="/src/img/blog/shad-hoodie-tb.JPEG" alt="Me wearing shad hoodie in a view of Thunder Bay"></img>
+            <img src="./blog/shad-hoodie-tb.JPEG" alt="Me wearing shad hoodie in a view of Thunder Bay"></img>
             <p className="desc">Selfie with Shad Hoodie in Thunder Bay</p>
         </div>
         

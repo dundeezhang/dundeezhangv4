@@ -65,7 +65,7 @@ export default function ArtOne() {
                     some good improvement. But that's not the main story.
                 </p>
                 <img
-                    src="/src/img/blog/run-night-image.jpeg"
+                    src="./blog/run-night-image.jpeg"
                     alt="picture of the night sky where I run"
                 ></img>
                 <p className="desc">
