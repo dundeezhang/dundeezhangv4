@@ -38,3 +38,12 @@ a:visited {
     font-size: calc(10px + 2.5vmin);
     margin: 0 0 5vmin 0;
 }
+
+.project-images {
+    object-fit: cover;
+    overflow: hidden;
+    height: 10vmin;
+    margin: 0;
+    min-width: 400px;
+    max-width: 100%;
+}

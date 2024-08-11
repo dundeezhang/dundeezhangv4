@@ -71,10 +71,12 @@ a.schoolText:visited {
 
 .fa-brands:hover {
     color: rgb(67, 141, 206);
+    transform: scale(1.1);
 }
 
 .fa-regular:hover {
     color: rgb(67, 141, 206);
+    transform: scale(1.1);
 }
 
 .resume-hover:hover {

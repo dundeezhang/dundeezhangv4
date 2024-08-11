@@ -60,6 +60,7 @@ function Works() {
                                         minWidth: "400px",
                                     }}
                                 >
+                                    <Card.Img variant="top" src="/src/img/website.png" className="project-images"/>
                                     <Card.Body className="ibm-plex-mono-light">
                                         <Card.Title className="project-title">dundeezhang.com</Card.Title>
                                         <Card.Subtitle
@@ -100,6 +101,7 @@ function Works() {
                                         minWidth: "400px",
                                     }}
                                 >
+                                    <Card.Img variant="top" src="/src/img/datingdo.png" className="project-images"/>
                                     <Card.Body className="ibm-plex-mono-light">
                                         <Card.Title className="project-title">
                                             datingdo.singles
@@ -142,6 +144,7 @@ function Works() {
                                         minWidth: "400px",
                                     }}
                                 >
+                                    <Card.Img variant="top" src="/src/img/compcode.png" className="project-images"/>
                                     <Card.Body className="ibm-plex-mono-light">
                                         <Card.Title className="project-title">
                                             Competitive Programming
@@ -185,6 +188,7 @@ function Works() {
                                         minWidth: "400px",
                                     }}
                                 >
+                                    <Card.Img variant="top" src="/src/img/dzpass.png" className="project-images"/>
                                     <Card.Body className="ibm-plex-mono-light">
                                         <Card.Title className="project-title">dzPass</Card.Title>
                                         <Card.Subtitle
@@ -225,6 +229,7 @@ function Works() {
                                         minWidth: "400px",
                                     }}
                                 >
+                                    <Card.Img variant="top" src="/src/img/bettercalc.png" className="project-images"/>
                                     <Card.Body className="ibm-plex-mono-light">
                                         <Card.Title className="project-title">
                                             Better-Calculator
@@ -267,6 +272,7 @@ function Works() {
                                         minWidth: "400px",
                                     }}
                                 >
+                                    <Card.Img variant="top" src="/src/img/blog.png" className="project-images"/>
                                     <Card.Body className="ibm-plex-mono-light">
                                         <Card.Title className="project-title">
                                             blog.dundeezhang.com
@@ -310,6 +316,7 @@ function Works() {
                                         minWidth: "400px",
                                     }}
                                 >
+                                    <Card.Img variant="top" src="/src/img/future.jpeg" className="project-images"/>
                                     <Card.Body className="ibm-plex-mono-light">
                                         <Card.Title className="project-title">Coming Soon</Card.Title>
                                         <Card.Subtitle
