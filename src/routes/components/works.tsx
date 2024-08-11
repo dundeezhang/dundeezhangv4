@@ -4,6 +4,14 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+import bettercalc from "/src/img/bettercalc.png";
+import blog from "/src/img/blog.png";
+import compcode from "/src/img/compcode.png";
+import datingdo from "/src/img/datingdo.png";
+import dzpass from "/src/img/dzpass.png";
+import future from "/src/img/future.jpeg";
+import website from "/src/img/website.png";
+
 import { motion } from "framer-motion";
 
 import "./css/works.css";
@@ -60,7 +68,7 @@ function Works() {
                                         minWidth: "400px",
                                     }}
                                 >
-                                    <Card.Img variant="top" src="/src/img/website.png" className="project-images"/>
+                                    <Card.Img variant="top" src={website} className="project-images"/>
                                     <Card.Body className="ibm-plex-mono-light">
                                         <Card.Title className="project-title">dundeezhang.com</Card.Title>
                                         <Card.Subtitle
@@ -101,7 +109,7 @@ function Works() {
                                         minWidth: "400px",
                                     }}
                                 >
-                                    <Card.Img variant="top" src="/src/img/datingdo.png" className="project-images"/>
+                                    <Card.Img variant="top" src={datingdo} className="project-images"/>
                                     <Card.Body className="ibm-plex-mono-light">
                                         <Card.Title className="project-title">
                                             datingdo.singles
@@ -144,7 +152,7 @@ function Works() {
                                         minWidth: "400px",
                                     }}
                                 >
-                                    <Card.Img variant="top" src="/src/img/compcode.png" className="project-images"/>
+                                    <Card.Img variant="top" src={compcode} className="project-images"/>
                                     <Card.Body className="ibm-plex-mono-light">
                                         <Card.Title className="project-title">
                                             Competitive Programming
@@ -188,7 +196,7 @@ function Works() {
                                         minWidth: "400px",
                                     }}
                                 >
-                                    <Card.Img variant="top" src="/src/img/dzpass.png" className="project-images"/>
+                                    <Card.Img variant="top" src={dzpass} className="project-images"/>
                                     <Card.Body className="ibm-plex-mono-light">
                                         <Card.Title className="project-title">dzPass</Card.Title>
                                         <Card.Subtitle
@@ -229,7 +237,7 @@ function Works() {
                                         minWidth: "400px",
                                     }}
                                 >
-                                    <Card.Img variant="top" src="/src/img/bettercalc.png" className="project-images"/>
+                                    <Card.Img variant="top" src={bettercalc} className="project-images"/>
                                     <Card.Body className="ibm-plex-mono-light">
                                         <Card.Title className="project-title">
                                             Better-Calculator
@@ -272,7 +280,7 @@ function Works() {
                                         minWidth: "400px",
                                     }}
                                 >
-                                    <Card.Img variant="top" src="/src/img/blog.png" className="project-images"/>
+                                    <Card.Img variant="top" src={blog} className="project-images"/>
                                     <Card.Body className="ibm-plex-mono-light">
                                         <Card.Title className="project-title">
                                             blog.dundeezhang.com
@@ -316,7 +324,7 @@ function Works() {
                                         minWidth: "400px",
                                     }}
                                 >
-                                    <Card.Img variant="top" src="/src/img/future.jpeg" className="project-images"/>
+                                    <Card.Img variant="top" src={future} className="project-images"/>
                                     <Card.Body className="ibm-plex-mono-light">
                                         <Card.Title className="project-title">Coming Soon</Card.Title>
                                         <Card.Subtitle

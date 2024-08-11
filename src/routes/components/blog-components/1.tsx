@@ -2,6 +2,8 @@ import { Outlet, Link } from "react-router-dom";
 
 import "/src/routes/components/css/blog.css";
 
+import runimage from "./blog/run-night-image.jpeg";
+
 export default function ArtOne() {
     return (
         <div>
@@ -65,7 +67,7 @@ export default function ArtOne() {
                     some good improvement. But that's not the main story.
                 </p>
                 <img
-                    src="./blog/run-night-image.jpeg"
+                    src={runimage}
                     alt="picture of the night sky where I run"
                 ></img>
                 <p className="desc">
