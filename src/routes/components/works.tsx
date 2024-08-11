@@ -11,9 +11,13 @@ import "./css/works.css";
 const CardDiv = {
     offscreen: {
         y: 150,
+        opacity: 0,
+        scale: 0.5
     },
     onscreen: {
         y: 0,
+        opacity: 1,
+        scale: 1,
         transition: {
             type: "spring",
             bounce: 0.4,
