@@ -1,19 +1,22 @@
-import "./css/Blog.css";
+import "/src/css/blogcomp.css";
+import {Outlet, Link} from "react-router-dom";
 
-function Blog() {
+export default function BlogComp() {
   return (
     <div className="Blog">
       <body className="blog-intro ibm-plex-mono-light">
         <h2>What's that? A Blog O:</h2>
-        <a target="_blank" rel="noreferrer" href="https://blog.dundeezhang.com">
+        <Link to={`blog`}>
           --{">"} Link to Blog {"<"}--
-        </a>
+        </Link>
         <p>
             Dundee Zhang - 2024 - All Rights Reserved
         </p>
       </body>
+      <div id="detail">
+        <Outlet />
+      </div>
     </div>
+    
   );
 }
-
-export default Blog;

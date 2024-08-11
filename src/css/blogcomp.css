@@ -1,0 +1,31 @@
+.Blog {
+    text-align: center;
+}
+
+.blog-intro {
+    background-color: white;
+    min-height: 40vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 1vmin);
+    color: black;
+}
+
+.resume {
+    margin-top: 6vmin;
+}
+
+a {
+    color: rgb(67, 141, 206);
+}
+
+a:hover {
+    color: rgb(16, 60, 98);
+}
+
+p {
+    margin-top: 5vmin;
+    margin-bottom: 5vmin;
+}
