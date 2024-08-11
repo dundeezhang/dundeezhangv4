@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 
-import "/src/css/blog.css";
+import "./components/css/blog.css";
 
 export default function Blog() {
     return (
@@ -8,11 +8,11 @@ export default function Blog() {
             <div>
                 <div>
                     <h1 className="blog-title ibm-plex-mono-light">
-                        blog.dundeezhang.com
+                        dundeezhang.com/blog
                     </h1>
-                    <a className="links" href="https://dundeezhang.com">
-                        Portfolio Site
-                    </a>
+                    <Link to={`/`}>
+                        --{">"} Home Site {"<"}--
+                    </Link>
                 </div>
                 <p className="green-colour">/* end blog */</p>
                 <div className="content-list">
@@ -50,7 +50,7 @@ export default function Blog() {
             </div>
             <div id="detail"></div>
             <Link to={`/`}>
-                --{">"} Home{"<"}--
+                --{">"} Home Site {"<"}--
             </Link>
             <div id="detail">
                 <Outlet />
