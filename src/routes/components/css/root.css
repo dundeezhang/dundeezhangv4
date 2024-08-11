@@ -1,0 +1,88 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 45vmin;
+    pointer-events: none;
+    margin: 4vmin;
+}
+
+.App-header {
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 1vmin);
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+ul > li {
+    display: inline-block;
+    margin: 0 5vmin 0 1vmin;
+    text-align: center;
+    color: black;
+    font-size: calc(10px + 2vmin);
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+p {
+    font-size: calc(10px + 1vmin);
+    margin: 0 3vmin 1.5vmin 3vmin;
+}
+
+p.website-intro {
+    font-size: calc(10px + 1vmin);
+    margin: 0 3vmin 1.5vmin 3vmin;
+}
+
+.resume {
+    margin-top: 6vmin;
+}
+
+a.csText {
+    font-size: calc(10px + 1vmin);
+    color: rgb(96, 160, 0);
+}
+
+a.csText:visited {
+    color: rgb(96, 160, 0);
+}
+
+a.schoolText {
+    font-size: calc(10px + 1vmin);
+    color: rgb(163, 38, 163);
+}
+
+a.schoolText:visited {
+    color: rgb(163, 38, 163);
+}
+
+.fa-brands:hover {
+    color: rgb(67, 141, 206);
+}
+
+.fa-regular:hover {
+    color: rgb(67, 141, 206);
+}
+
+.resume-hover:hover {
+    color: rgb(16, 60, 98);
+}
+
+h1.dundee-name {
+    font-size: calc(10px + 2.5vmin);
+    margin: 0 0 5vmin 0;
+}

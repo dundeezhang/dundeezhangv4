@@ -1,5 +1,5 @@
 import pfp from "/src/img/cropped_image.png";
-import "/src/css/root.css";
+import "./css/root.css";
 
 export default function Intro() {
     return (

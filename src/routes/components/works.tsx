@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 
 import { motion } from "framer-motion";
 
-import "/src/css/works.css";
+import "./css/works.css";
 
 const CardDiv = {
     offscreen: {
@@ -33,7 +33,7 @@ function Works() {
                     viewport={{ once: true, amount: 0.8 }}
                     variants={CardDiv}
                 >
-                    <h2 className="ibm-plex-mono-regular">
+                    <h2 className="ibm-plex-mono-regular header-name">
                         Here are some of my projects:
                     </h2>
                 </motion.div>
@@ -57,14 +57,14 @@ function Works() {
                                     }}
                                 >
                                     <Card.Body className="ibm-plex-mono-light">
-                                        <Card.Title>dundeezhang.com</Card.Title>
+                                        <Card.Title className="project-title">dundeezhang.com</Card.Title>
                                         <Card.Subtitle
-                                            className="mb-2"
+                                            className="mb-2 tools-used"
                                             style={{ color: "#9c9c9c" }}
                                         >
                                             TypeScript, HTML, CSS, React.js, Bootstrap
                                         </Card.Subtitle>
-                                        <Card.Text>
+                                        <Card.Text className="about-project-desc">
                                             An introduction website to show my
                                             projects and experience.
                                         </Card.Text>
@@ -97,16 +97,16 @@ function Works() {
                                     }}
                                 >
                                     <Card.Body className="ibm-plex-mono-light">
-                                        <Card.Title>
+                                        <Card.Title className="project-title">
                                             datingdo.singles
                                         </Card.Title>
                                         <Card.Subtitle
-                                            className="mb-2"
+                                            className="mb-2 tools-used"
                                             style={{ color: "#9c9c9c" }}
                                         >
                                             Bootstrap, HTML, CSS
                                         </Card.Subtitle>
-                                        <Card.Text>
+                                        <Card.Text className="about-project-desc">
                                             Grade 10 business final project
                                             written under time constraints.
                                         </Card.Text>
@@ -139,16 +139,16 @@ function Works() {
                                     }}
                                 >
                                     <Card.Body className="ibm-plex-mono-light">
-                                        <Card.Title>
+                                        <Card.Title className="project-title">
                                             Competitive Programming
                                         </Card.Title>
                                         <Card.Subtitle
-                                            className="mb-2"
+                                            className="mb-2 tools-used"
                                             style={{ color: "#9c9c9c" }}
                                         >
                                             C++, Java, Python
                                         </Card.Subtitle>
-                                        <Card.Text>
+                                        <Card.Text className="about-project-desc">
                                             Repository to store most of my
                                             solutions for CS problems.
                                         </Card.Text>
@@ -182,14 +182,14 @@ function Works() {
                                     }}
                                 >
                                     <Card.Body className="ibm-plex-mono-light">
-                                        <Card.Title>dzPass</Card.Title>
+                                        <Card.Title className="project-title">dzPass</Card.Title>
                                         <Card.Subtitle
-                                            className="mb-2"
+                                            className="mb-2 tools-used"
                                             style={{ color: "#9c9c9c" }}
                                         >
                                             C++, Makefile
                                         </Card.Subtitle>
-                                        <Card.Text>
+                                        <Card.Text className="about-project-desc">
                                             A CLI password manager written in
                                             C++ only. Used OOP principals.
                                         </Card.Text>
@@ -222,16 +222,16 @@ function Works() {
                                     }}
                                 >
                                     <Card.Body className="ibm-plex-mono-light">
-                                        <Card.Title>
+                                        <Card.Title className="project-title">
                                             Better-Calculator
                                         </Card.Title>
                                         <Card.Subtitle
-                                            className="mb-2"
+                                            className="mb-2 tools-used"
                                             style={{ color: "#9c9c9c" }}
                                         >
                                             C++, C, Cmake, Makefile
                                         </Card.Subtitle>
-                                        <Card.Text>
+                                        <Card.Text className="about-project-desc">
                                             A calculator I made to help me do
                                             homework, CLI.
                                         </Card.Text>
@@ -264,16 +264,16 @@ function Works() {
                                     }}
                                 >
                                     <Card.Body className="ibm-plex-mono-light">
-                                        <Card.Title>
+                                        <Card.Title className="project-title">
                                             blog.dundeezhang.com
                                         </Card.Title>
                                         <Card.Subtitle
-                                            className="mb-2"
+                                            className="mb-2 tools-used"
                                             style={{ color: "#9c9c9c" }}
                                         >
                                             HTML, CSS
                                         </Card.Subtitle>
-                                        <Card.Text>
+                                        <Card.Text className="about-project-desc">
                                             My personal blog where I talk about
                                             whatever! WIP.
                                         </Card.Text>
@@ -307,14 +307,14 @@ function Works() {
                                     }}
                                 >
                                     <Card.Body className="ibm-plex-mono-light">
-                                        <Card.Title>Coming Soon</Card.Title>
+                                        <Card.Title className="project-title">Coming Soon</Card.Title>
                                         <Card.Subtitle
-                                            className="mb-2"
+                                            className="mb-2 tools-used"
                                             style={{ color: "#9c9c9c" }}
                                         >
                                             More Languages
                                         </Card.Subtitle>
-                                        <Card.Text>
+                                        <Card.Text className="about-project-desc">
                                             More projects are WIP. Check out and
                                             follow my GitHub to stay updated!
                                         </Card.Text>

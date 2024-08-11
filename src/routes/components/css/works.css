@@ -1,0 +1,40 @@
+.App-content {
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+}
+
+h2 {
+    margin: 4vmin;
+}
+
+a {
+    color: rgb(67, 141, 206);
+    text-decoration: none;
+    font-size: calc(8px + 1.5vmin);
+}
+a:visited {
+    color: rgb(67, 141, 206);
+}
+
+.project-title {
+    font-size: calc(8px + 1.5vmin);
+}
+
+.tools-used {
+    font-size: calc(8px + 1.1vmin);
+}
+
+.about-project-desc {
+    margin: 0 0 0 0;
+}
+
+.header-name {
+    font-size: calc(10px + 2.5vmin);
+    margin: 0 0 5vmin 0;
+}
