@@ -110,9 +110,9 @@ a.schoolText:visited {
 .resume-button:hover {
     color: rgb(13, 37, 58);
     background-color: rgb(150, 220, 230);
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
     transform: scale(1.08);
 }
 
@@ -128,9 +128,9 @@ a.schoolText:visited {
 
 .circle-div:hover {
     background-color: rgb(212, 250, 255);
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
     transform: scale(1.1);
 }
 

@@ -13,18 +13,6 @@
     color: black;
 }
 
-.resume {
-    margin-top: 6vmin;
-}
-
-a {
-    color: rgb(67, 141, 206);
-}
-
-a:hover {
-    color: rgb(16, 60, 98);
-}
-
 p {
     margin-top: 5vmin;
     margin-bottom: 5vmin;
@@ -41,15 +29,18 @@ p {
     border-radius: 100vmin;
     padding: 1vmin 2.5vmin 1vmin 2.5vmin;
     border-color: rgba(255, 255, 255, 0);
-    background-color: rgb(212, 248, 255);
-    margin: 2vmin 0 0 0;
+    background-color: rgb(166, 237, 252);
+    margin: 3vmin 0 3vmin 0;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .blog-button:hover {
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    transition: all .5s;
-    transform: scale(1.08);
     color: rgb(22, 71, 114);
     background-color: rgb(166, 236, 245);
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+    transform: scale(1.05);
 }
