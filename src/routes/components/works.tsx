@@ -20,7 +20,7 @@ const CardDiv = {
     offscreen: {
         y: 150,
         opacity: 0,
-        scale: 0.5
+        scale: 0.9
     },
     onscreen: {
         y: 0,
@@ -28,8 +28,8 @@ const CardDiv = {
         scale: 1,
         transition: {
             type: "spring",
-            bounce: 0.4,
-            duration: 0.4,
+            bounce: 0.2,
+            duration: 1,
         },
     },
 };
