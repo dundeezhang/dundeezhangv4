@@ -9,10 +9,6 @@
     color: black;
 }
 
-h2 {
-    margin: 4vmin;
-}
-
 a {
     color: rgb(67, 141, 206);
     text-decoration: none;
@@ -32,18 +28,56 @@ a:visited {
 
 .about-project-desc {
     margin: 0 0 0 0;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .header-name {
     font-size: calc(10px + 2.5vmin);
-    margin: 0 0 5vmin 0;
+    margin: 4vmin 0 3vmin 0;
 }
 
 .project-images {
     object-fit: cover;
     overflow: hidden;
-    height: 20vmin;
+    height: 35vmin;
     margin: 0;
     min-width: 400px;
     max-width: 100%;
+    border-radius: 3vmin 3vmin 0 0;
+}
+
+.project-cards {
+    border-color: rgb(231, 231, 231);
+    border-radius: 3vmin;
+    background-color: #ffffff;
+    color: black;
+    margin: 1.5vmin 0.5vmin 1.5vmin 0.5vmin;
+    min-width: 400px;
+    text-align: left;
+    box-shadow: 0 0px 30px 1px rgb(211, 211, 211);
+}
+
+.project-cards:hover {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    transform: scale(1.03);
+    
+}
+
+.github-button {
+    font-size: calc(8px + 1.2vmin);
+    color: rgb(0, 0, 0);
+    border-radius: 100vmin;
+    padding: 1vmin 2.5vmin 1vmin 2.5vmin;
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgb(212, 248, 255);
+    margin: 2vmin 0 0 0;
+}
+
+.github-button:hover {
+    color: rgb(22, 71, 114);
+    background-color: rgb(166, 236, 245);
 }

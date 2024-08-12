@@ -18,9 +18,9 @@ import "./css/works.css";
 
 const CardDiv = {
     offscreen: {
-        y: 150,
+        y: 10,
         opacity: 0,
-        scale: 0.9
+        scale: 0.9,
     },
     onscreen: {
         y: 0,
@@ -34,6 +34,52 @@ const CardDiv = {
     },
 };
 
+const HeaderAnimate = {
+    offscreen: {
+        y: 20,
+        opacity: 0,
+        scale: 0.9,
+    },
+    onscreen: {
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        transition: {
+            type: "spring",
+            bounce: 0.2,
+            duration: 1,
+        },
+    },
+};
+
+const websiteGithubClick = () => {
+    window.open(
+        "https://github.com/dundeezhang/dundeezhang.github.io",
+        "_blank"
+    );
+};
+
+const datingdoGithubClick = () => {
+    window.open("https://github.com/dundeezhang/datingdo.single", "_blank");
+};
+
+const cpGithubClick = () => {
+    window.open("https://github.com/dundeezhang/Contests", "_blank");
+};
+
+const dzPassGithubClick = () => {
+    window.open("https://github.com/dundeezhang/dzPass", "_blank");
+};
+const betterCalcGithubClick = () => {
+    window.open("https://github.com/dundeezhang/Better-Calculator", "_blank");
+};
+const blogGithubClick = () => {
+    window.open("https://github.com/dundeezhang/blog", "_blank");
+};
+const profileGithubClick = () => {
+    window.open("https://github.com/dundeezhang", "_blank");
+};
+
 function Works() {
     return (
         <div className="Body">
@@ -43,10 +89,10 @@ function Works() {
                     initial="offscreen"
                     whileInView="onscreen"
                     viewport={{ once: true, amount: 0.8 }}
-                    variants={CardDiv}
+                    variants={HeaderAnimate}
                 >
                     <h2 className="ibm-plex-mono-regular header-name">
-                        Here are some of my projects:
+                        My Projects:
                     </h2>
                 </motion.div>
 
@@ -60,34 +106,33 @@ function Works() {
                                 viewport={{ once: true, amount: 0.8 }}
                                 variants={CardDiv}
                             >
-                                <Card
-                                    style={{
-                                        backgroundColor: "#ebebeb",
-                                        color: "black",
-                                        margin: "1.5vmin 0.5vmin 1.5vmin 0.5vmin",
-                                        minWidth: "400px",
-                                    }}
-                                >
-                                    <Card.Img variant="top" src={website} className="project-images"/>
+                                <Card className="project-cards">
+                                    <Card.Img
+                                        variant="top"
+                                        src={website}
+                                        className="project-images"
+                                    />
                                     <Card.Body className="ibm-plex-mono-light">
-                                        <Card.Title className="project-title">dundeezhang.com</Card.Title>
+                                        <Card.Title className="project-title">
+                                            dundeezhang.com
+                                        </Card.Title>
                                         <Card.Subtitle
                                             className="mb-2 tools-used"
                                             style={{ color: "#9c9c9c" }}
                                         >
-                                            TypeScript, HTML, CSS, React.js, Bootstrap
+                                            TypeScript, React, CSS
                                         </Card.Subtitle>
                                         <Card.Text className="about-project-desc">
                                             An introduction website to show my
                                             projects and experience.
                                         </Card.Text>
-                                        <a
-                                            href="https://github.com/dundeezhang/dundeezhang.github.io"
-                                            target="_blank"
-                                            rel="noreferrer"
+                                        <button
+                                            type="button"
+                                            onClick={websiteGithubClick}
+                                            className="github-button"
                                         >
-                                            View on GitHub
-                                        </a>
+                                            Github Repository
+                                        </button>
                                     </Card.Body>
                                 </Card>
                             </motion.div>
@@ -101,15 +146,12 @@ function Works() {
                                 viewport={{ once: true, amount: 0.8 }}
                                 variants={CardDiv}
                             >
-                                <Card
-                                    style={{
-                                        backgroundColor: "#ebebeb",
-                                        color: "black",
-                                        margin: "1.5vmin 0.5vmin 1.5vmin 0.5vmin",
-                                        minWidth: "400px",
-                                    }}
-                                >
-                                    <Card.Img variant="top" src={datingdo} className="project-images"/>
+                                <Card className="project-cards">
+                                    <Card.Img
+                                        variant="top"
+                                        src={datingdo}
+                                        className="project-images"
+                                    />
                                     <Card.Body className="ibm-plex-mono-light">
                                         <Card.Title className="project-title">
                                             datingdo.singles
@@ -124,13 +166,13 @@ function Works() {
                                             Grade 10 business final project
                                             written under time constraints.
                                         </Card.Text>
-                                        <a
-                                            href="https://github.com/dundeezhang/datingdo.single"
-                                            target="_blank"
-                                            rel="noreferrer"
+                                        <button
+                                            type="button"
+                                            onClick={datingdoGithubClick}
+                                            className="github-button"
                                         >
-                                            View on GitHub
-                                        </a>
+                                            Github Repository
+                                        </button>
                                     </Card.Body>
                                 </Card>
                             </motion.div>
@@ -144,15 +186,12 @@ function Works() {
                                 viewport={{ once: true, amount: 0.8 }}
                                 variants={CardDiv}
                             >
-                                <Card
-                                    style={{
-                                        backgroundColor: "#ebebeb",
-                                        color: "black",
-                                        margin: "1.5vmin 0.5vmin 1.5vmin 0.5vmin",
-                                        minWidth: "400px",
-                                    }}
-                                >
-                                    <Card.Img variant="top" src={compcode} className="project-images"/>
+                                <Card className="project-cards">
+                                    <Card.Img
+                                        variant="top"
+                                        src={compcode}
+                                        className="project-images"
+                                    />
                                     <Card.Body className="ibm-plex-mono-light">
                                         <Card.Title className="project-title">
                                             Competitive Programming
@@ -167,19 +206,17 @@ function Works() {
                                             Repository to store most of my
                                             solutions for CS problems.
                                         </Card.Text>
-                                        <a
-                                            href="https://github.com/dundeezhang/Contests"
-                                            target="_blank"
-                                            rel="noreferrer"
+                                        <button
+                                            type="button"
+                                            onClick={cpGithubClick}
+                                            className="github-button"
                                         >
-                                            View on GitHub
-                                        </a>
+                                            Github Repository
+                                        </button>
                                     </Card.Body>
                                 </Card>
                             </motion.div>
                         </Col>
-                    </Row>
-                    <Row>
                         <Col>
                             <motion.div
                                 className="card-container"
@@ -188,34 +225,33 @@ function Works() {
                                 viewport={{ once: true, amount: 0.8 }}
                                 variants={CardDiv}
                             >
-                                <Card
-                                    style={{
-                                        backgroundColor: "#ebebeb",
-                                        color: "black",
-                                        margin: "1.5vmin 0.5vmin 1.5vmin 0.5vmin",
-                                        minWidth: "400px",
-                                    }}
-                                >
-                                    <Card.Img variant="top" src={dzpass} className="project-images"/>
+                                <Card className="project-cards">
+                                    <Card.Img
+                                        variant="top"
+                                        src={dzpass}
+                                        className="project-images"
+                                    />
                                     <Card.Body className="ibm-plex-mono-light">
-                                        <Card.Title className="project-title">dzPass</Card.Title>
+                                        <Card.Title className="project-title">
+                                            dzPass
+                                        </Card.Title>
                                         <Card.Subtitle
                                             className="mb-2 tools-used"
                                             style={{ color: "#9c9c9c" }}
                                         >
-                                            C++, Makefile
+                                            C++, Makefile, OOP
                                         </Card.Subtitle>
                                         <Card.Text className="about-project-desc">
-                                            A CLI password manager written in
-                                            C++ only. Used OOP principals.
+                                            An CLI password manager written in
+                                            C++ only.
                                         </Card.Text>
-                                        <a
-                                            href="https://github.com/dundeezhang/dzPass"
-                                            target="_blank"
-                                            rel="noreferrer"
+                                        <button
+                                            type="button"
+                                            onClick={dzPassGithubClick}
+                                            className="github-button"
                                         >
-                                            View on GitHub
-                                        </a>
+                                            Github Repository
+                                        </button>
                                     </Card.Body>
                                 </Card>
                             </motion.div>
@@ -229,15 +265,12 @@ function Works() {
                                 viewport={{ once: true, amount: 0.8 }}
                                 variants={CardDiv}
                             >
-                                <Card
-                                    style={{
-                                        backgroundColor: "#ebebeb",
-                                        color: "black",
-                                        margin: "1.5vmin 0.5vmin 1.5vmin 0.5vmin",
-                                        minWidth: "400px",
-                                    }}
-                                >
-                                    <Card.Img variant="top" src={bettercalc} className="project-images"/>
+                                <Card className="project-cards">
+                                    <Card.Img
+                                        variant="top"
+                                        src={bettercalc}
+                                        className="project-images"
+                                    />
                                     <Card.Body className="ibm-plex-mono-light">
                                         <Card.Title className="project-title">
                                             Better-Calculator
@@ -252,13 +285,13 @@ function Works() {
                                             A calculator I made to help me do
                                             homework, CLI.
                                         </Card.Text>
-                                        <a
-                                            href="https://github.com/dundeezhang/Better-Calculator"
-                                            target="_blank"
-                                            rel="noreferrer"
+                                        <button
+                                            type="button"
+                                            onClick={betterCalcGithubClick}
+                                            className="github-button"
                                         >
-                                            View on GitHub
-                                        </a>
+                                            Github Repository
+                                        </button>
                                     </Card.Body>
                                 </Card>
                             </motion.div>
@@ -272,15 +305,12 @@ function Works() {
                                 viewport={{ once: true, amount: 0.8 }}
                                 variants={CardDiv}
                             >
-                                <Card
-                                    style={{
-                                        backgroundColor: "#ebebeb",
-                                        color: "black",
-                                        margin: "1.5vmin 0.5vmin 1.5vmin 0.5vmin",
-                                        minWidth: "400px",
-                                    }}
-                                >
-                                    <Card.Img variant="top" src={blog} className="project-images"/>
+                                <Card className="project-cards">
+                                    <Card.Img
+                                        variant="top"
+                                        src={blog}
+                                        className="project-images"
+                                    />
                                     <Card.Body className="ibm-plex-mono-light">
                                         <Card.Title className="project-title">
                                             blog.dundeezhang.com
@@ -292,22 +322,20 @@ function Works() {
                                             HTML, CSS
                                         </Card.Subtitle>
                                         <Card.Text className="about-project-desc">
-                                            My personal blog where I talk about
-                                            whatever! WIP.
+                                            My personal blog. Now has been migrated to this website.
                                         </Card.Text>
-                                        <a
-                                            href="https://github.com/dundeezhang/blog"
-                                            target="_blank"
-                                            rel="noreferrer"
+                                        <button
+                                            type="button"
+                                            onClick={blogGithubClick}
+                                            className="github-button"
                                         >
-                                            View on GitHub
-                                        </a>
+                                            Github Repository
+                                        </button>
                                     </Card.Body>
                                 </Card>
                             </motion.div>
                         </Col>
-                    </Row>
-                    <Row>
+
                         <Col>
                             <motion.div
                                 className="card-container"
@@ -316,17 +344,16 @@ function Works() {
                                 viewport={{ once: true, amount: 0.8 }}
                                 variants={CardDiv}
                             >
-                                <Card
-                                    style={{
-                                        backgroundColor: "#ebebeb",
-                                        color: "black",
-                                        margin: "1.5vmin 0.5vmin 1.5vmin 0.5vmin",
-                                        minWidth: "400px",
-                                    }}
-                                >
-                                    <Card.Img variant="top" src={future} className="project-images"/>
+                                <Card className="project-cards">
+                                    <Card.Img
+                                        variant="top"
+                                        src={future}
+                                        className="project-images"
+                                    />
                                     <Card.Body className="ibm-plex-mono-light">
-                                        <Card.Title className="project-title">Coming Soon</Card.Title>
+                                        <Card.Title className="project-title">
+                                            Coming Soon
+                                        </Card.Title>
                                         <Card.Subtitle
                                             className="mb-2 tools-used"
                                             style={{ color: "#9c9c9c" }}
@@ -337,13 +364,13 @@ function Works() {
                                             More projects are WIP. Check out and
                                             follow my GitHub to stay updated!
                                         </Card.Text>
-                                        <a
-                                            href="https://github.com/dundeezhang"
-                                            target="_blank"
-                                            rel="noreferrer"
+                                        <button
+                                            type="button"
+                                            onClick={profileGithubClick}
+                                            className="github-button"
                                         >
-                                            View on GitHub
-                                        </a>
+                                            Github Profile
+                                        </button>
                                     </Card.Body>
                                 </Card>
                             </motion.div>

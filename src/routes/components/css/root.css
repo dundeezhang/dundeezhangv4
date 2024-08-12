@@ -3,12 +3,11 @@
 }
 
 .App-logo {
-    
     pointer-events: none;
 }
 
 .App-header {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -16,17 +15,22 @@
     justify-content: center;
     font-size: calc(10px + 1vmin);
     color: black;
+    padding: 0;
 }
 
-ul {
+ul.social-cons {
     list-style-type: none;
+    padding-left: 0;
+    margin: 0 0 3vmin 0;
 }
 ul > li {
+    list-style-type: none;
     display: inline-block;
-    margin: 0 5vmin 0 1vmin;
+    margin: 0 3vmin 0 3vmin;
     text-align: center;
     color: black;
     font-size: calc(10px + 2vmin);
+    padding: 0;
 }
 
 a {
@@ -39,12 +43,19 @@ a:visited {
 
 p {
     font-size: calc(10px + 1vmin);
-    margin: 0 3vmin 1.5vmin 3vmin;
+    margin: 0 3vmin 0vmin 3vmin;
 }
 
-p.website-intro {
+p.website-intro-top {
     font-size: calc(10px + 1vmin);
     margin: 0 3vmin 1.5vmin 3vmin;
+    color: rgb(63, 63, 63);
+}
+
+p.website-intro-bottom {
+    font-size: calc(10px + 1vmin);
+    margin: 0 3vmin 3vmin 3vmin;
+    color: rgb(63, 63, 63);
 }
 
 .resume {
@@ -69,31 +80,74 @@ a.schoolText:visited {
     color: rgb(163, 38, 163);
 }
 
-.fa-brands:hover {
-    color: rgb(67, 141, 206);
-    transform: scale(1.1);
-}
-
-.fa-regular:hover {
-    color: rgb(67, 141, 206);
-    transform: scale(1.1);
-}
-
-.resume-hover:hover {
-    color: rgb(16, 60, 98);
-}
-
 .dundee-name {
     font-size: calc(10px + 2.5vmin);
-    margin: 0 0 5vmin 0;
+    margin: 3vmin 0 3vmin 0;
 }
 
 .profile-picture {
     height: 70vmin;
     width: 70vmin;
     pointer-events: none;
-    margin: 4vmin;
+    margin: 2.5vmin 0 1.5vmin 0;
     padding: 0;
     overflow: hidden;
     height: fit-content;
+}
+
+.resume-button {
+    color: rgb(36, 46, 51);
+    border-radius: 100vmin;
+    padding: 1vmin 2.5vmin 1vmin 2.5vmin;
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgb(166, 237, 252);
+    margin: 0;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.resume-button:hover {
+    color: rgb(13, 37, 58);
+    background-color: rgb(150, 220, 230);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    transform: scale(1.08);
+}
+
+.circle-div {
+    background-color: rgb(241, 241, 241);
+    border-radius: 100%;
+    width: calc(10px + 4.5vmin);
+    height: calc(10px + 4.5vmin);
+
+    position: relative;
+    text-align: center;
+}
+
+.circle-div:hover {
+    background-color: rgb(212, 250, 255);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
+.fa-brands {
+    font-size: calc(10px + 1.2vmin);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fa-regular {
+    font-size: calc(10px + 1.2vmin);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
