@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const blogClick = () => {
-    window.open("/blog", "_blank");
+    window.open("/blog", "_self");
 };
 
 const HeaderAnimate = {
