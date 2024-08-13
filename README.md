@@ -1,7 +1,6 @@
-# Personal blog and portfolio website (WIP)
+# Portfolio and Blog Website
+[![CodeFactor](https://www.codefactor.io/repository/github/dundeezhang/dundeezhang.github.io/badge)](https://www.codefactor.io/repository/github/dundeezhang/dundeezhang.github.io)
 
-[dundeezhang.com](http://dundeezhang.com)
+Built using TypeScript, React, and CSS. It is current still a work in progress.
 
-Here you can find my projects, blog, and contact information! 
-
-Thank you for checking it out!
+Visit at [dundeezhang.com](http://dundeezhang.com). Here you can find my projects, blog, and contact information. 
