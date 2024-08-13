@@ -30,9 +30,9 @@ p {
     padding: 1vmin 2.5vmin;
     border-color: rgba(255, 255, 255, 0);
     background-color: rgb(166, 237, 252);
-    margin: 3vmin 0 3vmin 0;
+    margin: 3vmin 0 6vmin 0;
     font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
 }
 

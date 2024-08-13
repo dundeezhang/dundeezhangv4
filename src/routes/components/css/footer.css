@@ -1,0 +1,11 @@
+.app-footer {
+    background-color: rgb(166, 237, 252);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 1vmin);
+    color: black;
+    padding: 0;
+    margin-bottom: 0;
+}

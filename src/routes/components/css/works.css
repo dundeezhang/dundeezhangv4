@@ -46,6 +46,7 @@ a:visited {
     min-width: 400px;
     max-width: 100%;
     border-radius: 3vmin 3vmin 0 0;
+    filter: brightness(70%);
 }
 
 .project-cards {
@@ -53,7 +54,7 @@ a:visited {
     border-radius: 3vmin;
     background-color: #ffffff;
     color: black;
-    margin: 1.5vmin 0.5vmin;
+    margin: 2vmin 0;
     min-width: 400px;
     text-align: left;
     box-shadow: 0 0px 30px 1px rgb(211, 211, 211);
@@ -73,11 +74,14 @@ a:visited {
     border-radius: 100vmin;
     padding: 1vmin 2.5vmin;
     border-color: rgba(255, 255, 255, 0);
-    background-color: rgb(212, 248, 255);
+    background-color: rgb(166, 237, 252);
     margin: 2vmin 0 0 0;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .github-button:hover {
-    color: rgb(22, 71, 114);
-    background-color: rgb(166, 236, 245);
+    color: rgb(13, 37, 58);
+    background-color: rgb(150, 220, 230);
 }

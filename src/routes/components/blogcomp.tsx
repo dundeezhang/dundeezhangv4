@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const blogClick = () => {
-    window.open("https://dundeezhang.com/blog/", "_blank");
+    window.open("/blog", "_blank");
 };
 
 const HeaderAnimate = {
@@ -73,8 +73,6 @@ export default function BlogComp() {
                         </button>
                     </div>
                 </motion.div>
-
-                <p>Dundee Zhang - 2024 - All Rights Reserved</p>
             </body>
             <div id="detail">
                 <Outlet />
