@@ -26,7 +26,7 @@ ul.social-cons {
 ul > li {
     list-style-type: none;
     display: inline-block;
-    margin: 0 3vmin 0 3vmin;
+    margin: 0 3vmin;
     text-align: center;
     color: black;
     font-size: calc(10px + 2vmin);
@@ -43,18 +43,18 @@ a:visited {
 
 p {
     font-size: calc(10px + 1vmin);
-    margin: 0 3vmin 0vmin 3vmin;
+    margin: 0 3vmin;
 }
 
 p.website-intro-top {
     font-size: calc(10px + 1vmin);
-    margin: 0 3vmin 1.5vmin 3vmin;
+    margin: 0 3vmin 1.5vmin;
     color: rgb(63, 63, 63);
 }
 
 p.website-intro-bottom {
     font-size: calc(10px + 1vmin);
-    margin: 0 3vmin 3vmin 3vmin;
+    margin: 0 3vmin 3vmin;
     color: rgb(63, 63, 63);
 }
 
@@ -98,7 +98,7 @@ a.schoolText:visited {
 .resume-button {
     color: rgb(36, 46, 51);
     border-radius: 100vmin;
-    padding: 1vmin 2.5vmin 1vmin 2.5vmin;
+    padding: 1vmin 2.5vmin;
     border-color: rgba(255, 255, 255, 0);
     background-color: rgb(166, 237, 252);
     margin: 0;
@@ -151,3 +151,4 @@ a.schoolText:visited {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+

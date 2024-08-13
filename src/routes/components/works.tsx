@@ -11,6 +11,7 @@ import datingdo from "/src/img/datingdo.png";
 import dzpass from "/src/img/dzpass.png";
 import future from "/src/img/future.jpeg";
 import website from "/src/img/website.png";
+import haida from "/src/img/haida.jpg";
 
 import { motion } from "framer-motion";
 
@@ -79,6 +80,10 @@ const blogGithubClick = () => {
 const profileGithubClick = () => {
     window.open("https://github.com/dundeezhang", "_blank");
 };
+
+const haidaGithubClick = () => {
+    window.open("https://github.com/dundeezhang/Submarine-Intercept-Simulator", "_blank");
+}
 
 function Works() {
     return (
@@ -347,6 +352,45 @@ function Works() {
                                 <Card className="project-cards">
                                     <Card.Img
                                         variant="top"
+                                        src={haida}
+                                        className="project-images"
+                                    />
+                                    <Card.Body className="ibm-plex-mono-light">
+                                        <Card.Title className="project-title">
+                                            Submarine Intercept Sim
+                                        </Card.Title>
+                                        <Card.Subtitle
+                                            className="mb-2 tools-used"
+                                            style={{ color: "#9c9c9c" }}
+                                        >
+                                            Java Java-Swing, OOP
+                                        </Card.Subtitle>
+                                        <Card.Text className="about-project-desc">
+                                            WWII Battleship versus submarine simulator
+                                        </Card.Text>
+                                        <button
+                                            type="button"
+                                            onClick={haidaGithubClick}
+                                            className="github-button"
+                                        >
+                                            Github Repository
+                                        </button>
+                                    </Card.Body>
+                                </Card>
+                            </motion.div>
+                        </Col>
+
+                        <Col>
+                            <motion.div
+                                className="card-container"
+                                initial="offscreen"
+                                whileInView="onscreen"
+                                viewport={{ once: true, amount: 0.8 }}
+                                variants={CardDiv}
+                            >
+                                <Card className="project-cards">
+                                    <Card.Img
+                                        variant="top"
                                         src={future}
                                         className="project-images"
                                     />
@@ -362,7 +406,7 @@ function Works() {
                                         </Card.Subtitle>
                                         <Card.Text className="about-project-desc">
                                             More projects are WIP. Check out and
-                                            follow my GitHub to stay updated!
+                                            follow my GitHub.
                                         </Card.Text>
                                         <button
                                             type="button"
