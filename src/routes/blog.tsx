@@ -22,7 +22,7 @@ export default function Blog() {
                         <img src={pfp} className="profile-picture-blog" />
                         <div className="title-div">
                             <h1 className="blog-title ibm-plex-mono-light">
-                                dundeezhang.com/blog
+                                /blog
                             </h1>
                             <h2 className="blog-subtitle">Life Updates</h2>
                         </div>

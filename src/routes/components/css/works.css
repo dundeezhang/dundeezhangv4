@@ -36,7 +36,6 @@
         overflow: hidden;
         height: 60vmin;
         margin: 0;
-        min-width: 350px;
         max-width: 100%;
         border-radius: 2.5vmin;
         filter: brightness(70%);
@@ -124,7 +123,6 @@
         overflow: hidden;
         height: 40vmin;
         margin: 0;
-        min-width: 400px;
         max-width: 100%;
         border-radius: 2.5vmin;
         filter: brightness(70%);
@@ -133,7 +131,7 @@
     .project-cards {
         border-color: rgb(231, 231, 231);
         border-radius: 2.5vmin;
-        background-color: #ffffff;
+        background-color: rgb(255, 255, 255);
         color: black;
         margin: 2vmin 0;
         min-width: 400px;

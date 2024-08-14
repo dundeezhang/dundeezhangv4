@@ -71,13 +71,16 @@ function BlogCard({ title, date, desc, postNum }: Datas) {
                     variants={CardDiv}
                 >
                     <Card className="blog-cards">
-                        <Card.Body className="ibm-plex-mono-light">
+                        <Card.Body>
                             <Card.Title className="blog-title">
                                 {title}
                             </Card.Title>
+                            <Card.Img
+                            src={`/works/future.jpg`}
+                            className="blog-images"
+                            />
                             <Card.Subtitle
                                 className="mb-2 date-wrote"
-                                style={{ color: "#9c9c9c" }}
                             >
                                 {date}
                             </Card.Subtitle>
@@ -87,7 +90,7 @@ function BlogCard({ title, date, desc, postNum }: Datas) {
                             <button
                                 type="button"
                                 onClick={()=> viewPost(postNum)}
-                                className="my-button"
+                                className="my-button blog-buttons"
                             >
                                 View Post
                             </button>

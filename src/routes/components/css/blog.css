@@ -7,147 +7,282 @@
     font-size: calc(10px + 1.5vmin);
 }
 
-.blog-header {
-    display: flex;
-    padding: 5vmin;
-    background-color: rgb(166, 237, 252);
-    position: relative;
+@media only screen and (max-width: 600px) {
+    .blog-header {
+        display: flex;
+        padding: 10vmin;
+        background-color: rgb(166, 237, 252);
+        position: relative;
+    }
+
+    .blog-header-content {
+        margin: 0 auto;
+    }
+
+    .profile-picture-blog {
+        height: calc(10px + 20vmin);
+        float: left;
+        margin: 0 2vmin 0 0;
+    }
+
+    .title-div {
+        width: fit-content;
+        align-content: center;
+    }
+
+    h1.blog-title {
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 600;
+        font-style: normal;
+        margin-top: 3vmin;
+        font-size: calc(10px + 5vmin);
+    }
+
+    h2.blog-subtitle {
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-style: normal;
+        margin-bottom: 1vmin;
+        font-size: calc(10px + 2vmin);
+        color: rgb(87, 87, 87);
+    }
+
+    .navbar {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        background: linear-gradient(
+            180deg,
+            rgb(255, 255, 255) 0%,
+            rgba(200, 200, 200, 0) 100%
+        );
+        z-index: 999;
+    }
+
+    .my-button {
+        color: rgb(0, 0, 0);
+        border-radius: 100vmin;
+        padding: 2vmin 3vmin;
+        border-color: rgba(255, 255, 255, 0);
+        background-color: rgb(241, 241, 241);
+        font-size: calc(8px + 2vmin);
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-style: normal;
+        margin: auto;
+    }
+
+    div.indicators-top {
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        text-align: center;
+        margin: 3vmin 0 0.5vmin;
+    }
+
+    div.indicators-bottom {
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        text-align: center;
+        margin: 0.5vmin 0 3vmin;
+    }
+
+    .blog-images {
+        object-fit: cover;
+        overflow: hidden;
+        height: 50vmin;
+        margin: 3vmin 0 5vmin;
+        max-width: 100%;
+        border-radius: 3vmin;
+        filter: brightness(70%);
+    }
+
+    .blog-cards {
+        border-color: rgb(231, 231, 231);
+        border-radius: 2.5vmin;
+        background-color: #ffffff;
+        color: black;
+        margin: 2vmin 0;
+        min-width: 350px;
+        max-width: 500px;
+        text-align: left;
+        box-shadow: 0 0px 30px 1px rgb(211, 211, 211);
+    }
+
+    .content-container {
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    .blog-title {
+        font-size: calc(8px + 4vmin);
+    }
+
+    .date-wrote {
+        font-size: calc(8px + 2vmin);
+        color: rgb(82, 82, 82);
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .about-blog-desc {
+        margin: 0 0 1.8vmin;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+        font-size: calc(8px + 1.8vmin);
+    }
+
+    .blog-buttons {
+        margin: 3vmin auto auto;
+        float: right;
+    }
 }
 
-.blog-header-content {
-    margin: 0 auto;
-}
+@media only screen and (min-width: 600px) {
+    .blog-header {
+        display: flex;
+        padding: 5vmin;
+        background-color: rgb(166, 237, 252);
+        position: relative;
+    }
 
-.profile-picture-blog {
-    height: calc(10px + 10vmin);
-    float: left;
-    margin: 0 2vmin 0 0;
-}
+    .blog-header-content {
+        margin: 0 auto;
+    }
 
-.title-div {
-    width: fit-content;
-    align-content: center;
-}
+    .profile-picture-blog {
+        height: calc(10px + 10vmin);
+        float: left;
+        margin: 0 2vmin 0 0;
+    }
 
-h1.blog-title {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
-    margin-top: 1vmin;
-    font-size: calc(10px + 2.5vmin);
-}
+    .title-div {
+        width: fit-content;
+        align-content: center;
+    }
 
-h2.blog-subtitle {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 1vmin;
-    font-size: calc(10px + 1.5vmin);
-}
+    h1.blog-title {
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-style: normal;
+        margin-top: 1vmin;
+        font-size: calc(10px + 2.5vmin);
+    }
 
-.navbar {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    align-items: center;
-    background: linear-gradient(
-        180deg,
-        rgb(255, 255, 255) 0%,
-        rgba(200, 200, 200, 0) 100%
-    );
-    z-index: 999;
-}
+    h2.blog-subtitle {
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+        margin-bottom: 1vmin;
+        font-size: calc(10px + 1.5vmin);
+    }
 
-.my-button {
-    color: rgb(0, 0, 0);
-    border-radius: 100vmin;
-    padding: 1vmin 2.5vmin;
-    border-color: rgba(255, 255, 255, 0);
-    background-color: rgb(241, 241, 241);
-    font-size: calc(8px + 1.2vmin);
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
-    margin: auto;
-}
+    .navbar {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        background: linear-gradient(
+            180deg,
+            rgb(255, 255, 255) 0%,
+            rgba(200, 200, 200, 0) 100%
+        );
+        z-index: 999;
+    }
 
-.my-button:hover {
-    background-color: rgb(212, 250, 255);
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    transition: all 0.2s;
-    transform: scale(1.08);
-}
+    .my-button {
+        color: rgb(0, 0, 0);
+        border-radius: 100vmin;
+        padding: 1vmin 2.5vmin;
+        border-color: rgba(255, 255, 255, 0);
+        background-color: rgb(241, 241, 241);
+        font-size: calc(8px + 1.2vmin);
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-style: normal;
+        margin: auto;
+    }
 
-div.indicators-top {
-    font-size: calc(8px + 1.2vmin);
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    text-align: center;
-    margin: 3vmin 0 0.5vmin;
-}
+    .my-button:hover {
+        background-color: rgb(212, 250, 255);
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s;
+        transform: scale(1.08);
+    }
 
-div.indicators-bottom {
-    font-size: calc(8px + 1.2vmin);
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    text-align: center;
-    margin: 0.5vmin 0 3vmin;
-}
+    div.indicators-top {
+        font-size: calc(8px + 1.2vmin);
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        text-align: center;
+        margin: 3vmin 0 0.5vmin;
+    }
 
-.blog-images {
-    object-fit: cover;
-    overflow: hidden;
-    height: 35vmin;
-    margin: 0;
-    min-width: 400px;
-    max-width: 100%;
-    border-radius: 3vmin;
-    filter: brightness(70%);
-}
+    div.indicators-bottom {
+        font-size: calc(8px + 1.2vmin);
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        text-align: center;
+        margin: 0.5vmin 0 3vmin;
+    }
 
-.blog-cards {
-    border-color: rgb(231, 231, 231);
-    border-radius: 3vmin;
-    background-color: #ffffff;
-    color: black;
-    margin: 2vmin 0;
-    min-width: 400px;
-    max-width: 500px;
-    text-align: left;
-    box-shadow: 0 0px 30px 1px rgb(211, 211, 211);
-}
+    .blog-images {
+        object-fit: cover;
+        overflow: hidden;
+        height: 35vmin;
+        margin: 0;
+        min-width: 400px;
+        max-width: 100%;
+        border-radius: 3vmin;
+        filter: brightness(70%);
+    }
 
-.blog-cards:hover {
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    transition: all 0.2s;
-    transform: scale(1.03);
-}
+    .blog-cards {
+        border-color: rgb(231, 231, 231);
+        border-radius: 3vmin;
+        background-color: #ffffff;
+        color: black;
+        margin: 2vmin 0;
+        min-width: 400px;
+        max-width: 500px;
+        text-align: left;
+        box-shadow: 0 0px 30px 1px rgb(211, 211, 211);
+    }
 
-a {
-    text-decoration: none;
-    color: rgb(89, 122, 168);
-}
+    .blog-cards:hover {
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s;
+        transform: scale(1.03);
+    }
 
-.content-container {
-    margin: 0 auto;
-    width: fit-content;
-}
+    a {
+        text-decoration: none;
+        color: rgb(89, 122, 168);
+    }
 
-.blog-title {
-    font-size: calc(8px + 1.5vmin);
-}
+    .content-container {
+        margin: 0 auto;
+        width: fit-content;
+    }
 
-.date-wrote {
-    font-size: calc(8px + 1.1vmin);
-}
+    .blog-title {
+        font-size: calc(8px + 1.5vmin);
+    }
 
-.about-blog-desc {
-    margin: 0 0 1.5vmin;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
+    .date-wrote {
+        font-size: calc(8px + 1.1vmin);
+    }
+
+    .about-blog-desc {
+        margin: 0 0 1.5vmin;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+    }
 }
 
 p.highlight-color {
