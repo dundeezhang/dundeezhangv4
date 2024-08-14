@@ -9,15 +9,6 @@
     color: black;
 }
 
-a {
-    color: rgb(67, 141, 206);
-    text-decoration: none;
-    font-size: calc(8px + 1.5vmin);
-}
-a:visited {
-    color: rgb(67, 141, 206);
-}
-
 .project-title {
     font-size: calc(8px + 1.5vmin);
 }
