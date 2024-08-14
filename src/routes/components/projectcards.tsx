@@ -105,7 +105,7 @@ const worksData: [string, string, string, string, string, string][] = [
     ],
 ];
 
-function WorksCard({ title, langs, desc, pic, repository }: Datas) {
+function WorksCard({ title, langs, desc, pic, repository, buttontext }: Datas) {
     return (
             <Col>
                 <motion.div
@@ -139,7 +139,7 @@ function WorksCard({ title, langs, desc, pic, repository }: Datas) {
                                 onClick={()=> viewProject(repository)}
                                 className="github-button"
                             >
-                                Github Repository
+                                {buttontext}
                             </button>
                         </Card.Body>
                     </Card>
