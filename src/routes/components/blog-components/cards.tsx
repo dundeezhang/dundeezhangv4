@@ -6,7 +6,6 @@ import Col from "react-bootstrap/Col";
 
 import "/src/routes/components/css/blog.css";
 
-
 const viewPost = (article: number): undefined => {
     window.open(`/blog/article/${article}`, "_self");
 };
@@ -14,7 +13,7 @@ const viewPost = (article: number): undefined => {
 const CardDiv: Variants = {
     offscreen: {
         y: 10,
-        opacity: 0,
+        opacity: 0.1,
         scale: 0.9,
     },
     onscreen: {
@@ -55,8 +54,6 @@ const blogData: [string, string, string, number][] = [
         "After a year of doing virtual high school, here are my thoughts...",
         0,
     ],
-    
-    
 ];
 
 function BlogCard({ title, date, desc, postNum }: Datas) {
@@ -71,17 +68,16 @@ function BlogCard({ title, date, desc, postNum }: Datas) {
                     variants={CardDiv}
                 >
                     <Card className="blog-cards">
+                        <Card.Img
+                            src={`/works/future.jpg`}
+                            className="blog-images"
+                        />
                         <Card.Body>
                             <Card.Title className="blog-title">
                                 {title}
                             </Card.Title>
-                            <Card.Img
-                            src={`/works/future.jpg`}
-                            className="blog-images"
-                            />
-                            <Card.Subtitle
-                                className="mb-2 date-wrote"
-                            >
+
+                            <Card.Subtitle className="mb-2 date-wrote">
                                 {date}
                             </Card.Subtitle>
                             <Card.Text className="about-blog-desc">
@@ -89,7 +85,7 @@ function BlogCard({ title, date, desc, postNum }: Datas) {
                             </Card.Text>
                             <button
                                 type="button"
-                                onClick={()=> viewPost(postNum)}
+                                onClick={() => viewPost(postNum)}
                                 className="my-button blog-buttons"
                             >
                                 View Post

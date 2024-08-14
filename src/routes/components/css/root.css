@@ -161,6 +161,7 @@
     }
     
     a {
+        text-decoration: none;
         color: black;
     }
     
@@ -274,4 +275,3 @@
         margin: auto 1vmin auto auto;
     }
 }
-

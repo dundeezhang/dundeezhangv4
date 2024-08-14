@@ -90,8 +90,7 @@
     .blog-images {
         object-fit: cover;
         overflow: hidden;
-        height: 50vmin;
-        margin: 3vmin 0 5vmin;
+        height: 70vmin;
         max-width: 100%;
         border-radius: 3vmin;
         filter: brightness(70%);
@@ -233,10 +232,9 @@
         object-fit: cover;
         overflow: hidden;
         height: 35vmin;
-        margin: 0;
         min-width: 400px;
         max-width: 100%;
-        border-radius: 3vmin;
+        border-radius: 2.5vmin;
         filter: brightness(70%);
     }
 
@@ -270,7 +268,7 @@
     }
 
     .blog-title {
-        font-size: calc(8px + 1.5vmin);
+        font-size: calc(8px + 2vmin);
     }
 
     .date-wrote {
