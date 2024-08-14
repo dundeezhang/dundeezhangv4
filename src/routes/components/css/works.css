@@ -26,7 +26,7 @@
 
 .header-name {
     font-size: calc(10px + 2.5vmin);
-    margin: 12vmin 0 3vmin 0;
+    margin: 12vmin 0 3vmin;
 }
 
 .project-images {
@@ -66,7 +66,7 @@
     padding: 1vmin 2.5vmin;
     border-color: rgba(255, 255, 255, 0);
     background-color: rgb(166, 237, 252);
-    margin: 2vmin 0 0 0;
+    margin: 2vmin 0 0;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 500;
     font-style: normal;

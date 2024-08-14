@@ -21,7 +21,7 @@
 ul.social-cons {
     list-style-type: none;
     padding-left: 0;
-    margin: 0 0 3vmin 0;
+    margin: 0 0 3vmin;
 }
 ul > li {
     list-style-type: none;
@@ -82,17 +82,16 @@ a.schoolText:visited {
 
 .dundee-name {
     font-size: calc(10px + 2.5vmin);
-    margin: 3vmin 0 3vmin 0;
+    margin: 3vmin 0 3vmin;
 }
 
 .profile-picture {
-    height: 70vmin;
     width: 70vmin;
+    height: fit-content;
     pointer-events: none;
-    margin: 2.5vmin 0 1.5vmin 0;
+    margin: 2.5vmin 0 1.5vmin;
     padding: 0;
     overflow: hidden;
-    height: fit-content;
 }
 
 .resume-button {
@@ -110,9 +109,9 @@ a.schoolText:visited {
 .resume-button:hover {
     color: rgb(13, 37, 58);
     background-color: rgb(150, 220, 230);
-    -webkit-transition: all .2s;
-    -moz-transition: all .2s;
-    transition: all .2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
     transform: scale(1.08);
 }
 
@@ -128,9 +127,9 @@ a.schoolText:visited {
 
 .circle-div:hover {
     background-color: rgb(212, 250, 255);
-    -webkit-transition: all .2s;
-    -moz-transition: all .2s;
-    transition: all .2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
     transform: scale(1.1);
 }
 
@@ -151,4 +150,3 @@ a.schoolText:visited {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
