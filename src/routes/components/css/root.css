@@ -82,7 +82,7 @@ a.schoolText:visited {
 
 .dundee-name {
     font-size: calc(10px + 2.5vmin);
-    margin: 3vmin 0 3vmin;
+    margin: 3vmin 0;
 }
 
 .profile-picture {
