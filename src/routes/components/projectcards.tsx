@@ -14,7 +14,7 @@ const viewProject = (repo: string): undefined => {
 const CardDiv: Variants = {
     offscreen: {
         y: 10,
-        opacity: 0,
+        opacity: 0.1,
         scale: 0.9,
     },
     onscreen: {
