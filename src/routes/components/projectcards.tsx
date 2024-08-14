@@ -118,7 +118,7 @@ function WorksCard({ title, langs, desc, pic, repository }: Datas) {
                     <Card className="project-cards">
                         <Card.Img
                             variant="top"
-                            src={`/public/works/${pic}`}
+                            src={`/works/${pic}`}
                             className="project-images"
                         />
                         <Card.Body className="ibm-plex-mono-light">
