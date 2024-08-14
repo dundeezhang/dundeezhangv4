@@ -52,13 +52,6 @@
         box-shadow: 0 0px 10px 1px rgb(211, 211, 211);
     }
 
-    .project-cards:hover {
-        -webkit-transition: all 0.2s;
-        -moz-transition: all 0.2s;
-        transition: all 0.2s;
-        transform: scale(1.03);
-    }
-
     .github-button {
         font-size: calc(8px + 2vmin);
         color: rgb(0, 0, 0);
@@ -70,11 +63,6 @@
         font-family: "IBM Plex Mono", monospace;
         font-weight: 500;
         font-style: normal;
-    }
-    
-    .github-button:hover {
-        color: rgb(13, 37, 58);
-        background-color: rgb(150, 220, 230);
     }
     
     .github-button-icon {

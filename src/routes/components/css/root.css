@@ -62,6 +62,7 @@
     
     a.csText {
         color: rgb(7, 88, 143);
+        text-decoration: none;
     }
     
     a.csText:visited {
@@ -70,6 +71,7 @@
     
     a.schoolText {
         color: rgb(163, 38, 163);
+        text-decoration: none;
     }
     
     a.schoolText:visited {
@@ -190,6 +192,7 @@
     a.csText {
         font-size: calc(10px + 1vmin);
         color: rgb(7, 88, 143);
+        text-decoration: none;
     }
     
     a.csText:visited {
@@ -199,6 +202,7 @@
     a.schoolText {
         font-size: calc(10px + 1vmin);
         color: rgb(163, 38, 163);
+        text-decoration: none;
     }
     
     a.schoolText:visited {
