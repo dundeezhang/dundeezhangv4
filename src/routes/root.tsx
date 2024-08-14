@@ -4,6 +4,7 @@ import BlogComp from "./components/blogcomp";
 import Footer from "./components/footer";
 
 export default function Root() {
+
     return (
         <div>
             <Intro />

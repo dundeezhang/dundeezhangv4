@@ -69,7 +69,8 @@ export default function BlogComp() {
                             onClick={blogClick}
                             className="blog-button"
                         >
-                            Link to Blog
+                            <i className="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+                            Blog Page
                         </button>
                     </div>
                 </motion.div>

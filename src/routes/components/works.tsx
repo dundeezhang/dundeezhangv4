@@ -36,7 +36,7 @@ function Works() {
                     viewport={{ once: true, amount: 0.8 }}
                     variants={HeaderAnimate}
                 >
-                    <h2 className="ibm-plex-mono-regular header-name">
+                    <h2 className="header-name">
                         My Projects:
                     </h2>
                 </motion.div>

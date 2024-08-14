@@ -48,14 +48,11 @@ p {
 
 p.website-intro-top {
     font-size: calc(10px + 1vmin);
-    margin: 0 3vmin 1.5vmin;
-    color: rgb(63, 63, 63);
-}
-
-p.website-intro-bottom {
-    font-size: calc(10px + 1vmin);
     margin: 0 3vmin 3vmin;
-    color: rgb(63, 63, 63);
+    color: rgb(80, 80, 80);
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .resume {
@@ -64,11 +61,11 @@ p.website-intro-bottom {
 
 a.csText {
     font-size: calc(10px + 1vmin);
-    color: rgb(96, 160, 0);
+    color: rgb(7, 88, 143);
 }
 
 a.csText:visited {
-    color: rgb(96, 160, 0);
+    color: rgb(7, 88, 143);
 }
 
 a.schoolText {
@@ -83,6 +80,10 @@ a.schoolText:visited {
 .dundee-name {
     font-size: calc(10px + 2.5vmin);
     margin: 3vmin 0;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(18, 100, 112);
 }
 
 .profile-picture {
@@ -133,7 +134,7 @@ a.schoolText:visited {
     transform: scale(1.1);
 }
 
-.fa-brands {
+.intro-icons {
     font-size: calc(10px + 1.2vmin);
     margin: 0;
     position: absolute;
@@ -142,11 +143,6 @@ a.schoolText:visited {
     transform: translate(-50%, -50%);
 }
 
-.fa-regular {
-    font-size: calc(10px + 1.2vmin);
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.external-icon {
+    margin: auto 1vmin auto auto;
 }

@@ -89,7 +89,7 @@ const worksData: [string, string, string, string, string, string][] = [
     ],
     [
         "Submarine Intercept Sim",
-        "Java Java-Swing, OOP",
+        "Java, Java-Swing, OOP",
         "WWII Battleship versus submarine simulator",
         "haida.jpg",
         "Submarine-Intercept-Simulator",
@@ -127,7 +127,6 @@ function WorksCard({ title, langs, desc, pic, repository, buttontext }: Datas) {
                             </Card.Title>
                             <Card.Subtitle
                                 className="mb-2 tools-used"
-                                style={{ color: "#9c9c9c" }}
                             >
                                 {langs}
                             </Card.Subtitle>
@@ -139,6 +138,7 @@ function WorksCard({ title, langs, desc, pic, repository, buttontext }: Datas) {
                                 onClick={()=> viewProject(repository)}
                                 className="github-button"
                             >
+                                <i className="fa-brands fa-github github-button-icon"></i>
                                 {buttontext}
                             </button>
                         </Card.Body>

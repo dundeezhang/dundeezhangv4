@@ -28,8 +28,8 @@ export default function Intro() {
                     </div>
                 </motion.div>
                 <TypeAnimation
-                    sequence={[500, "Hello! I'm Dundee"]}
-                    className="dundee-name ibm-plex-mono-regular"
+                    sequence={[500, "Hello! I'm Dundee,"]}
+                    className="dundee-name"
                 ></TypeAnimation>
                 <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -48,7 +48,7 @@ export default function Intro() {
                             className="csText"
                             href="https://uwaterloo.ca/future-students/programs/computer-science"
                         >
-                            Computer Science
+                            CS
                         </a>{" "}
                         student at the{" "}
                         <a
@@ -59,10 +59,6 @@ export default function Intro() {
                         >
                             University of Waterloo
                         </a>
-                    </p>
-                    <p className="website-intro-bottom">
-                        I am a developer who is passionate for pushing
-                        technology forward!
                     </p>
                 </motion.div>
 
@@ -86,7 +82,7 @@ export default function Intro() {
                                     }}
                                     target="_blank"
                                 >
-                                    <i className="fa-brands fa-linkedin-in"></i>
+                                    <i className="fa-brands fa-linkedin-in intro-icons"></i>
                                 </a>
                             </div>
                         </motion.div>
@@ -110,7 +106,7 @@ export default function Intro() {
                                     }}
                                     target="_blank"
                                 >
-                                    <i className="fa-brands fa-github"></i>
+                                    <i className="fa-brands fa-github intro-icons"></i>
                                 </a>
                             </div>
                         </motion.div>
@@ -134,7 +130,7 @@ export default function Intro() {
                                     }}
                                     target="_blank"
                                 >
-                                    <i className="fa-regular fa-envelope"></i>
+                                    <i className="fa-regular fa-envelope intro-icons"></i>
                                 </a>
                             </div>
                         </motion.div>
@@ -156,6 +152,7 @@ export default function Intro() {
                             onClick={resumeClick}
                             className="resume-button"
                         >
+                            <i className="fa-solid fa-arrow-up-right-from-square external-icon"></i>
                             Resume
                         </button>
                     </div>
