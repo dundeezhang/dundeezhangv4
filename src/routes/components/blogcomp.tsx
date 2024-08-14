@@ -45,7 +45,7 @@ const BlogButtonAnimate = {
 export default function BlogComp() {
     return (
         <div className="Blog">
-            <body className="blog-intro ibm-plex-mono-light">
+            <body className="blog-intro">
                 <motion.div
                     className="card-container"
                     initial="offscreen"

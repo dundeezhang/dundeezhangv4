@@ -56,7 +56,7 @@ const worksData: [string, string, string, string, string, string][] = [
         "Github Repository",
     ],
     [
-        "Competitive Programming",
+        "Contest Solutions",
         "C++, Java, Python",
         "Repository to store most of my solutions for CS problems.",
         "compcode.png",
@@ -66,7 +66,7 @@ const worksData: [string, string, string, string, string, string][] = [
     [
         "dzPass",
         "C++, Makefile, OOP",
-        "An CLI password manager written in C++ only.",
+        "An CLI password and user manager tool written in C++ only.",
         "dzpass.png",
         "dzPass",
         "Github Repository",
@@ -74,7 +74,7 @@ const worksData: [string, string, string, string, string, string][] = [
     [
         "Better-Calculator",
         "C++, C, Cmake, Makefile",
-        "A calculator I made to help me do homework, CLI.",
+        "A CLI calculator tool I made to help me do homework.",
         "bettercalc.png",
         "Better-Calculator",
         "Github Repository",

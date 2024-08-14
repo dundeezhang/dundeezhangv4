@@ -2,45 +2,86 @@
     text-align: center;
 }
 
-.blog-intro {
-    background-color: white;
-    min-height: 40vmin;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 1vmin);
-    color: black;
+@media only screen and (max-width: 600px) {
+    .blog-intro {
+        background-color: white;
+        min-height: 40vmin;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        margin-top: 5vmin;
+        margin-bottom: 5vmin;
+    }
+
+    .header-name-blog {
+        font-size: calc(10px + 4vmin);
+        margin: 12vmin 0 3vmin;
+    }
+
+    .blog-button {
+        font-size: calc(8px + 2vmin);
+        color: rgb(0, 0, 0);
+        border-radius: 100vmin;
+        padding: 2vmin 5vmin;
+        border-color: rgba(255, 255, 255, 0);
+        background-color: rgb(166, 237, 252);
+        margin: 3vmin 0 6vmin;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .external-icon {
+        margin: auto 2vmin auto auto;
+        font-size: calc(10px + 1.5vmin);
+    }
 }
 
-p {
-    margin-top: 5vmin;
-    margin-bottom: 5vmin;
-}
+@media only screen and (min-width: 600px) {
+    .blog-intro {
+        background-color: white;
+        min-height: 40vmin;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(10px + 1vmin);
+        color: black;
+    }
 
-.header-name-blog {
-    font-size: calc(10px + 2.5vmin);
-    margin: 12vmin 0 3vmin;
-}
+    p {
+        margin-top: 5vmin;
+        margin-bottom: 5vmin;
+    }
 
-.blog-button {
-    font-size: calc(8px + 1.2vmin);
-    color: rgb(0, 0, 0);
-    border-radius: 100vmin;
-    padding: 1vmin 2.5vmin;
-    border-color: rgba(255, 255, 255, 0);
-    background-color: rgb(166, 237, 252);
-    margin: 3vmin 0 6vmin;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
-}
+    .header-name-blog {
+        font-size: calc(10px + 2.5vmin);
+        margin: 12vmin 0 3vmin;
+    }
 
-.blog-button:hover {
-    color: rgb(22, 71, 114);
-    background-color: rgb(166, 236, 245);
-    -webkit-transition: all .2s;
-    -moz-transition: all .2s;
-    transition: all .2s;
-    transform: scale(1.05);
+    .blog-button {
+        font-size: calc(8px + 1.2vmin);
+        color: rgb(0, 0, 0);
+        border-radius: 100vmin;
+        padding: 1vmin 2.5vmin;
+        border-color: rgba(255, 255, 255, 0);
+        background-color: rgb(166, 237, 252);
+        margin: 3vmin 0 6vmin;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .blog-button:hover {
+        color: rgb(22, 71, 114);
+        background-color: rgb(166, 236, 245);
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s;
+        transform: scale(1.05);
+    }
 }

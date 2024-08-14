@@ -41,7 +41,7 @@ function Works() {
                     </h2>
                 </motion.div>
                 <Container fluid>
-                    <Row>
+                    <Row className="card-container-works">
                         <WorkCards />
                     </Row>
                 </Container>
