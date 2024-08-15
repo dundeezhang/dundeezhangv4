@@ -7,7 +7,30 @@ import { useForm, ValidationError } from "@formspree/react";
 export default function Contact() {
     const [state, handleSubmit] = useForm("mpwalqqy");
     if (state.succeeded) {
-        return <p>Message Sent!</p>;
+        return (
+            <div>
+                <h2>Contact Me</h2>
+                <p className="message-return">Message Sent!</p>
+            </div>
+        );
+    }
+
+    if (state.errors) {
+        return (
+            <div>
+                <h2>Contact Me</h2>
+                <p className="message-return">Message Failed to Send</p>
+            </div>
+        );
+    }
+
+    if (state.submitting) {
+        return (
+            <div>
+                <h2>Contact Me</h2>
+                <p className="message-return">Sending...</p>
+            </div>
+        );
     }
 
     return (
@@ -40,8 +63,8 @@ export default function Contact() {
                     <p className="contact-card-text">Message</p>
                     <textarea
                         className="contact-input-field"
-                        maxLength={300}
-                        placeholder="Message (Max 300 characters)"
+                        maxLength={500}
+                        placeholder="Message (Max 500 characters)"
                         name="message"
                         required={true}
                     />
