@@ -1,5 +1,5 @@
 # Portfolio and Blog Website
-[![CodeFactor](https://www.codefactor.io/repository/github/dundeezhang/dundeezhang.github.io/badge)](https://www.codefactor.io/repository/github/dundeezhang/dundeezhang.github.io)
+[![CodeFactor](https://www.codefactor.io/repository/github/dundeezhang/dundeezhangv4/badge)](https://www.codefactor.io/repository/github/dundeezhang/dundeezhangv4)
 
 Built using TypeScript, React, and CSS. It is current still a work in progress.
 
