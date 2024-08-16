@@ -1,15 +1,82 @@
-.app-footer {
-    background-color: rgb(166, 237, 252);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 1vmin);
-    color: black;
-    padding: 0;
-    margin-bottom: 0;
-    height: 15vmin;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
+@media only screen and (max-width: 600px) {
+    .app-footer {
+        background-color: rgb(166, 237, 252);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(10px + 1vmin);
+        color: black;
+        padding: 0;
+        margin-bottom: 0;
+        height: fit-content;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    .circle-div-footer {
+        background-color: rgb(255, 255, 255);
+        border-radius: 100%;
+        width: calc(10px + 7vmin);
+        height: calc(10px + 7vmin);
+    
+        position: relative;
+        text-align: center;
+    }
+    
+    .footer-icons {
+        font-size: calc(10px + 1.5vmin);
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
+
+@media only screen and (min-width: 600px) {
+    .app-footer {
+        background-color: rgb(166, 237, 252);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(10px + 1vmin);
+        color: black;
+        padding: 0;
+        margin-bottom: 0;
+        height: fit-content;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .circle-div-footer {
+        background-color: rgb(255, 255, 255);
+        border-radius: 100%;
+        width: calc(10px + 4.5vmin);
+        height: calc(10px + 4.5vmin);
+    
+        position: relative;
+        text-align: center;
+    }
+    
+    .circle-div-footer:hover {
+        background-color: rgb(212, 250, 255);
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s;
+        transform: scale(1.1);
+    }
+    
+    .footer-icons {
+        font-size: calc(10px + 1.2vmin);
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+

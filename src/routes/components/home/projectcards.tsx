@@ -79,6 +79,14 @@ const worksData: [string, string, string, string, string, string][] = [
         "Github Repository",
     ],
     [
+        "dundeezhangv1",
+        "HTML, CSS",
+        "My first version of this website. Made only with html/css.",
+        "dundeezhangv1.png",
+        "dundeezhangv1",
+        "Github Repository",
+    ],
+    [
         "blog.dundeezhang.com",
         "HTML, CSS",
         "My personal blog. Now has been migrated to this website.",
@@ -89,7 +97,7 @@ const worksData: [string, string, string, string, string, string][] = [
     [
         "Submarine Intercept Sim",
         "Java, Java-Swing, OOP",
-        "WWII Battleship versus submarine simulator",
+        "World War II Battleship (Haida) versus submarine simulator",
         "haida.jpg",
         "Submarine-Intercept-Simulator",
         "Github Repository",
