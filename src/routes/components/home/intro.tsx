@@ -1,7 +1,6 @@
 import pfp from "/src/img/cropped_image.png";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import "./css/root.css";
 
 const resumeClick = () => {
     window.open(
@@ -137,7 +136,6 @@ export default function Intro() {
                     </li>
                 </ul>
                 <motion.div
-
                     initial={{ opacity: 0, scale: 1.7 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{

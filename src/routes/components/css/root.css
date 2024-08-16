@@ -18,7 +18,7 @@
         color: black;
         padding: 0;
     }
-    
+
     ul.social-cons {
         list-style-type: none;
         padding-left: 0;
@@ -33,20 +33,20 @@
         font-size: calc(10px + 2vmin);
         padding: 0;
     }
-    
+
     a {
         color: black;
     }
-    
+
     a:visited {
         color: black;
     }
-    
+
     p {
         font-size: calc(10px + 1vmin);
         margin: 0 3vmin;
     }
-    
+
     p.website-intro-top {
         font-size: calc(10px + 1.9vmin);
         margin: 0 3vmin 10vmin;
@@ -55,29 +55,29 @@
         font-weight: 500;
         font-style: normal;
     }
-    
+
     .resume {
         margin-top: 6vmin;
     }
-    
+
     a.csText {
         color: rgb(7, 88, 143);
         text-decoration: none;
     }
-    
+
     a.csText:visited {
         color: rgb(7, 88, 143);
     }
-    
+
     a.schoolText {
         color: rgb(163, 38, 163);
         text-decoration: none;
     }
-    
+
     a.schoolText:visited {
         color: rgb(163, 38, 163);
     }
-    
+
     .dundee-name {
         font-size: calc(10px + 4vmin);
         margin: 3vmin 0;
@@ -86,7 +86,7 @@
         font-style: normal;
         color: rgb(18, 100, 112);
     }
-    
+
     .profile-picture {
         width: 100vmin;
         height: fit-content;
@@ -95,7 +95,7 @@
         padding: 0;
         overflow: hidden;
     }
-    
+
     .resume-button {
         color: rgb(36, 46, 51);
         border-radius: 100vmin;
@@ -108,17 +108,17 @@
         font-style: normal;
         font-size: calc(10px + 1.9vmin);
     }
-    
+
     .circle-div {
         background-color: rgb(241, 241, 241);
         border-radius: 100%;
         width: calc(10px + 10vmin);
         height: calc(10px + 10vmin);
-    
+
         position: relative;
         text-align: center;
     }
-    
+
     .intro-icons {
         font-size: calc(10px + 2.5vmin);
         margin: 0;
@@ -127,7 +127,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    
+
     .external-icon {
         margin: auto 2vmin auto auto;
         font-size: calc(10px + 1.5vmin);
@@ -146,7 +146,7 @@
         color: black;
         padding: 0;
     }
-    
+
     ul.social-cons {
         list-style-type: none;
         padding-left: 0;
@@ -161,21 +161,21 @@
         font-size: calc(10px + 2vmin);
         padding: 0;
     }
-    
+
     a {
         text-decoration: none;
         color: black;
     }
-    
+
     a:visited {
         color: black;
     }
-    
+
     p {
         font-size: calc(10px + 1vmin);
         margin: 0 3vmin;
     }
-    
+
     p.website-intro-top {
         font-size: calc(10px + 1vmin);
         margin: 0 3vmin 3vmin;
@@ -184,31 +184,31 @@
         font-weight: 500;
         font-style: normal;
     }
-    
+
     .resume {
         margin-top: 6vmin;
     }
-    
+
     a.csText {
         font-size: calc(10px + 1vmin);
         color: rgb(7, 88, 143);
         text-decoration: none;
     }
-    
+
     a.csText:visited {
         color: rgb(7, 88, 143);
     }
-    
+
     a.schoolText {
         font-size: calc(10px + 1vmin);
         color: rgb(163, 38, 163);
         text-decoration: none;
     }
-    
+
     a.schoolText:visited {
         color: rgb(163, 38, 163);
     }
-    
+
     .dundee-name {
         font-size: calc(10px + 2.5vmin);
         margin: 3vmin 0;
@@ -217,7 +217,7 @@
         font-style: normal;
         color: rgb(18, 100, 112);
     }
-    
+
     .profile-picture {
         width: 70vmin;
         height: fit-content;
@@ -226,7 +226,7 @@
         padding: 0;
         overflow: hidden;
     }
-    
+
     .resume-button {
         color: rgb(36, 46, 51);
         border-radius: 100vmin;
@@ -238,7 +238,7 @@
         font-weight: 500;
         font-style: normal;
     }
-    
+
     .resume-button:hover {
         color: rgb(13, 37, 58);
         background-color: rgb(150, 220, 230);
@@ -247,17 +247,17 @@
         transition: all 0.2s;
         transform: scale(1.08);
     }
-    
+
     .circle-div {
         background-color: rgb(241, 241, 241);
         border-radius: 100%;
         width: calc(10px + 4.5vmin);
         height: calc(10px + 4.5vmin);
-    
+
         position: relative;
         text-align: center;
     }
-    
+
     .circle-div:hover {
         background-color: rgb(212, 250, 255);
         -webkit-transition: all 0.2s;
@@ -265,7 +265,7 @@
         transition: all 0.2s;
         transform: scale(1.1);
     }
-    
+
     .intro-icons {
         font-size: calc(10px + 1.2vmin);
         margin: 0;
@@ -274,7 +274,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    
+
     .external-icon {
         margin: auto 1vmin auto auto;
     }

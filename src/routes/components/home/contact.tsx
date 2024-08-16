@@ -1,7 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import "./css/contact.css";
-
 import { useForm, ValidationError } from "@formspree/react";
 
 export default function Contact() {

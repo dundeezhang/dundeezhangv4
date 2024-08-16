@@ -3,8 +3,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import { motion } from "framer-motion";
 
-import "./css/works.css";
-
 import WorkCards from "./projectcards";
 
 const HeaderAnimate = {
@@ -36,9 +34,7 @@ function Works() {
                     viewport={{ once: true, amount: 0.8 }}
                     variants={HeaderAnimate}
                 >
-                    <h2 className="header-name">
-                        My Projects:
-                    </h2>
+                    <h2 className="header-name">My Projects:</h2>
                 </motion.div>
                 <Container fluid>
                     <Row className="card-container-works">

@@ -5,9 +5,7 @@ import Container from "react-bootstrap/Container";
 import pfp from "/src/img/cropped_image.png";
 
 import Footer from "./components/footer";
-import BlogCards from "./components/blog-components/cards";
-
-import "./components/css/blog.css";
+import BlogCards from "./components/blog/cards";
 
 const homeClick = () => {
     window.open("/", "_self");
@@ -43,7 +41,7 @@ export default function Blog() {
 
                 <div className="content-container">
                     <Container fluid>
-                    <BlogCards/>
+                        <BlogCards />
                     </Container>
                 </div>
                 <div className="indicators-bottom">

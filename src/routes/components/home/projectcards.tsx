@@ -10,7 +10,6 @@ const viewProject = (repo: string): undefined => {
     window.open(`https://github.com/dundeezhang/${repo}`, "_blank");
 };
 
-
 const CardDiv: Variants = {
     offscreen: {
         y: 10,
@@ -101,63 +100,63 @@ const worksData: [string, string, string, string, string, string][] = [
         "More projects are WIP. Check out and follow my GitHub.",
         "future.jpg",
         "",
-        "Github Profile"
+        "Github Profile",
     ],
 ];
 
 function WorksCard({ title, langs, desc, pic, repository, buttontext }: Datas) {
     return (
-            <Col>
-                <motion.div
-                    className="card-container"
-                    initial="offscreen"
-                    whileInView="onscreen"
-                    viewport={{ once: true, amount: 0.8 }}
-                    variants={CardDiv}
-                >
-                    <Card className="project-cards">
-                        <Card.Img
-                            variant="top"
-                            src={`/works/${pic}`}
-                            className="project-images"
-                        />
-                        <Card.Body className="ibm-plex-mono-light">
-                            <Card.Title className="project-title">
-                                {title}
-                            </Card.Title>
-                            <Card.Subtitle
-                                className="mb-2 tools-used"
-                            >
-                                {langs}
-                            </Card.Subtitle>
-                            <Card.Text className="about-project-desc">
-                                {desc}
-                            </Card.Text>
-                            <button
-                                type="button"
-                                onClick={()=> viewProject(repository)}
-                                className="github-button"
-                            >
-                                <i className="fa-brands fa-github github-button-icon"></i>
-                                {buttontext}
-                            </button>
-                        </Card.Body>
-                    </Card>
-                </motion.div>
-            </Col>
+        <Col>
+            <motion.div
+                className="card-container"
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{ once: true, amount: 0.8 }}
+                variants={CardDiv}
+            >
+                <Card className="project-cards">
+                    <Card.Img
+                        variant="top"
+                        src={`/works/${pic}`}
+                        className="project-images"
+                    />
+                    <Card.Body className="ibm-plex-mono-light">
+                        <Card.Title className="project-title">
+                            {title}
+                        </Card.Title>
+                        <Card.Subtitle className="mb-2 tools-used">
+                            {langs}
+                        </Card.Subtitle>
+                        <Card.Text className="about-project-desc">
+                            {desc}
+                        </Card.Text>
+                        <button
+                            type="button"
+                            onClick={() => viewProject(repository)}
+                            className="github-button"
+                        >
+                            <i className="fa-brands fa-github github-button-icon"></i>
+                            {buttontext}
+                        </button>
+                    </Card.Body>
+                </Card>
+            </motion.div>
+        </Col>
     );
 }
 
 export default function WorkCards() {
-    return worksData.map(([title, langs, desc, pic, repository, buttontext]) => (
-        <WorksCard
-            title={title}
-            langs={langs}
-            desc={desc}
-            pic={pic}
-            repository={repository}
-            buttontext={buttontext}
-            key={null}
-        />
-    ));
+    return worksData.map(
+        ([title, langs, desc, pic, repository, buttontext]) => (
+            <WorksCard
+                title={title}
+                langs={langs}
+                desc={desc}
+                pic={pic}
+                repository={repository}
+                buttontext={buttontext}
+                key={null}
+            />
+        )
+    );
 }

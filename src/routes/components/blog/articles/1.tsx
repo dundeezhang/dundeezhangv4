@@ -2,7 +2,7 @@ import { Outlet, Link } from "react-router-dom";
 
 import "/src/routes/components/css/blog.css";
 
-import runimage from "./blog/run-night-image.jpeg";
+import runimage from "./images/run-night-image.jpeg";
 
 export default function ArtOne() {
     return (
@@ -118,13 +118,13 @@ export default function ArtOne() {
                     The second issue that arose was just that I didn't know how
                     to do anything in react. Mind you, this was really my first
                     actual experience using react to code something usable. So,
-                    the new syntax such as 'className', 'style={"{{}}"}', and not
-                    being able to link html sites within my own projects easily
-                    was all a little challenging for me. Mind you, I got around
-                    most of them, and this blog site is a work-around of the
-                    html issue... Yeah, I'm not the greatest problem solver, but
-                    I don't care enough to do a more elegant solution. I just
-                    wanted to put out my websites as soon as I could.
+                    the new syntax such as 'className', 'style={"{{}}"}', and
+                    not being able to link html sites within my own projects
+                    easily was all a little challenging for me. Mind you, I got
+                    around most of them, and this blog site is a work-around of
+                    the html issue... Yeah, I'm not the greatest problem solver,
+                    but I don't care enough to do a more elegant solution. I
+                    just wanted to put out my websites as soon as I could.
                 </p>
                 <p>
                     My third issue was that Cloudflare doesn't tell me if my

@@ -4,8 +4,6 @@ import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import "/src/routes/components/css/blog.css";
-
 const viewPost = (article: number): undefined => {
     window.open(`/blog/article/${article}`, "_self");
 };
