@@ -63,6 +63,14 @@ const worksData: [string, string, string, string, string, string][] = [
         "Github Repository",
     ],
     [
+        "NHSCSC Website",
+        "TypeScript, React, CSS",
+        "Website for NHS CS Club. Shows events and announcements.",
+        "nhscsc.png",
+        "website-nhscc",
+        "Github Repository",
+    ],
+    [
         "dzPass",
         "C++, Makefile, OOP",
         "An CLI password and user manager tool written in C++ only.",
