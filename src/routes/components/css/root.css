@@ -4,6 +4,7 @@
 
 .App-logo {
     pointer-events: none;
+    border-radius: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -300,23 +301,23 @@
     }
 
     a.csText {
-        color: rgb(122, 176, 213);
+        color: rgb(255, 255, 255);
     }
 
     a.csText:visited {
-        color: rgb(118, 164, 195);
+        color: rgb(255, 255, 255);
     }
 
     a.schoolText {
-        color: rgb(212, 128, 212);
+        color: rgb(226, 137, 231);
     }
 
     a.schoolText:visited {
-        color: rgb(212, 128, 212);
+        color: rgb(226, 137, 231);
     }
 
     .dundee-name {
-        color: rgb(137, 218, 231);
+        color: rgb(226, 137, 231);
     }
 
     .resume-button {
