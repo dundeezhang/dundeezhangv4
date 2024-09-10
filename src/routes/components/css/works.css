@@ -159,3 +159,45 @@
         margin: auto 10vw;
     }
 }
+/* dark mode*/
+@media (prefers-color-scheme: dark) {
+    .App-content {
+        background-color: #252525;
+    }
+    .project-title {
+        color: white;
+    }
+
+    .tools-used {
+        color: white;
+    }
+
+    .about-project-desc {
+        color: white;
+    }
+
+    .header-name {
+        color: white;
+    }
+
+    .project-images {
+        filter: brightness(50%);
+    }
+
+    .project-cards {
+        background-color: #252525;
+        color: white;
+        box-shadow: 0 0px 10px 1px rgb(18, 18, 18);
+        border-color: #252525;
+    }
+
+    .github-button {
+        color: white;
+        background-color: rgb(60, 60, 60);
+    }
+
+    .github-button:hover {
+        background-color: rgb(72, 72, 72);
+        color: white;
+    }
+}

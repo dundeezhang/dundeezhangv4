@@ -96,6 +96,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+@media (prefers-color-scheme: dark) {
+    html, body {
+        background-color: #252525;
+    }
+}
+
 html,
 body {
     text-align: center;
