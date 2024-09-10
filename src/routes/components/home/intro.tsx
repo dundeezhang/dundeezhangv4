@@ -1,4 +1,4 @@
-import pfp from "/src/img/cropped_image.png";
+import pfp from "/src/img/specimenB.jpeg";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
