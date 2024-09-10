@@ -138,6 +138,43 @@ textarea:focus {
 }
 
 contact-button:disabled {
-    color: rgb(13, 37, 58);
+    color: white;
     background-color: rgb(150, 220, 230);
+}
+
+@media (prefers-color-scheme: dark) {
+    input:focus {
+        outline-color: rgb(196, 130, 204);
+    }
+
+    textarea:focus {
+        outline-color: rgb(196, 130, 204);
+    }
+
+    contact-button:disabled {
+        color: white;
+        background-color: rgb(150, 220, 230);
+    }
+
+    .contact-button {
+        color: white;
+        border-color: rgba(221, 221, 221, 0);
+        background-color: rgb(60, 60, 60);
+    }
+
+    .contact-button:hover {
+        background-color: rgb(72, 72, 72);
+        color: white;
+    }
+
+    .contact-input-box,
+    .contact-input-field {
+        color: white;
+        background-color: rgb(51, 51, 51);
+        box-shadow: 0 0px 10px 1px rgb(28, 28, 28);
+    }
+
+    .contact-card-text {
+        color: white;
+    }
 }

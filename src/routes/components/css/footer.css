@@ -80,3 +80,21 @@
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    .app-footer {
+        background-color: rgb(8, 8, 8);
+        color: white;
+    }
+
+    .circle-div-footer {
+        background-color: rgb(60, 60, 60);
+    }
+    
+    .circle-div-footer:hover {
+        background-color: rgb(72, 72, 72);
+    }
+    
+    .footer-icons {
+        color: white;
+    }
+}
