@@ -117,7 +117,7 @@ export default function Intro() {
                             <div className="circle-div">
                                 <a
                                     rel="noreferrer"
-                                    href="mailto:dundeez124@gmail.com"
+                                    href="mailto:contact@dundeezhang.com"
                                     target="_blank"
                                 >
                                     <i className="fa-regular fa-envelope intro-icons"></i>

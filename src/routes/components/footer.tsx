@@ -50,7 +50,7 @@ export default function Footer() {
                         <div className="circle-div-footer">
                             <a
                                 rel="noreferrer"
-                                href="mailto:dundeez124@gmail.com"
+                                href="mailto:contact@dundeezhang.com"
                                 style={{
                                     color: "black",
                                 }}
