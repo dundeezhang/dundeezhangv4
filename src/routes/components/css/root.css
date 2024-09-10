@@ -279,3 +279,61 @@
         margin: auto 1vmin auto auto;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .App-header {
+        background-color: #252525;
+        color: white;
+    }
+    ul > li {
+        color: white;
+    }
+    ul > li {
+        color: white;
+    }
+
+    a, a:visited {
+        color: white;
+    }
+    p.website-intro-top {
+        color: rgb(172, 172, 172);
+    }
+
+    a.csText {
+        color: rgb(122, 176, 213);
+    }
+
+    a.csText:visited {
+        color: rgb(118, 164, 195);
+    }
+
+    a.schoolText {
+        color: rgb(212, 128, 212);
+    }
+
+    a.schoolText:visited {
+        color: rgb(212, 128, 212);
+    }
+
+    .dundee-name {
+        color: rgb(137, 218, 231);
+    }
+
+    .resume-button {
+        color: rgb(255, 255, 255);
+        background-color: rgb(60, 60, 60);
+    }
+
+    .resume-button:hover {
+        background-color: rgb(72, 72, 72);
+        color: white;
+    }
+
+    .circle-div {
+        background-color: rgb(60, 60, 60);
+    }
+
+    .circle-div:hover {
+        background-color: rgb(72, 72, 72);
+    }
+}

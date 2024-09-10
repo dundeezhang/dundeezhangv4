@@ -76,9 +76,6 @@ export default function Intro() {
                                 <a
                                     rel="noreferrer"
                                     href="https://www.linkedin.com/in/dundeezhang/"
-                                    style={{
-                                        color: "black",
-                                    }}
                                     target="_blank"
                                 >
                                     <i className="fa-brands fa-linkedin-in intro-icons"></i>
@@ -100,9 +97,6 @@ export default function Intro() {
                                 <a
                                     rel="noreferrer"
                                     href="https://github.com/dundeezhang"
-                                    style={{
-                                        color: "black",
-                                    }}
                                     target="_blank"
                                 >
                                     <i className="fa-brands fa-github intro-icons"></i>
@@ -124,9 +118,6 @@ export default function Intro() {
                                 <a
                                     rel="noreferrer"
                                     href="mailto:dundeez124@gmail.com"
-                                    style={{
-                                        color: "black",
-                                    }}
                                     target="_blank"
                                 >
                                     <i className="fa-regular fa-envelope intro-icons"></i>
