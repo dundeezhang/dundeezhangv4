@@ -85,3 +85,21 @@
         transform: scale(1.05);
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .blog-intro {
+        background-color: #252525;
+        color: white;
+    }
+
+    .blog-button {
+        color: rgb(255, 255, 255);
+        background-color: rgb(60, 60, 60);
+        margin: 3vmin 0 6vmin;
+    }
+
+    .blog-button:hover {
+        color: white;
+        background-color: rgb(72, 72, 72);
+    }
+}
