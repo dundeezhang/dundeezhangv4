@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 
-import pfp from "/src/img/cropped_image.png";
+import pfp from "/src/img/specimenB.jpeg";
 
 import Footer from "./components/footer";
 import BlogCards from "./components/blog/cards";
