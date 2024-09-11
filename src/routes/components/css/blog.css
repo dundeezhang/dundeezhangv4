@@ -23,6 +23,7 @@
         height: calc(10px + 20vmin);
         float: left;
         margin: 0 2vmin 0 0;
+        border-radius: 100%;
     }
 
     .title-div {
@@ -155,6 +156,7 @@
         height: calc(10px + 10vmin);
         float: left;
         margin: 0 2vmin 0 0;
+        border-radius: 100%;
     }
 
     .title-div {
@@ -288,6 +290,51 @@ p.highlight-color {
     margin: 0;
 }
 
+@media (prefers-color-scheme: dark) {
+    .blog-header {
+        background-color: rgb(8, 8, 8);
+    }
+
+    .navbar {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        background: linear-gradient(
+            180deg,
+            rgb(8, 8, 8) 0%,
+            rgba(200, 200, 200, 0) 100%
+        );
+        z-index: 999;
+    }
+
+    .my-button {
+        color: white;
+        background-color: rgb(60, 60, 60);
+    }
+
+    .my-button:hover {
+        background-color: rgb(72, 72, 72);
+    }
+
+    .blog-images {
+        filter: brightness(50%);
+    }
+
+    .blog-cards {
+        border-color: rgba(231, 231, 231, 0);
+        border-radius: 3vmin;
+        background-color: #252525;
+        color: white;
+        box-shadow: 0 0px 10px 1px rgb(18, 18, 18);
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(142, 175, 221);
+    }
+}
+
 /*  blog stuff */
 .green-colour {
     color: rgb(64, 162, 64);
@@ -308,3 +355,4 @@ img.vert-img {
 p.desc {
     font-size: calc(10px + 1vmin);
 }
+
