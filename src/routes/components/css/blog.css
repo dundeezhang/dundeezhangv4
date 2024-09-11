@@ -74,6 +74,19 @@
         margin: 3vh auto;
     }
 
+    .my-button-blog {
+        color: rgb(0, 0, 0);
+        border-radius: 100vmin;
+        padding: 2vmin 3vmin;
+        border-color: rgba(255, 255, 255, 0);
+        background-color: rgb(241, 241, 241);
+        font-size: calc(8px + 2vmin);
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-style: normal;
+        margin: auto;
+    }
+
     div.indicators-top {
         font-family: "IBM Plex Mono", monospace;
         font-weight: 500;
@@ -206,12 +219,29 @@
         margin: 3vmin auto;
     }
 
+    .my-button-blog {
+        color: rgb(0, 0, 0);
+        border-radius: 100vmin;
+        padding: 1vmin 2.5vmin;
+        border-color: rgba(255, 255, 255, 0);
+        background-color: rgb(241, 241, 241);
+        font-size: calc(8px + 1.2vmin);
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-style: normal;
+        margin: auto;
+    }
+
     .my-button:hover {
         background-color: rgb(212, 250, 255);
         -webkit-transition: all 0.2s;
         -moz-transition: all 0.2s;
         transition: all 0.2s;
         transform: scale(1.08);
+    }
+
+    .my-buttong-blo:hover {
+        background-color: rgb(212, 250, 255);
     }
 
     div.indicators-top {
@@ -313,7 +343,16 @@ p.highlight-color {
         background-color: rgb(60, 60, 60);
     }
 
+    .my-button-blog {
+        color: white;
+        background-color: rgb(60, 60, 60);
+    }
+
     .my-button:hover {
+        background-color: rgb(72, 72, 72);
+    }
+
+    .my-button-blog:hover {
         background-color: rgb(72, 72, 72);
     }
 

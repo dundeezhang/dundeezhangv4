@@ -84,7 +84,7 @@ function BlogCard({ title, date, desc, postNum }: Datas) {
                             <button
                                 type="button"
                                 onClick={() => viewPost(postNum)}
-                                className="my-button blog-buttons"
+                                className="my-button-blog blog-buttons"
                             >
                                 View Post
                             </button>
