@@ -71,7 +71,7 @@
         font-family: "IBM Plex Mono", monospace;
         font-weight: 500;
         font-style: normal;
-        margin: auto;
+        margin: 3vh auto;
     }
 
     div.indicators-top {
@@ -203,7 +203,7 @@
         font-family: "IBM Plex Mono", monospace;
         font-weight: 500;
         font-style: normal;
-        margin: auto;
+        margin: 3vmin auto;
     }
 
     .my-button:hover {
