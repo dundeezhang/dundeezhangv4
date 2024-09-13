@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const resumeClick = () => {
     window.open(
-        "https://drive.google.com/file/d/1z6C-EVzE-1E1d1d-5VrrwLRzPyIiLTb-/view?usp=drive_link",
+        "https://drive.google.com/file/d/1VOapgYaUNxDdWYi-j3IMw9GvvYHdxQMF/view?usp=drive_link",
         "_blank"
     );
 };
