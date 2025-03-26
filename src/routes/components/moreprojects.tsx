@@ -41,6 +41,15 @@ interface Datas {
 
 const moreData: [string, string, string, string, string, string, string][] = [
   [
+    "Eco Elo",
+    "React, PostgreSQL, Resend",
+    "Earn elo and compete to be the most eco friendly consumer!",
+    "ecoelo",
+    "Github Repository",
+    "hide-button-class",
+    "",
+  ],
+  [
     "Contest Solutions",
     "C++, Java, Python",
     "Repository to store most of my solutions for CS problems.",
