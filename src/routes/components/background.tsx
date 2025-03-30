@@ -24,7 +24,7 @@ const GridOverlay = styled.div<{ x: number; y: number; isDarkMode: boolean }>`
             : "linear-gradient(to right, #e0e0e0 1px, transparent 1px), linear-gradient(to bottom, #e0e0e0 1px, transparent 1px)"};
     background-size: 25px 25px;
     pointer-events: none;
-    transform: ${({ x, y }) => `translate(${-x / 100}px, ${-y / 100}px)`};
+    transform: ${({ x, y }) => `translate(${-x / 50}px, ${-y / 50}px)`};
 `;
 
 const GlassBackground = styled.div<{ isDarkMode: boolean }>`
