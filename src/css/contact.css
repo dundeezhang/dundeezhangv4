@@ -159,7 +159,8 @@ contact-button:disabled {
     .contact-button {
         color: white;
         border-color: rgba(221, 221, 221, 0);
-        background-color: rgb(60, 60, 60);
+        background-color: rgba(60, 60, 60, 0.219);
+        backdrop-filter: blur(4px);
     }
 
     .contact-button:hover {
@@ -170,8 +171,9 @@ contact-button:disabled {
     .contact-input-box,
     .contact-input-field {
         color: white;
-        background-color: rgb(51, 51, 51);
-        box-shadow: 0 0px 10px 1px rgb(28, 28, 28);
+        background-color: rgba(60, 60, 60, 0.219);
+        backdrop-filter: blur(4px);
+        box-shadow: 0 0px 10px 1px rgb(20, 20, 20);
     }
 
     .contact-card-text {
