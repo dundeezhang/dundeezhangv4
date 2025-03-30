@@ -2,11 +2,6 @@
     text-align: center;
 }
 
-.App-logo {
-    pointer-events: none;
-    border-radius: 100%;
-}
-
 .badge-container a {
     transition: transform 0.1s ease-in-out; /* Smooth transition for scaling */
     display: inline-block; /* Ensure the anchor behaves like a block for scaling */
@@ -225,7 +220,7 @@ span.glow {
     }
 
     p {
-        font-size: calc(10px + 1vmin);
+        font-size: calc(8px + 1vmin);
         margin: 0 3vmin;
     }
 

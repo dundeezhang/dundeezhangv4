@@ -1,12 +1,6 @@
 import { motion } from "framer-motion";
-import { useMediaQuery } from "react-responsive";
-
-import uwcsWrBlack from "/icons/blackuwcswebring.svg";
-import uwcsWrWhite from "/icons/uwcscwebring.svg";
 
 export default function Intro() {
-    const isDarkMode = useMediaQuery({ query: "(prefers-color-scheme: dark)" });
-
     return (
         <div id="intro">
             <header className="App-header">
@@ -134,38 +128,52 @@ export default function Intro() {
                     </li>
                 </ul>
                 <motion.div
-                    initial={{ opacity: 0, scale: 1.5 }}
+                    initial={{ opacity: 0, scale: 0.7 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
-                        duration: 0.2,
-                        delay: 0.9,
+                        duration: 1,
+                        delay: 1.1,
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >
-                    <div className="webring-div">
-                        <a
-                            className="cs-webring-links"
-                            href="https://cs.uwatering.com/#https://dundeezhang.com?nav=prev"
-                        >
-                            <i className="fa-solid fa-arrow-left"></i>
-                        </a>
-                        <a
-                            href="https://cs.uwatering.com/#https://dundeezhang.com"
-                            target="_blank"
-                        >
-                            <img
-                                src={isDarkMode ? uwcsWrWhite : uwcsWrBlack}
-                                alt="UWaterloo CS Web Ring"
-                                className="cs-webring"
-                            />
-                        </a>
-                        <a
-                            className="cs-webring-links"
-                            href="https://cs.uwatering.com/#https://dundeezhang.com?nav=next"
-                        >
-                            <i className="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
+                    <p className="website-intro-top navlist">
+                        Move mouse for parallax effect!
+                    </p>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, scale: 1.05 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{
+                        duration: 1,
+                        delay: 1.8,
+                        ease: [0, 0.71, 0.2, 1.01],
+                    }}
+                >
+                    <motion.div
+                        initial={{ opacity: 1, scale: 1.1 }}
+                        animate={{
+                            opacity: 1,
+                            scale: 1,
+                            y: [0, -10, 0],
+                        }}
+                        transition={{
+                            duration: 1,
+                            delay: 0,
+                            ease: "easeInOut",
+                            repeat: Infinity,
+                            repeatType: "mirror",
+                        }}
+                    >
+                        <i
+                            className="fa-solid fa-chevron-down"
+                            onClick={() => {
+                                window.scrollBy({
+                                    top: window.innerHeight,
+                                    behavior: "smooth",
+                                });
+                            }}
+                        ></i>
+                    </motion.div>
                 </motion.div>
             </header>
         </div>

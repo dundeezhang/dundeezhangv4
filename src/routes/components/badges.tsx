@@ -1,4 +1,8 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
+
+import uwcsWrBlack from "/icons/blackuwcswebring.svg";
+import uwcsWrWhite from "/icons/uwcscwebring.svg";
 
 interface BadgeProps {
     imageUrl: string;
@@ -36,8 +40,34 @@ const badgesData: BadgeProps[] = [
 ];
 
 const Badges: React.FC = () => {
+    const isDarkMode = useMediaQuery({ query: "(prefers-color-scheme: dark)" });
     return (
         <div style={{ marginBottom: "12vh" }}>
+            <p>UWaterloo CS Webring:</p>
+            <div className="webring-div" style={{ marginTop: "2vh" }}>
+                <a
+                    className="cs-webring-links"
+                    href="https://cs.uwatering.com/#https://dundeezhang.com?nav=prev"
+                >
+                    <i className="fa-solid fa-arrow-left"></i>
+                </a>
+                <a
+                    href="https://cs.uwatering.com/#https://dundeezhang.com"
+                    target="_blank"
+                >
+                    <img
+                        src={isDarkMode ? uwcsWrWhite : uwcsWrBlack}
+                        alt="UWaterloo CS Web Ring"
+                        className="cs-webring"
+                    />
+                </a>
+                <a
+                    className="cs-webring-links"
+                    href="https://cs.uwatering.com/#https://dundeezhang.com?nav=next"
+                >
+                    <i className="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
             <p>Here are badges of a few friends' websites!</p>
             <div
                 className="badge-container"

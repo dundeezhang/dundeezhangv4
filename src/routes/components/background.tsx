@@ -24,7 +24,8 @@ const GridOverlay = styled.div<{ x: number; y: number; isDarkMode: boolean }>`
             : "linear-gradient(to right, #e0e0e0 1px, transparent 1px), linear-gradient(to bottom, #e0e0e0 1px, transparent 1px)"};
     background-size: 35px 35px;
     pointer-events: none;
-    transform: ${({ x, y }) => `translate(${-x / 80}px, ${-y / 80}px)`};
+    transform: ${({ x, y }) =>
+        `translate(${-x / 100}px, ${-y / 100}px)`}; /* Subtle parallax effect */
 `;
 
 const GlassBackground = styled.div<{ isDarkMode: boolean }>`
@@ -74,33 +75,10 @@ const Grid: React.FC = () => {
             setMousePosition({ x: event.clientX, y: event.clientY });
         };
 
-        const handleDeviceOrientation = (event: DeviceOrientationEvent) => {
-            const { beta, gamma } = event; // Beta: front-back tilt, Gamma: left-right tilt
-            if (beta !== null && gamma !== null) {
-                setMousePosition({
-                    x: gamma * 10, // Scale gamma for horizontal movement
-                    y: beta * 10, // Scale beta for vertical movement
-                });
-            }
-        };
-
-        if (window.innerWidth <= 768) {
-            // Use device orientation for mobile devices
-            window.addEventListener(
-                "deviceorientation",
-                handleDeviceOrientation
-            );
-        } else {
-            // Use mouse movement for desktop devices
-            window.addEventListener("mousemove", handleMouseMove);
-        }
+        window.addEventListener("mousemove", handleMouseMove);
 
         return () => {
             window.removeEventListener("mousemove", handleMouseMove);
-            window.removeEventListener(
-                "deviceorientation",
-                handleDeviceOrientation
-            );
         };
     }, []);
 

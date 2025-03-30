@@ -9,7 +9,7 @@ export default function About() {
                 at the University of Waterloo. I have practical experience
                 developing using JavaScript, TypeScript, C, C++, Java, and
                 Python with frameworks and tools such as React, Node, Next, and
-                MongoDB.
+                SQL.
             </p>
             <p className="about-me-ptext">
                 I also maintain and update my blog when I have time. Check it

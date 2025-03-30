@@ -113,7 +113,7 @@
     }
 
     .tools-used {
-        font-size: calc(8px + 1.3vmin);
+        font-size: calc(6 + 1.2vmin);
         color: rgb(82, 82, 82);
         font-family: "IBM Plex Mono", monospace;
         font-weight: 500;
@@ -122,15 +122,19 @@
 
     .about-project-desc {
         margin: 0;
-        font-size: calc(8px + 1.2vmin);
+        font-size: calc(6 + 1.2vmin);
         font-family: "IBM Plex Mono", monospace;
         font-weight: 500;
         font-style: normal;
         color: rgb(51, 51, 51);
     }
 
+    .about-project-desc:hover {
+        transform: scale(1); /* little oopsies */
+    }
+
     .header-name {
-        font-size: calc(10px + 2.5vmin);
+        font-size: calc(8px + 2.5vmin);
         margin: 0 0 3vmin;
         padding-top: 18vmin;
         font-family: "IBM Plex Mono", monospace;
@@ -168,7 +172,7 @@
     }
 
     .github-button {
-        font-size: calc(8px + 1.2vmin);
+        font-size: calc(6px + 1vmin);
         color: rgb(0, 0, 0);
         border-radius: 100vmin;
         padding: 1vmin 2.5vmin;
@@ -181,7 +185,7 @@
     }
 
     #external-link-button {
-        font-size: calc(8px + 1.2vmin);
+        font-size: calc(6px + 1vmin);
         color: rgb(0, 0, 0);
         border-radius: 100vmin;
         padding: 1vmin 2.5vmin;
@@ -218,7 +222,7 @@
         padding: 0.4vmin 2vmin;
         border-color: rgba(255, 255, 255, 0);
         background-color: rgb(166, 237, 252);
-        margin: 0 0 1vmin;
+        margin: 0 0 12vmin;
         font-family: "IBM Plex Mono", monospace;
         font-weight: 500;
         font-style: normal;
@@ -239,7 +243,7 @@
     }
 
     .about-project-desc {
-        color: white;
+        color: rgb(211, 211, 211);
     }
 
     .header-name {
@@ -251,7 +255,7 @@
     }
 
     .project-cards {
-        background-color: #25252500;
+        background-color: #00000000;
         backdrop-filter: blur(4px);
         color: white;
         box-shadow: 0 0px 10px 1px rgb(18, 18, 18);
