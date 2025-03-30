@@ -59,6 +59,11 @@ export default function Contact() {
             <div className="content-container-center" id="contactform">
                 <div className="contact-form-container">
                     <h2 className="header-name">Contact Me</h2>
+                    <p style={{ marginBottom: "2rem" }}>
+                        Use this form to contact me for any inquiries or
+                        recruiting opportunites! <br />
+                        My email is also in the footer of this website.
+                    </p>
 
                     <form
                         id="contact-form"

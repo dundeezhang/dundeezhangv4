@@ -169,11 +169,10 @@ span.glow {
     }
 
     .circle-div {
-        background-color: rgb(241, 241, 241);
+        background-color: rgba(241, 241, 241, 0);
         border-radius: 100%;
         width: calc(10px + 10vmin);
         height: calc(10px + 10vmin);
-
         position: relative;
         text-align: center;
     }
@@ -185,11 +184,6 @@ span.glow {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
-
-    .external-icon {
-        margin: auto 2vmin auto auto;
-        font-size: calc(10px + 1.5vmin);
     }
 }
 
@@ -299,7 +293,7 @@ span.glow {
     }
 
     .circle-div {
-        background-color: rgb(241, 241, 241);
+        background-color: rgba(241, 241, 241, 0);
         border-radius: 100%;
         width: calc(10px + 4.5vmin);
         height: calc(10px + 4.5vmin);
@@ -309,7 +303,8 @@ span.glow {
     }
 
     .circle-div:hover {
-        background-color: rgb(212, 250, 255);
+        background-color: rgba(241, 241, 241, 0.432);
+        backdrop-filter: blur(1px);
         -webkit-transition: all 0.2s;
         -moz-transition: all 0.2s;
         transition: all 0.2s;
@@ -323,10 +318,6 @@ span.glow {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
-
-    .external-icon {
-        margin: auto 1vmin auto auto;
     }
 }
 
@@ -404,10 +395,11 @@ span.glow {
     }
 
     .circle-div {
-        background-color: rgb(60, 60, 60);
+        background-color: #1f1f1f00;
     }
 
     .circle-div:hover {
-        background-color: rgb(72, 72, 72);
+        background-color: #2424244d;
+        backdrop-filter: blur(1px);
     }
 }

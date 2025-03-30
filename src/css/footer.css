@@ -2,18 +2,25 @@
     margin-bottom: 5vh;
 }
 
-.cs-webring {
-    width: 3.5vmin;
-    margin: 0 5px;
+.cs-webring:hover,
+.cs-webring-links:hover {
+    transform: scale(1.1);
 }
 
 .cs-webring-links {
     margin: 0 10px;
+    transition: all 0.2s;
 }
 
 @media only screen and (max-width: 600px) {
     .p-foot {
         margin: 5vh 0 3vh;
+    }
+
+    .cs-webring {
+        width: 7vmin;
+        margin: 0 5px;
+        transition: all 0.2s;
     }
 
     .app-footer {
@@ -53,6 +60,12 @@
 }
 
 @media only screen and (min-width: 600px) {
+    .cs-webring {
+        width: 3.5vmin;
+        margin: 0 5px;
+        transition: all 0.2s;
+    }
+
     .p-foot {
         margin: 5vh 0 3vh;
     }
@@ -108,11 +121,12 @@
     }
 
     .circle-div-footer {
-        background-color: rgb(60, 60, 60);
+        background-color: rgba(60, 60, 60, 0);
     }
 
     .circle-div-footer:hover {
-        background-color: rgb(72, 72, 72);
+        background-color: #2424244d;
+        backdrop-filter: blur(1px);
     }
 
     .footer-icons {
