@@ -27,6 +27,11 @@ const badgesData: BadgeProps[] = [
         linkUrl: "https://hyperneutrino.xyz",
         altText: "hyperneutrino",
     },
+    {
+        imageUrl: "/badges/s23adhik.png",
+        linkUrl: "https://csclub.uwaterloo.ca/~s23adhik/",
+        altText: "s23adhik",
+    },
     // Add more badges here
 ];
 
