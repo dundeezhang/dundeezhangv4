@@ -22,7 +22,7 @@ const GridOverlay = styled.div<{ x: number; y: number; isDarkMode: boolean }>`
         isDarkMode
             ? "linear-gradient(to right, #333 1px, transparent 1px), linear-gradient(to bottom, #333 1px, transparent 1px)"
             : "linear-gradient(to right, #e0e0e0 1px, transparent 1px), linear-gradient(to bottom, #e0e0e0 1px, transparent 1px)"};
-    background-size: 25px 25px;
+    background-size: 35px 35px;
     pointer-events: none;
     transform: ${({ x, y }) => `translate(${-x / 80}px, ${-y / 80}px)`};
 `;
@@ -114,16 +114,6 @@ const Grid: React.FC = () => {
                 />
             </GridContainer>
             <GlassBackground isDarkMode={isDarkMode} />
-            <ul className="background">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
         </>
     );
 };
