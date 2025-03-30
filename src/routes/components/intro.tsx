@@ -19,7 +19,7 @@ export default function Intro() {
                     }}
                 >
                     <p className="website-intro-top">
-                        Welcome to my website! I'm a software developer studying{" "}
+                        Welcome to my website! I'm currently studying{" "}
                         <a
                             target="_blank"
                             rel="noreferrer"
@@ -136,7 +136,10 @@ export default function Intro() {
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >
-                    <p className="website-intro-top navlist">
+                    <p
+                        className="website-intro-top navlist"
+                        style={{ opacity: 0.75 }}
+                    >
                         Move mouse for parallax effect!
                     </p>
                 </motion.div>
@@ -154,7 +157,7 @@ export default function Intro() {
                         animate={{
                             opacity: 1,
                             scale: 1,
-                            y: [0, -10, 0],
+                            y: [0, -5, 0],
                         }}
                         transition={{
                             duration: 1,
@@ -166,6 +169,7 @@ export default function Intro() {
                     >
                         <i
                             className="fa-solid fa-chevron-down"
+                            style={{ opacity: 0.75 }}
                             onClick={() => {
                                 window.scrollBy({
                                     top: window.innerHeight,

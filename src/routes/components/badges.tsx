@@ -68,7 +68,7 @@ const Badges: React.FC = () => {
                     <i className="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
-            <p>Here are badges of a few friends' websites!</p>
+            <p>Here's my badge and a few of my friends' badges!</p>
             <div
                 className="badge-container"
                 style={{
