@@ -13,13 +13,33 @@ export default function TableOfContents() {
         <div className="table-of-content-wrapper">
             <div className="mobile-nav">
                 <div className="center-list">
-                    <a href="#intro">Top</a>
+                    <a href="/">Home</a>
                     <a onClick={resumeClick}>Resume</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contactform">Contact</a>
+                    <a href="/works">Projects</a>
+                    <a href="/contact">Contact</a>
                 </div>
             </div>
             <li className="navlist">
+                <motion.div
+                    initial={{ opacity: 0, scale: 1.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{
+                        duration: 0.2,
+                        delay: 0.4,
+                        ease: [0, 0.71, 0.2, 1.01],
+                    }}
+                >
+                    <ul className="table-of-content">
+                        <a
+                            rel="noreferrer"
+                            className="table-of-content-text"
+                            href="/"
+                        >
+                            <span className="nav-span">Home</span>
+                        </a>
+                    </ul>
+                </motion.div>
+
                 <motion.div
                     initial={{ opacity: 0, scale: 1.5 }}
                     animate={{ opacity: 1, scale: 1 }}
@@ -29,8 +49,17 @@ export default function TableOfContents() {
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >
-                    <ul className="table-of-content">Go To:</ul>
+                    <ul className="table-of-content">
+                        <a
+                            rel="noreferrer"
+                            className="table-of-content-text"
+                            href="/works"
+                        >
+                            <span className="nav-span">Projects</span>
+                        </a>
+                    </ul>
                 </motion.div>
+
                 <motion.div
                     initial={{ opacity: 0, scale: 1.5 }}
                     animate={{ opacity: 1, scale: 1 }}
@@ -44,67 +73,7 @@ export default function TableOfContents() {
                         <a
                             rel="noreferrer"
                             className="table-of-content-text"
-                            href="#intro"
-                        >
-                            <span className="nav-span">Top</span>
-                        </a>
-                    </ul>
-                </motion.div>
-
-                <motion.div
-                    initial={{ opacity: 0, scale: 1.5 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{
-                        duration: 0.2,
-                        delay: 0.7,
-                        ease: [0, 0.71, 0.2, 1.01],
-                    }}
-                >
-                    <ul className="table-of-content">
-                        <a
-                            rel="noreferrer"
-                            className="table-of-content-text"
-                            href="#about"
-                        >
-                            <span className="nav-span">About Me</span>
-                        </a>
-                    </ul>
-                </motion.div>
-
-                <motion.div
-                    initial={{ opacity: 0, scale: 1.5 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{
-                        duration: 0.2,
-                        delay: 0.8,
-                        ease: [0, 0.71, 0.2, 1.01],
-                    }}
-                >
-                    <ul className="table-of-content">
-                        <a
-                            rel="noreferrer"
-                            className="table-of-content-text"
-                            href="#projects"
-                        >
-                            <span className="nav-span">Projects</span>
-                        </a>
-                    </ul>
-                </motion.div>
-
-                <motion.div
-                    initial={{ opacity: 0, scale: 1.5 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{
-                        duration: 0.2,
-                        delay: 0.9,
-                        ease: [0, 0.71, 0.2, 1.01],
-                    }}
-                >
-                    <ul className="table-of-content">
-                        <a
-                            rel="noreferrer"
-                            className="table-of-content-text"
-                            href="#contactform"
+                            href="/contact"
                         >
                             <span className="nav-span">Contact</span>
                         </a>
@@ -116,7 +85,7 @@ export default function TableOfContents() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
                         duration: 0.2,
-                        delay: 1.0,
+                        delay: 0.7,
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >
@@ -137,7 +106,7 @@ export default function TableOfContents() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
                         duration: 0.2,
-                        delay: 1.1,
+                        delay: 0.8,
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >

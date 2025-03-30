@@ -59,6 +59,10 @@ export default function About() {
                     Currently, I am seeking internships for{" "}
                     <span className="about-me-paragraph">Summer 2025</span>.
                 </p>
+                <p className="about-me-ptext">
+                    Browse the rest of my website using the navigation bar or
+                    list to see my works and contact details.
+                </p>
             </motion.div>
         </div>
     );

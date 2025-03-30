@@ -2,7 +2,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .project-title {
         font-size: calc(8px + 4vmin);
         font-family: "IBM Plex Mono", monospace;
@@ -31,7 +31,7 @@
     .header-name {
         font-size: calc(10px + 4vmin);
         margin: 0 0 3vmin;
-        padding-top: 12vmin;
+        padding-top: 18vmin;
         font-family: "IBM Plex Mono", monospace;
         font-weight: 600;
         font-style: normal;
@@ -131,7 +131,8 @@
 
     .header-name {
         font-size: calc(10px + 2.5vmin);
-        margin: 12vmin 0 3vmin;
+        margin: 0 0 3vmin;
+        padding-top: 18vmin;
         font-family: "IBM Plex Mono", monospace;
         font-weight: 600;
         font-style: normal;
@@ -140,7 +141,7 @@
     .project-images {
         object-fit: cover;
         overflow: hidden;
-        height: 40vmin;
+        height: 35vmin;
         margin: 0;
         max-width: 100%;
         border-radius: 2.5vmin;
@@ -150,11 +151,11 @@
     .project-cards {
         border-color: rgb(231, 231, 231);
         border-radius: 2.5vmin;
-        background-color: rgba(255, 255, 255, 0);
+        background-color: #ffffff00;
         backdrop-filter: blur(4px);
         color: black;
-        margin: 1.5vmin 0;
-        min-width: 400px;
+        margin: 2vmin auto;
+        width: 600px;
         text-align: left;
         box-shadow: 0 0px 10px 1px rgb(211, 211, 211);
     }
@@ -221,6 +222,10 @@
         font-family: "IBM Plex Mono", monospace;
         font-weight: 500;
         font-style: normal;
+    }
+
+    .header-desc {
+        margin: 0 15vw 3vh;
     }
 }
 /* dark mode*/

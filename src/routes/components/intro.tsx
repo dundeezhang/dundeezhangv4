@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
-const resumeClick = () => {
-    window.open("/resume.pdf", "_blank");
-};
+import uwcsWrBlack from "/icons/blackuwcswebring.svg";
+import uwcsWrWhite from "/icons/uwcscwebring.svg";
 
 export default function Intro() {
+    const isDarkMode = useMediaQuery({ query: "(prefers-color-scheme: dark)" });
+
     return (
         <div id="intro">
             <header className="App-header">
@@ -18,7 +20,7 @@ export default function Intro() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
                         duration: 0.5,
-                        delay: 0.5,
+                        delay: 0.3,
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >
@@ -52,7 +54,7 @@ export default function Intro() {
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{
                                 duration: 0.2,
-                                delay: 0.7,
+                                delay: 0.5,
                                 ease: [0, 0.71, 0.2, 1.01],
                             }}
                         >
@@ -73,7 +75,7 @@ export default function Intro() {
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{
                                 duration: 0.2,
-                                delay: 0.9,
+                                delay: 0.6,
                                 ease: [0, 0.71, 0.2, 1.01],
                             }}
                         >
@@ -94,40 +96,75 @@ export default function Intro() {
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{
                                 duration: 0.2,
-                                delay: 1.1,
+                                delay: 0.7,
                                 ease: [0, 0.71, 0.2, 1.01],
                             }}
                         >
                             <a
                                 rel="noreferrer"
-                                href="mailto:contact@dundeezhang.com"
+                                href="https://twitter.com/dundeezhang"
                                 target="_blank"
                             >
                                 <div className="circle-div">
-                                    <i className="fa-regular fa-envelope intro-icons"></i>
+                                    <i className="fa-brands fa-twitter intro-icons"></i>
+                                </div>
+                            </a>
+                        </motion.div>
+                    </li>
+                    <li>
+                        <motion.div
+                            initial={{ opacity: 0, scale: 1.5 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{
+                                duration: 0.2,
+                                delay: 0.8,
+                                ease: [0, 0.71, 0.2, 1.01],
+                            }}
+                        >
+                            <a
+                                rel="noreferrer"
+                                href="/resume.pdf"
+                                target="_blank"
+                            >
+                                <div className="circle-div">
+                                    <i className="intro-icons fa-solid fa-file"></i>
                                 </div>
                             </a>
                         </motion.div>
                     </li>
                 </ul>
                 <motion.div
-                    initial={{ opacity: 0, scale: 1.7 }}
+                    initial={{ opacity: 0, scale: 1.5 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
-                        duration: 0.4,
-                        delay: 1.3,
+                        duration: 0.2,
+                        delay: 0.9,
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                 >
-                    <div>
-                        <button
-                            type="button"
-                            onClick={resumeClick}
-                            className="resume-button"
+                    <div className="webring-div">
+                        <a
+                            className="cs-webring-links"
+                            href="https://cs.uwatering.com/#https://dundeezhang.com?nav=prev"
                         >
-                            <i className="fa-solid fa-arrow-up-right-from-square external-icon"></i>
-                            Resume
-                        </button>
+                            <i className="fa-solid fa-arrow-left"></i>
+                        </a>
+                        <a
+                            href="https://cs.uwatering.com/#https://dundeezhang.com"
+                            target="_blank"
+                        >
+                            <img
+                                src={isDarkMode ? uwcsWrWhite : uwcsWrBlack}
+                                alt="UWaterloo CS Web Ring"
+                                className="cs-webring"
+                            />
+                        </a>
+                        <a
+                            className="cs-webring-links"
+                            href="https://cs.uwatering.com/#https://dundeezhang.com?nav=next"
+                        >
+                            <i className="fa-solid fa-arrow-right"></i>
+                        </a>
                     </div>
                 </motion.div>
             </header>

@@ -2,6 +2,7 @@ import { motion, Variants } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 const viewProject = (repo: string): undefined => {
     window.open(`https://github.com/dundeezhang/${repo}`, "_blank");
@@ -53,7 +54,7 @@ const worksData: [
     [
         "Portfolio",
         "TypeScript, React, CSS",
-        "Website to show my projects, ideas, and experience.",
+        "Website to show my projects, ideas, and experience. Continue browsing this site to see the fruits of my labour.",
         "website.png",
         "dundeezhangv4",
         "Github Repository",
@@ -63,7 +64,7 @@ const worksData: [
     [
         "Blog",
         "TypeScript, React, Markdown",
-        "Blog site to share my notes, ideas and life updates.",
+        "Blog site to share my notes, ideas and life updates. Uses Markdown to write posts and uses Giscus to allow user commenting.",
         "blog.png",
         "blogv2",
         "Github Repository",
@@ -72,8 +73,8 @@ const worksData: [
     ],
     [
         "Auranate",
-        "Flask, JavaScript, Firebase",
-        "AI toolset to prepare and help people in the workforce.",
+        "Flask, Python, JavaScript, Firebase-Auth",
+        "AI toolset to prepare and help people in the workforce. Uses text and image generative AI to help users create resumes, cover letters, and portfolios.",
         "aura.png",
         "aura",
         "Github Repository",
@@ -82,8 +83,8 @@ const worksData: [
     ],
     [
         "yourDoList",
-        "Python, Flask, SQL, GPT-4o",
-        "To do list that generates subtasks for your main tasks.",
+        "Python, Flask, SQLAlchemy, GPT-4o",
+        "To do list that generates subtasks for your main tasks. Uses AI to help you break down your tasks into smaller, more manageable pieces so that you spend more time working; less time planning.",
         "todo.png",
         "todo",
         "Github Repository",
@@ -113,56 +114,58 @@ function WorksCard({
     externallink,
 }: Datas) {
     return (
-        <Col>
-            <motion.div
-                className="card-container"
-                initial="offscreen"
-                whileInView="onscreen"
-                viewport={{ amount: 0.5 }}
-                variants={CardDiv}
-            >
-                <Card className="project-cards">
-                    <a onClick={() => viewProject(repository)}>
-                        <Card.Img
-                            variant="top"
-                            src={`/works/${pic}`}
-                            className="project-images"
-                        />
-                    </a>
-
-                    <Card.Body className="ibm-plex-mono-light">
+        <Row className="card-container-works">
+            <Col>
+                <motion.div
+                    className="card-container"
+                    initial="offscreen"
+                    whileInView="onscreen"
+                    viewport={{ amount: 0.5 }}
+                    variants={CardDiv}
+                >
+                    <Card className="project-cards">
                         <a onClick={() => viewProject(repository)}>
-                            <Card.Title className="project-title">
-                                {title}
-                            </Card.Title>
-                            <Card.Subtitle className="mb-2 tools-used">
-                                {langs}
-                            </Card.Subtitle>
-                            <Card.Text className="about-project-desc">
-                                {desc}
-                            </Card.Text>
+                            <Card.Img
+                                variant="top"
+                                src={`/works/${pic}`}
+                                className="project-images"
+                            />
                         </a>
 
-                        <button
-                            type="button"
-                            onClick={() => viewProject(repository)}
-                            className="github-button"
-                        >
-                            <i className="fa-brands fa-github github-button-icon"></i>
-                            {buttontext}
-                        </button>
-                        <button
-                            type="button"
-                            onClick={() => openLink(externallink)}
-                            className={hideclass}
-                            id="external-link-button"
-                        >
-                            <i className="fa fa-external-link"></i>
-                        </button>
-                    </Card.Body>
-                </Card>
-            </motion.div>
-        </Col>
+                        <Card.Body className="ibm-plex-mono-light">
+                            <a onClick={() => viewProject(repository)}>
+                                <Card.Title className="project-title">
+                                    {title}
+                                </Card.Title>
+                                <Card.Subtitle className="mb-2 tools-used">
+                                    {langs}
+                                </Card.Subtitle>
+                                <Card.Text className="about-project-desc">
+                                    {desc}
+                                </Card.Text>
+                            </a>
+
+                            <button
+                                type="button"
+                                onClick={() => viewProject(repository)}
+                                className="github-button"
+                            >
+                                <i className="fa-brands fa-github github-button-icon"></i>
+                                {buttontext}
+                            </button>
+                            <button
+                                type="button"
+                                onClick={() => openLink(externallink)}
+                                className={hideclass}
+                                id="external-link-button"
+                            >
+                                <i className="fa fa-external-link"></i>
+                            </button>
+                        </Card.Body>
+                    </Card>
+                </motion.div>
+            </Col>
+        </Row>
     );
 }
 

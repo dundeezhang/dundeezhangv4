@@ -4,6 +4,10 @@
     margin-top: 3vh;
 }
 
+#about {
+    margin-bottom: 12vh;
+}
+
 span.about-me-paragraph {
     background: radial-gradient(
         circle at 100%,
