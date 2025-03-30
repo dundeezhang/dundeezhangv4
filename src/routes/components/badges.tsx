@@ -45,6 +45,7 @@ const Badges: React.FC = () => {
                     gap: "8px",
                     justifyContent: "center",
                     marginTop: "16px",
+                    flexWrap: "wrap",
                 }}
             >
                 {badgesData.map((badge, index) => (
