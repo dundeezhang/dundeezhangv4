@@ -40,6 +40,7 @@ const Badges: React.FC = () => {
         <div style={{ marginBottom: "12vh" }}>
             <p>Here are badges of a few friends' websites!</p>
             <div
+                className="badge-container"
                 style={{
                     display: "flex",
                     gap: "8px",

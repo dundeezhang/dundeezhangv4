@@ -4,6 +4,15 @@
     margin-top: 3vh;
 }
 
+p {
+    transition: transform 0.2s ease-in-out; /* Smooth transition for scaling */
+    display: inline-block; /* Ensure the anchor behaves like a block for scaling */
+}
+
+p:hover {
+    transform: scale(1.05); /* Slightly expand the badge on hover */
+}
+
 #about {
     margin-bottom: 12vh;
 }

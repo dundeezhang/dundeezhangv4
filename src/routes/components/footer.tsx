@@ -4,10 +4,8 @@ export default function Footer() {
     return (
         <div>
             <footer className="app-footer">
-                <span className="glow">
-                    <p className="p-foot">
-                        Dundee Zhang {currYear} - All Rights Reserved
-                    </p>
+                <span className="glow p-foot">
+                    Dundee Zhang {currYear} - All Rights Reserved
                 </span>
                 <ul className="social-cons">
                     <li>

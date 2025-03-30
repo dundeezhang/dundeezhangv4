@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
 import { useForm, ValidationError } from "@formspree/react";
 import MainBackground from "./components/background";
-import TableOfContents from "./components/tableofcontent";
+import TableOfContents from "./components/navbar";
 import Footer from "./components/footer";
 
 const HeaderAnimate = {
