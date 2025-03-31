@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import pfp from "../../img/specimenB.jpeg";
 import quack from "../../img/quack.mp3";
 import duck from "../../img/duck.png";
