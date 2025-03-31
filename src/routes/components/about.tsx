@@ -1,4 +1,4 @@
-import TiltImage from "./TiltImage";
+import TiltImage from "./tiltimage";
 
 export default function About() {
     return (
