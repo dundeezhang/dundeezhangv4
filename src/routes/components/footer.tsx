@@ -46,7 +46,7 @@ export default function Footer() {
                             target="_blank"
                         >
                             <div className="circle-div-footer">
-                                <i className="fa-brands fa-twitter footer-icons"></i>
+                                <i className="fa-brands fa-x-twitter footer-icons"></i>
                             </div>
                         </a>
                     </li>

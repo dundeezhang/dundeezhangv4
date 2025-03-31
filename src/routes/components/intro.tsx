@@ -100,7 +100,7 @@ export default function Intro() {
                                 target="_blank"
                             >
                                 <div className="circle-div">
-                                    <i className="fa-brands fa-twitter intro-icons"></i>
+                                    <i className="fa-brands fa-x-twitter intro-icons"></i>
                                 </div>
                             </a>
                         </motion.div>
