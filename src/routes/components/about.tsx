@@ -1,7 +1,10 @@
+import TiltImage from "./TiltImage";
+
 export default function About() {
     return (
         <div id="about">
             <h2 className="header-name">About Me</h2>
+            <TiltImage />
             <p className="about-me-ptext">
                 I am a first year (1B){" "}
                 <a
@@ -17,7 +20,6 @@ export default function About() {
                 Java, and Python with frameworks and tools such as React, Node,
                 Next, and SQL.
             </p>
-
             <p className="about-me-ptext">
                 I also maintain and update my blog when I have time. Check it
                 out{" "}

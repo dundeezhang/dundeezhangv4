@@ -5,6 +5,25 @@
     margin-top: 3vh;
 }
 
+#about {
+    align-items: center;
+}
+
+.about-me-profile {
+    border-radius: 100%;
+    max-width: 250px;
+    display: inline-block;
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: 6vmin auto 3vmin;
+    transition: all 0.2s ease-in-out;
+}
+
+.about-me-profile:hover {
+    transform: scale(1.05);
+}
+
 p {
     transition: transform 0.2s ease-in-out; /* Smooth transition for scaling */
     display: inline-block; /* Ensure the anchor behaves like a block for scaling */
