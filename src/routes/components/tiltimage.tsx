@@ -7,8 +7,13 @@ const TiltImage = () => {
     const [rotation, setRotation] = useState({ x: 0, y: 0 });
     const imageRef = useRef<HTMLDivElement>(null);
     const audioRef = useRef<HTMLAudioElement>(null);
-    const [hoverCount, setHoverCount] = useState(0);
+    const [clickCount, setClickCount] = useState(0);
     const [imageSource, setImageSource] = useState(pfp);
+    const [showCounter, setShowCounter] = useState(false);
+    const [cps, setCps] = useState(0);
+    const clickTimesRef = useRef<number[]>([]);
+    const [isDuck, setIsDuck] = useState(false);
+    const [isPulsing, setIsPulsing] = useState(false);
 
     useEffect(() => {
         const handleMouseMove = (e: MouseEvent) => {
@@ -35,16 +40,43 @@ const TiltImage = () => {
 
     const playQuack = () => {
         if (audioRef.current) {
+            audioRef.current.currentTime = 0;
             audioRef.current.play();
         }
-        setHoverCount((prevCount) => prevCount + 1);
+        setClickCount((prevCount) => prevCount + 1);
+
+        // Track click times
+        clickTimesRef.current = [...clickTimesRef.current, Date.now()];
+
+        // Trigger pulse animation
+        setIsPulsing(true);
+        setTimeout(() => {
+            setIsPulsing(false);
+        }, 200); // Adjust the duration of the pulse effect (in milliseconds)
     };
 
     useEffect(() => {
-        if (hoverCount >= 4) {
+        const intervalId = setInterval(() => {
+            // Filter out clicks older than 1 second
+            const now = Date.now();
+            const lastSecondClicks = clickTimesRef.current.filter(
+                (time) => time > now - 1000
+            );
+
+            // Update CPS
+            setCps(lastSecondClicks.length);
+        }, 1000);
+
+        return () => clearInterval(intervalId);
+    }, []);
+
+    useEffect(() => {
+        if (clickCount >= 5) {
             setImageSource(duck);
+            setShowCounter(true);
+            setIsDuck(true);
         }
-    }, [hoverCount]);
+    }, [clickCount]);
 
     return (
         <div
@@ -58,11 +90,20 @@ const TiltImage = () => {
             <img
                 src={imageSource}
                 alt="Profile"
-                style={{ height: "auto" }}
-                className="about-me-profile"
-                onMouseEnter={playQuack}
+                style={{
+                    height: "auto",
+                    borderRadius: isDuck ? "0" : "50%",
+                }}
+                className={`about-me-profile ${isPulsing ? "pulse" : ""}`}
+                onClick={playQuack}
             />
             <audio ref={audioRef} src={quack} preload="auto" />
+            {showCounter && (
+                <>
+                    <p>Clicks: {clickCount}</p>
+                    <p>CPS: {cps}</p>
+                </>
+            )}
         </div>
     );
 };
