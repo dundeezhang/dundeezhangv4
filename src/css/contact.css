@@ -20,7 +20,8 @@
         border-radius: 2vmin;
         padding: 2vmin 5vmin;
         border-color: rgba(255, 255, 255, 0);
-        background-color: rgb(241, 241, 241);
+        background-color: #ffffff00;
+        backdrop-filter: blur(4px);
         margin: 0 0 2vmin;
         font-family: "IBM Plex Mono", monospace;
         font-weight: 500;
@@ -90,7 +91,8 @@
         border-radius: 2vmin;
         padding: 1vmin 2.5vmin;
         border-color: rgba(255, 255, 255, 0);
-        background-color: rgb(241, 241, 241);
+        background-color: #ffffff00;
+        backdrop-filter: blur(4px);
         font-family: "IBM Plex Mono", monospace;
         font-weight: 500;
         font-style: normal;
