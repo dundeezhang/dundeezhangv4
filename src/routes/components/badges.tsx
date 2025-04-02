@@ -36,7 +36,7 @@ const badgesData: BadgeProps[] = [
         linkUrl: "https://csclub.uwaterloo.ca/~s23adhik/",
         altText: "s23adhik",
     },
-    // Add more badges here
+    // future badges
 ];
 
 const Badges: React.FC = () => {

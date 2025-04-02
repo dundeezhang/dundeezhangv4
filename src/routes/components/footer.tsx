@@ -53,7 +53,7 @@ export default function Footer() {
                     <li>
                         <a
                             rel="noreferrer"
-                            href="mailto:contact@dundeezhang.com"
+                            href="mailto:hello@dundeezha.ng"
                             style={{
                                 color: "black",
                             }}

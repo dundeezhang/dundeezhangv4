@@ -24,12 +24,22 @@ const HeaderAnimate = {
 };
 
 export default function Contact() {
-    const [state, handleSubmit] = useForm("mpwalqqy");
+    const [state, handleSubmit] = useForm("meoarglq");
     if (state.succeeded) {
         return (
             <div>
-                <h2 className="header-name">Contact Me</h2>
-                <p className="message-return">Message Sent!</p>
+                <TableOfContents />
+                <MainBackground />
+                <div className="contact-form-container">
+                    <h2 className="header-name">Contact Me</h2>
+                    <p style={{ marginBottom: "2rem" }}>
+                        Use this form to contact me for any inquiries or
+                        recruiting opportunites! <br />
+                        My email is also in the footer of this website.
+                    </p>
+                    <br />
+                    <p className="message-return">Message Sent!</p>
+                </div>
             </div>
         );
     }
@@ -37,8 +47,18 @@ export default function Contact() {
     if (state.errors) {
         return (
             <div>
-                <h2 className="header-name">Contact Me</h2>
-                <p className="message-return">Message Failed to Send</p>
+                <TableOfContents />
+                <MainBackground />
+                <div className="contact-form-container">
+                    <h2 className="header-name">Contact Me</h2>
+                    <p style={{ marginBottom: "2rem" }}>
+                        Use this form to contact me for any inquiries or
+                        recruiting opportunites! <br />
+                        My email is also in the footer of this website.
+                    </p>
+                    <br />
+                    <p className="message-return">Message Failed to Send</p>
+                </div>
             </div>
         );
     }
@@ -46,8 +66,18 @@ export default function Contact() {
     if (state.submitting) {
         return (
             <div>
-                <h2 className="header-name">Contact Me</h2>
-                <p className="message-return">Sending...</p>
+                <TableOfContents />
+                <MainBackground />
+                <div className="contact-form-container">
+                    <h2 className="header-name">Contact Me</h2>
+                    <p style={{ marginBottom: "2rem" }}>
+                        Use this form to contact me for any inquiries or
+                        recruiting opportunites! <br />
+                        My email is also in the footer of this website.
+                    </p>
+                    <br />
+                    <p className="message-return">Sending...</p>
+                </div>
             </div>
         );
     }
