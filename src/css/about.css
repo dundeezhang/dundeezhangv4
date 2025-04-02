@@ -7,6 +7,7 @@
 
 #about {
     align-items: center;
+    margin-bottom: 12vh;
 }
 
 .pulse {
@@ -47,10 +48,6 @@ p {
 
 p:hover {
     transform: scale(1.05); /* Slightly expand the badge on hover */
-}
-
-#about {
-    margin-bottom: 12vh;
 }
 
 span.about-me-paragraph {
