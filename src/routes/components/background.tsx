@@ -25,7 +25,7 @@ const GridOverlay = styled.div<{ x: number; y: number; isDarkMode: boolean }>`
     background-size: 35px 35px;
     pointer-events: none;
     transform: ${({ x, y }) =>
-        `translate(${-x / 100}px, ${-y / 100}px)`}; /* Subtle parallax effect */
+        `translate(${-x / 75}px, ${-y / 75}px)`};
 `;
 
 const GlassBackground = styled.div<{ isDarkMode: boolean }>`
@@ -36,14 +36,14 @@ const GlassBackground = styled.div<{ isDarkMode: boolean }>`
     height: 100%;
     background: ${({ isDarkMode }) =>
         isDarkMode ? "rgba(18, 18, 18, 0.5)" : "rgba(255, 255, 255, 0.2)"};
-    backdrop-filter: blur(1px); /* Background blur */
-    -webkit-backdrop-filter: blur(1px); /* For Safari */
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
     border: 1px solid
         ${({ isDarkMode }) =>
             isDarkMode
                 ? "rgba(255, 255, 255, 0.1)"
                 : "rgba(255, 255, 255, 0.3)"};
-    padding: 1rem; /* Padding inside the element */
+    padding: 1rem;
     box-shadow: 0 0 6px
         ${({ isDarkMode }) =>
             isDarkMode ? "rgba(0, 0, 0, 0.5)" : "rgba(0, 0, 0, 0.1)"};
