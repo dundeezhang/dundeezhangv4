@@ -14,9 +14,9 @@ export default function TableOfContents() {
             <div className="mobile-nav">
                 <div className="center-list">
                     <a href="/">Home</a>
-                    <a onClick={resumeClick}>Resume</a>
                     <a href="/works">Projects</a>
                     <a href="/contact">Contact</a>
+                    <a href="/resume.pdf" target="_blank">Resume</a>
                 </div>
             </div>
             <li className="navlist">
