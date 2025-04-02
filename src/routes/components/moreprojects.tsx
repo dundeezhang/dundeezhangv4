@@ -127,17 +127,15 @@ function MoreCard({
                 >
                     <Card className="project-cards">
                         <Card.Body className="ibm-plex-mono-light">
-                            <a onClick={() => viewProject(repository)}>
-                                <Card.Title className="project-title">
-                                    {title}
-                                </Card.Title>
-                                <Card.Subtitle className="mb-2 tools-used">
-                                    {langs}
-                                </Card.Subtitle>
-                                <Card.Text className="about-project-desc">
-                                    {desc}
-                                </Card.Text>
-                            </a>
+                            <Card.Title className="project-title">
+                                {title}
+                            </Card.Title>
+                            <Card.Subtitle className="mb-2 tools-used">
+                                {langs}
+                            </Card.Subtitle>
+                            <Card.Text className="about-project-desc">
+                                {desc}
+                            </Card.Text>
 
                             <button
                                 type="button"

@@ -156,15 +156,13 @@
         height: 35vmin;
     }
 
-    .project-cards {
-        width: 600px;
+    .project-images:hover {
+        filter: brightness(75%);
+        transition: all 0.5s;
     }
 
-    .project-cards:hover {
-        -webkit-transition: all 0.2s;
-        -moz-transition: all 0.2s;
-        transition: all 0.2s;
-        transform: scale(1.03);
+    .project-cards {
+        width: 600px;
     }
 
     .github-button {
