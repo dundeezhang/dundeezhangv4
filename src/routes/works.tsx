@@ -15,8 +15,8 @@ function Works() {
 
                     <p className="header-desc">
                         View most of my projects here! <br />
-                        Although do check out my GitHub because almost
-                        everything I do is uploaded there:{" "}
+                        Also check out my GitHub since almost everything I do is
+                        uploaded there:{" "}
                         <span className="glow">
                             <a
                                 href="https://github.com/dundeezhang"
