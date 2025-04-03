@@ -74,7 +74,7 @@
     font-style: normal;
 }
 
-.hide-button {
+.tag-button {
     color: rgb(0, 0, 0);
     border-radius: 100vmin;
     border-color: rgba(255, 255, 255, 0);
@@ -84,7 +84,7 @@
     font-style: normal;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 650px) {
     .project-title {
         font-size: calc(8px + 4vmin);
     }
@@ -124,14 +124,19 @@
         font-size: calc(8px + 2vmin);
     }
 
-    .hide-button {
+    .tag-button {
         font-size: calc(5px + 2vmin);
         padding: 1.5vmin 4vmin;
-        margin: 1vmin 0 2vmin;
+        margin: 5px 5px;
+    }
+
+    .tag-container {
+        max-width: 600px;
+        margin: 2vmin auto;
     }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 650px) {
     .project-title {
         font-size: calc(8px + 1.7vmin);
     }
@@ -162,7 +167,7 @@
     }
 
     .project-cards {
-        width: 600px;
+        max-width: 600px;
     }
 
     .github-button {
@@ -193,10 +198,15 @@
         margin: auto 10vw;
     }
 
-    .hide-button {
+    .tag-button {
         font-size: calc(4px + 1.2vmin);
         padding: 0.4vmin 2vmin;
-        margin: 0 0 12vmin;
+        margin: 0 5px 10px;
+    }
+
+    .tag-container {
+        max-width: 600px;
+        margin: 0 auto 3vmin;
     }
 
     .header-desc {
@@ -253,12 +263,12 @@
         color: white;
     }
 
-    .hide-button {
+    .tag-button {
         color: white;
         background-color: rgb(60, 60, 60);
     }
 
-    .hide-button:hover {
+    .tag-button:hover {
         background-color: rgb(72, 72, 72);
         color: white;
     }

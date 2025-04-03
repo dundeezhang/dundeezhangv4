@@ -1,27 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
-import { useState } from "react";
-
 import WorkCards from "./components/projectcards";
-import MoreCards from "./components/moreprojects";
 import TableOfContents from "./components/navbar";
 import MainBackground from "./components/background";
 import Footer from "./components/footer";
 
 function Works() {
-    const [openMore, setOpenMore] = useState(false);
-
-    const [buttonMoreText, setButtonMoreText] = useState("Show More Projects");
-
-    const toggleMore = () => {
-        setButtonMoreText(
-            buttonMoreText === "Show More Projects"
-                ? "Show Less Projects"
-                : "Show More Projects"
-        );
-        setOpenMore(!openMore);
-    };
-
     return (
         <div className="projects-wrapper">
             <div className="Body" id="projects">
@@ -46,20 +30,6 @@ function Works() {
                         <Container fluid>
                             <WorkCards />
                         </Container>
-
-                        {openMore && (
-                            <Container fluid>
-                                <MoreCards />
-                            </Container>
-                        )}
-                        <button
-                            type="button"
-                            onClick={toggleMore}
-                            className="hide-button"
-                            id="toggle-button"
-                        >
-                            {buttonMoreText}
-                        </button>
                     </div>
                 </body>
 
