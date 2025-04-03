@@ -354,7 +354,7 @@ export default function WorkCards() {
                         }`}
                         onClick={() => handleTagClick(tag)}
                         style={{
-                            backgroundColor: selectedTags.includes(tag)
+                            backgroundColor: selectedTags.includes(tag) // color stuff goes here
                                 ? isDarkMode
                                     ? "white"
                                     : "black"
