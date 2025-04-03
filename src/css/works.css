@@ -162,7 +162,7 @@
     }
 
     .project-images:hover {
-        filter: brightness(75%);
+        filter: brightness(90%);
         transition: all 0.5s;
     }
 
@@ -233,6 +233,10 @@
 
     .project-images {
         filter: brightness(50%);
+    }
+
+    .project-images:hover {
+        filter: brightness(75%);
     }
 
     .project-cards {
