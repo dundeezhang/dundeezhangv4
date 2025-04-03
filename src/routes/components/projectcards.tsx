@@ -261,48 +261,42 @@ function WorksCard({
 export default function WorkCards() {
     const [searchTerm, setSearchTerm] = useState("");
     const [worksData, setWorksData] = useState(rawWorksData);
+    const [selectedTags, setSelectedTags] = useState<string[]>([]);
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+        setIsDarkMode(mediaQuery.matches);
+
+        const handleChange = (event: MediaQueryListEvent) => {
+            setIsDarkMode(event.matches);
+        };
+
+        mediaQuery.addEventListener("change", handleChange);
+
+        return () => {
+            mediaQuery.removeEventListener("change", handleChange);
+        };
+    }, []);
 
     const handleTagClick = (tag: string) => {
-        let searchString = "";
-        switch (tag) {
-            case "All":
-                break;
-            case "Web":
-                searchString =
-                    "TypeScript, JavaScript, HTML, CSS, React, Next.js, Flask";
-                break;
-            case "C++":
-                searchString = "C++";
-                break;
-            case "C":
-                searchString = "C";
-                break;
-            case "Python":
-                searchString = "Python";
-                break;
-            case "Java":
-                searchString = "Java, !JavaScript";
-                break;
-            case "JavaScript":
-                searchString = "JavaScript";
-                break;
-            case "GoLang":
-                searchString = "GoLang";
-                break;
-            case "SQL":
-                searchString = "SQL";
-                break;
-            case "Firebase":
-                searchString = "Firebase";
-                break;
-            case "GPT":
-                searchString = "GPT";
-                break;
-            default:
-                searchString = tag;
-        }
-        setSearchTerm(searchString);
+        setSelectedTags((prevTags) => {
+            if (prevTags.includes(tag)) {
+                return prevTags.filter((t) => t !== tag);
+            } else {
+                return [...prevTags, tag];
+            }
+        });
     };
+
+    useEffect(() => {
+        let searchString = "";
+        if (selectedTags.length > 0 && !selectedTags.includes("All")) {
+            searchString = selectedTags.join(", ");
+        }
+
+        setSearchTerm(searchString);
+    }, [selectedTags]);
 
     useEffect(() => {
         const filteredData = rawWorksData.filter((item, index) => {
@@ -330,6 +324,18 @@ export default function WorkCards() {
 
     const lastProject = rawWorksData[rawWorksData.length - 1];
 
+    const tagList = [
+        "All",
+        "Web",
+        "JavaScript",
+        "Python",
+        "C++",
+        "GoLang",
+        "SQL",
+        "Firebase",
+        "GPT",
+    ];
+
     return (
         <>
             <input
@@ -340,60 +346,29 @@ export default function WorkCards() {
                 style={{ maxWidth: "600px", margin: "20px 0" }}
             />
             <div className="tag-container">
-                <button
-                    className="tag-button tag-button"
-                    onClick={() => handleTagClick("All")}
-                >
-                    All
-                </button>
-                <button
-                    className="tag-button tag-button"
-                    onClick={() => handleTagClick("Web")}
-                >
-                    Web Development
-                </button>
-                <button
-                    className="tag-button tag-button"
-                    onClick={() => handleTagClick("JavaScript")}
-                >
-                    JavaScript
-                </button>
-                <button
-                    className="tag-button tag-button"
-                    onClick={() => handleTagClick("Python")}
-                >
-                    Python
-                </button>
-                <button
-                    className="tag-button tag-button"
-                    onClick={() => handleTagClick("C++")}
-                >
-                    C++
-                </button>
-                <button
-                    className="tag-button tag-button"
-                    onClick={() => handleTagClick("GoLang")}
-                >
-                    GoLang
-                </button>
-                <button
-                    className="tag-button tag-button"
-                    onClick={() => handleTagClick("SQL")}
-                >
-                    SQL
-                </button>
-                <button
-                    className="tag-button tag-button"
-                    onClick={() => handleTagClick("Firebase")}
-                >
-                    Firebase
-                </button>
-                <button
-                    className="tag-button tag-button"
-                    onClick={() => handleTagClick("GPT")}
-                >
-                    GPT
-                </button>
+                {tagList.map((tag) => (
+                    <button
+                        key={tag}
+                        className={`tag-button ${
+                            selectedTags.includes(tag) ? "selected" : ""
+                        }`}
+                        onClick={() => handleTagClick(tag)}
+                        style={{
+                            backgroundColor: selectedTags.includes(tag)
+                                ? isDarkMode
+                                    ? "white"
+                                    : "black"
+                                : "",
+                            color: selectedTags.includes(tag)
+                                ? isDarkMode
+                                    ? "black"
+                                    : "white"
+                                : "",
+                        }}
+                    >
+                        {tag}
+                    </button>
+                ))}
             </div>
             {worksData.map(
                 ([
