@@ -150,7 +150,7 @@ const rawWorksData: [
         "Skibidention",
         "Github Repository",
         "hide-button-class",
-        "",
+        "https://readmd.dhz.app/",
     ],
     [
         "NHSCSC Website",
@@ -305,7 +305,10 @@ export default function WorkCards() {
     };
 
     useEffect(() => {
-        const filteredData = rawWorksData.filter((item) => {
+        const filteredData = rawWorksData.filter((item, index) => {
+            if (index === rawWorksData.length - 1) {
+                return false;
+            }
             const [title, langs, desc] = item;
             const tags = searchTerm
                 .toLowerCase()
@@ -324,6 +327,8 @@ export default function WorkCards() {
         });
         setWorksData(filteredData);
     }, [searchTerm]);
+
+    const lastProject = rawWorksData[rawWorksData.length - 1];
 
     return (
         <>
@@ -413,6 +418,19 @@ export default function WorkCards() {
                         key={title}
                     />
                 )
+            )}
+            {lastProject && (
+                <WorksCard
+                    title={lastProject[0]}
+                    langs={lastProject[1]}
+                    desc={lastProject[2]}
+                    pic={lastProject[3]}
+                    repository={lastProject[4]}
+                    buttontext={lastProject[5]}
+                    hideclass={lastProject[6]}
+                    externallink={lastProject[7]}
+                    key={lastProject[0]}
+                />
             )}
         </>
     );
