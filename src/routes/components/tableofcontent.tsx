@@ -1,14 +1,6 @@
 import { motion } from "framer-motion";
 
 export default function TableOfContents() {
-    const resumeClick = () => {
-        window.open("/resume.pdf", "_blank");
-    };
-
-    const blogClick = () => {
-        window.open("https://blog.dhz.app", "_blank");
-    };
-
     return (
         <div className="table-of-content-wrapper">
             <div className="mobile-nav">
@@ -16,7 +8,9 @@ export default function TableOfContents() {
                     <a href="/">Home</a>
                     <a href="/works">Projects</a>
                     <a href="/contact">Contact</a>
-                    <a href="/resume.pdf" target="_blank">Resume</a>
+                    <a href="/resume.pdf" target="_blank">
+                        Resume
+                    </a>
                 </div>
             </div>
             <li className="navlist">
@@ -91,8 +85,10 @@ export default function TableOfContents() {
                 >
                     <ul className="table-of-content">
                         <a
-                            onClick={blogClick}
+                            rel="noreferrer"
                             className="table-of-content-text"
+                            href="https://blog.dhz.app"
+                            target="_blank"
                         >
                             <span className="nav-span">
                                 Blog <i className="fa fa-external-link"></i>
@@ -112,8 +108,10 @@ export default function TableOfContents() {
                 >
                     <ul className="table-of-content">
                         <a
-                            onClick={resumeClick}
+                            rel="noreferrer"
                             className="table-of-content-text"
+                            href="/resume.pdf"
+                            target="_blank"
                         >
                             <span className="nav-span">
                                 Resume <i className="fa fa-external-link"></i>
