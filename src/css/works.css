@@ -127,7 +127,7 @@
     .tag-button {
         font-size: calc(5px + 2vmin);
         padding: 1.5vmin 4vmin;
-        margin: 5px 5px;
+        margin: 5px;
     }
 
     .tag-container {
