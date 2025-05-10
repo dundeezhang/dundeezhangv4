@@ -6,14 +6,14 @@ import About from "./components/about";
 import Badges from "./components/badges";
 
 export default function Home() {
-    return (
-        <div>
-            <MainBackground />
-            <TableOfContents />
-            <Intro />
-            <About />
-            <Badges />
-            <Footer />
-        </div>
-    );
+  return (
+    <div>
+      <MainBackground />
+      <TableOfContents />
+      <Intro />
+      <About />
+      <Badges />
+      <Footer />
+    </div>
+  );
 }

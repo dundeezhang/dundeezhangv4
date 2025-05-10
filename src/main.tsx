@@ -17,22 +17,22 @@ import "./css/footer.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <Home />,
-    },
-    {
-        path: "/works",
-        element: <Works />,
-    },
-    {
-        path: "/contact",
-        element: <Contact />,
-    },
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/works",
+    element: <Works />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
 ]);
 
 createRoot(document.getElementById("root")!).render(
-    <StrictMode>
-        <RouterProvider router={router} />
-    </StrictMode>
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>
 );
