@@ -1,279 +1,294 @@
 .hide-button-class {
-    display: none;
+  display: none;
+}
+
+.projects-container {
+  margin-bottom: 50px;
 }
 
 .project-title {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 600;
-    font-style: normal;
-    margin: 0.8vmin 0 1vmin;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0.8vmin 0 1vmin;
 }
 
 .tools-used {
-    color: rgb(82, 82, 82);
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
+  color: rgb(82, 82, 82);
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .about-project-desc {
-    margin: 0;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
-    color: rgb(51, 51, 51);
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(51, 51, 51);
 }
 
 .header-name {
-    margin: 0 0 3vmin;
-    padding-top: 18vmin;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 600;
-    font-style: normal;
+  margin: 0 0 3vmin;
+  padding-top: 18vmin;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .project-images {
-    object-fit: cover;
-    overflow: hidden;
-    margin: 0;
-    max-width: 100%;
-    border-radius: 2.5vmin;
-    filter: brightness(70%);
+  object-fit: cover;
+  overflow: hidden;
+  margin: 0;
+  max-width: 100%;
+  border-radius: 2.5vmin;
+  filter: brightness(70%);
 }
 
 .project-cards {
-    border-color: rgb(231, 231, 231);
-    border-radius: 2.5vmin;
-    background-color: #ffffff00;
-    backdrop-filter: blur(4px);
-    color: black;
-    margin: 2vmin auto;
-    text-align: left;
-    box-shadow: 0 0px 10px 1px rgb(211, 211, 211);
+  border-color: rgb(231, 231, 231);
+  border-radius: 2.5vmin;
+  background-color: #ffffff00;
+  backdrop-filter: blur(4px);
+  color: black;
+  margin: 2vmin auto;
+  text-align: left;
+  box-shadow: 0 0px 10px 1px rgb(211, 211, 211);
 }
 
 .github-button {
-    color: rgb(0, 0, 0);
-    border-radius: 100vmin;
-    border-color: rgba(255, 255, 255, 0);
-    background-color: rgb(166, 237, 252);
-    margin: 2vmin 0 0;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
+  color: rgb(0, 0, 0);
+  border-radius: 100vmin;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgb(241, 241, 241);
+  margin: 2vmin 0 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
 }
 
 #external-link-button {
-    color: rgb(0, 0, 0);
-    border-radius: 100vmin;
-    border-color: rgba(255, 255, 255, 0);
-    background-color: rgb(241, 241, 241);
-    margin: 2vmin 0 0 2vmin;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
+  color: rgb(0, 0, 0);
+  border-radius: 100vmin;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgb(241, 241, 241);
+  margin: 2vmin 0 0 2vmin;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .tag-button {
-    color: rgb(0, 0, 0);
-    border-radius: 100vmin;
-    border-color: rgba(255, 255, 255, 0);
-    background-color: rgb(166, 237, 252);
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
+  color: rgb(0, 0, 0);
+  border-radius: 100vmin;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgb(241, 241, 241);
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.tag-button:hover {
+  background-color: rgb(211, 211, 211);
+  color: rgb(0, 0, 0);
+  transition: all 0.5s;
 }
 
 @media only screen and (max-width: 650px) {
-    .project-title {
-        font-size: calc(8px + 4vmin);
-    }
+  .project-title {
+    font-size: calc(8px + 4vmin);
+  }
 
-    .tools-used {
-        font-size: calc(8px + 2vmin);
-    }
+  .tools-used {
+    font-size: calc(8px + 2vmin);
+  }
 
-    .about-project-desc {
-        font-size: calc(8px + 1.8vmin);
-    }
+  .about-project-desc {
+    font-size: calc(8px + 1.8vmin);
+  }
 
-    .header-name {
-        font-size: calc(10px + 4vmin);
-    }
+  .header-name {
+    font-size: calc(10px + 4vmin);
+    margin-top: 5vh;
+  }
 
-    .project-images {
-        height: 60vmin;
-    }
+  .project-images {
+    height: 60vmin;
+  }
 
-    .project-cards {
-        min-width: 350px;
-    }
+  .project-cards {
+    min-width: 350px;
+  }
 
-    .github-button {
-        font-size: calc(8px + 2vmin);
-        padding: 2vmin 5vmin;
-    }
+  .github-button {
+    font-size: calc(8px + 2vmin);
+    padding: 2vmin 5vmin;
+  }
 
-    #external-link-button {
-        font-size: calc(8px + 2vmin);
-        padding: 2vmin 5vmin;
-    }
+  #external-link-button {
+    font-size: calc(8px + 2vmin);
+    padding: 2vmin 5vmin;
+  }
 
-    .github-button-icon {
-        margin: auto 2vmin auto auto;
-        font-size: calc(8px + 2vmin);
-    }
+  .github-button-icon {
+    margin: auto 2vmin auto auto;
+    font-size: calc(8px + 2vmin);
+  }
 
-    .tag-button {
-        font-size: calc(5px + 2vmin);
-        padding: 1.5vmin 4vmin;
-        margin: 5px;
-    }
+  .tag-button {
+    font-size: calc(5px + 2vmin);
+    padding: 1.5vmin 4vmin;
+    margin: 5px;
+  }
 
-    .tag-container {
-        max-width: 600px;
-        margin: 2vmin auto;
-    }
+  .tag-container {
+    max-width: 600px;
+    margin: 2vmin auto;
+  }
 }
 
 @media only screen and (min-width: 650px) {
-    .project-title {
-        font-size: calc(8px + 1.7vmin);
-    }
+  .project-title {
+    font-size: calc(8px + 1.7vmin);
+  }
 
-    .tools-used {
-        font-size: calc(6 + 1.2vmin);
-    }
+  .tools-used {
+    font-size: calc(6 + 1.2vmin);
+  }
 
-    .about-project-desc {
-        font-size: calc(6 + 1.2vmin);
-    }
+  .about-project-desc {
+    font-size: calc(6 + 1.2vmin);
+  }
 
-    .about-project-desc:hover {
-        transform: scale(1); /* little oopsies */
-    }
+  .about-project-desc:hover {
+    transform: scale(1); /* little oopsies */
+  }
 
-    .header-name {
-        font-size: calc(8px + 2.5vmin);
-    }
+  .header-name {
+    font-size: calc(8px + 2.5vmin);
+  }
 
-    .project-images {
-        height: 35vmin;
-    }
+  .project-images {
+    height: 35vmin;
+  }
 
-    .project-images:hover {
-        filter: brightness(90%);
-        transition: all 0.5s;
-    }
+  .project-images:hover {
+    filter: brightness(90%);
+    transition: all 0.5s;
+  }
 
-    .project-cards {
-        max-width: 600px;
-    }
+  .project-cards {
+    max-width: 600px;
+  }
 
-    .github-button {
-        font-size: calc(6px + 1vmin);
-        padding: 1vmin 2.5vmin;
-    }
+  .github-button {
+    font-size: calc(6px + 1vmin);
+    padding: 1vmin 2.5vmin;
+  }
 
-    #external-link-button {
-        font-size: calc(6px + 1vmin);
-        padding: 1vmin 2.5vmin;
-    }
+  #external-link-button {
+    font-size: calc(6px + 1vmin);
+    padding: 1vmin 2.5vmin;
+  }
 
-    #external-link-button:hover {
-        background-color: rgb(212, 250, 255);
-        color: rgb(13, 37, 58);
-    }
+  #external-link-button:hover {
+    background-color: rgb(211, 211, 211);
+    color: rgb(0, 0, 0);
+    transition: all 0.5s;
+  }
 
-    .github-button:hover {
-        color: rgb(13, 37, 58);
-        background-color: rgb(150, 220, 230);
-    }
+  .github-button:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(211, 211, 211);
 
-    .github-button-icon {
-        margin: auto 1vmin auto auto;
-    }
+    transition: all 0.5s;
+  }
 
-    .card-container-works {
-        margin: auto 10vw;
-    }
+  .github-button-icon {
+    margin: auto 1vmin auto auto;
+  }
 
-    .tag-button {
-        font-size: calc(4px + 1.2vmin);
-        padding: 0.4vmin 2vmin;
-        margin: 0 5px 10px;
-    }
+  .card-container-works {
+    margin: auto 10vw;
+  }
 
-    .tag-container {
-        max-width: 600px;
-        margin: 0 auto 3vmin;
-    }
+  .tag-button {
+    font-size: calc(4px + 1.2vmin);
+    padding: 0.4vmin 2vmin;
+    margin: 0 5px 10px;
+  }
 
-    .header-desc {
-        margin: 0 15vw 3vh;
-    }
+  .tag-container {
+    max-width: 600px;
+    margin: 0 auto 3vmin;
+  }
+
+  .header-desc {
+    margin: 0 15vw 3vh;
+  }
 }
 /* dark mode*/
 @media (prefers-color-scheme: dark) {
-    .project-title {
-        color: white;
-    }
+  .project-title {
+    color: white;
+  }
 
-    .tools-used {
-        color: rgb(184, 184, 184);
-    }
+  .tools-used {
+    color: rgb(184, 184, 184);
+  }
 
-    .about-project-desc {
-        color: rgb(211, 211, 211);
-    }
+  .about-project-desc {
+    color: rgb(211, 211, 211);
+  }
 
-    .header-name {
-        color: white;
-    }
+  .header-name {
+    color: white;
+  }
 
-    .project-images {
-        filter: brightness(50%);
-    }
+  .project-images {
+    filter: brightness(50%);
+  }
 
-    .project-images:hover {
-        filter: brightness(75%);
-    }
+  .project-images:hover {
+    filter: brightness(75%);
+  }
 
-    .project-cards {
-        background-color: #00000000;
-        backdrop-filter: blur(4px);
-        color: white;
-        box-shadow: 0 0px 10px 1px rgb(18, 18, 18);
-        border-color: #252525;
-    }
+  .project-cards {
+    background-color: #00000000;
+    backdrop-filter: blur(4px);
+    color: white;
+    box-shadow: 0 0px 10px 1px rgb(18, 18, 18);
+    border-color: #252525;
+  }
 
-    .github-button {
-        color: white;
-        background-color: rgb(60, 60, 60);
-    }
+  .github-button {
+    color: white;
+    background-color: rgb(60, 60, 60);
+  }
 
-    .github-button:hover {
-        background-color: rgb(72, 72, 72);
-        color: white;
-    }
+  .github-button:hover {
+    background-color: rgb(80, 80, 80);
+    color: white;
+  }
 
-    #external-link-button {
-        color: white;
-        background-color: rgb(60, 60, 60);
-    }
+  #external-link-button {
+    color: white;
+    background-color: rgb(60, 60, 60);
+  }
 
-    #external-link-button:hover {
-        background-color: rgb(72, 72, 72);
-        color: white;
-    }
+  #external-link-button:hover {
+    background-color: rgb(80, 80, 80);
+    color: white;
+  }
 
-    .tag-button {
-        color: white;
-        background-color: rgb(60, 60, 60);
-    }
+  .tag-button {
+    color: white;
+    background-color: rgb(60, 60, 60);
+  }
 
-    .tag-button:hover {
-        background-color: rgb(72, 72, 72);
-        color: white;
-    }
+  .tag-button:hover {
+    background-color: rgb(80, 80, 80);
+    color: white;
+    transition: all 0.5s;
+  }
 }

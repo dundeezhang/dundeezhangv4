@@ -1,400 +1,365 @@
 .App {
-    text-align: center;
+  text-align: center;
 }
 
 .badge-container a {
-    transition: transform 0.1s ease-in-out; /* Smooth transition for scaling */
-    display: inline-block; /* Ensure the anchor behaves like a block for scaling */
+  transition: transform 0.1s ease-in-out; /* Smooth transition for scaling */
+  display: inline-block; /* Ensure the anchor behaves like a block for scaling */
 }
 
 .badge-container a:hover {
-    transform: scale(1.1); /* Slightly expand the badge on hover */
+  transform: scale(1.1); /* Slightly expand the badge on hover */
 }
 
 .dundee-name {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: 0.15em solid rgb(18, 100, 112); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    animation: typing 0.8s steps(40, end), blink-caret 0.75s step-end infinite;
-    position: relative;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(18, 100, 112); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: typing 0.8s steps(40, end), blink-caret 0.75s step-end infinite;
+  position: relative;
 }
 
 span.glow {
-    background: radial-gradient(
-        circle at 100%,
-        rgb(18, 100, 112),
-        rgb(49, 167, 185),
-        rgb(11, 68, 76),
-        rgb(27, 150, 169),
-        rgb(18, 100, 112)
-    );
-    font-weight: 600;
-    background-size: 200% auto;
-    color: #000;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animatedTextGradient 2.2s linear infinite;
+  background: radial-gradient(
+    circle at 100%,
+    rgb(226, 137, 231),
+    rgb(231, 160, 234),
+    rgb(209, 79, 216),
+    rgb(231, 160, 234),
+    rgb(226, 137, 231)
+  );
+  font-weight: 600;
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animatedTextGradient 2.2s linear infinite;
 }
 
 @keyframes animatedTextGradient {
-    to {
-        background-position: 200% center;
-    }
+  to {
+    background-position: 200% center;
+  }
 }
 
 .dundee-container {
-    position: relative;
-    width: fit-content;
+  position: relative;
+  width: fit-content;
 }
 
 /* The typing effect */
 @keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-    from,
-    to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: rgb(18, 100, 112);
-    }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(18, 100, 112);
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .App-header {
-        background-color: rgba(255, 255, 255, 0);
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: calc(10px + 2vmin);
-        color: black;
-        padding: 0;
-    }
+  .App-header {
+    background-color: rgba(255, 255, 255, 0);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+    padding: 0;
+  }
 
-    ul.social-cons {
-        list-style-type: none;
-        padding-left: 0;
-        margin: 0 0 6vmin;
-    }
-    ul > li {
-        list-style-type: none;
-        display: inline-block;
-        margin: 0 3vmin;
-        text-align: center;
-        color: black;
-        font-size: calc(10px + 2vmin);
-        padding: 0;
-    }
+  ul.social-cons {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0 0 6vmin;
+  }
+  ul > li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 3vmin;
+    text-align: center;
+    color: black;
+    font-size: calc(10px + 2vmin);
+    padding: 0;
+  }
 
-    a {
-        color: black;
-    }
+  a {
+    color: black;
+  }
 
-    a:visited {
-        color: black;
-    }
+  a:visited {
+    color: black;
+  }
 
-    p {
-        font-size: calc(10px + 1vmin);
-        margin: 0 3vmin;
-        font-weight: 500;
-    }
+  p {
+    font-size: calc(10px + 1vmin);
+    margin: 0 3vmin;
+    font-weight: 500;
+  }
 
-    p.website-intro-top {
-        font-size: calc(10px + 1.9vmin);
-        margin: 0 3vmin 10vmin;
-        color: rgb(80, 80, 80);
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        font-style: normal;
-    }
+  p.website-intro-top {
+    font-size: calc(10px + 1.9vmin);
+    margin: 0 3vmin 10vmin;
+    color: rgb(80, 80, 80);
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+  }
 
-    .resume {
-        margin-top: 6vmin;
-    }
+  .resume {
+    margin-top: 6vmin;
+  }
 
-    a.csText {
-        color: rgb(7, 88, 143);
-        text-decoration: none;
-    }
+  .dundee-name {
+    font-size: calc(10px + 4vmin);
+    margin: 3vmin auto;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(18, 100, 112);
+  }
 
-    a.csText:visited {
-        color: rgb(7, 88, 143);
-    }
+  .resume-button {
+    color: rgb(36, 46, 51);
+    border-radius: 100vmin;
+    padding: 2vmin 5vmin;
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgb(166, 237, 252);
+    margin: 0;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: calc(10px + 1.9vmin);
+  }
 
-    a.schoolText {
-        color: rgb(163, 38, 163);
-        text-decoration: none;
-    }
+  .circle-div {
+    background-color: rgba(241, 241, 241, 0);
+    border-radius: 100%;
+    width: calc(10px + 10vmin);
+    height: calc(10px + 10vmin);
+    position: relative;
+    text-align: center;
+  }
 
-    a.schoolText:visited {
-        color: rgb(163, 38, 163);
-    }
-
-    .dundee-name {
-        font-size: calc(10px + 4vmin);
-        margin: 3vmin auto;
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 600;
-        font-style: normal;
-        color: rgb(18, 100, 112);
-    }
-
-    .resume-button {
-        color: rgb(36, 46, 51);
-        border-radius: 100vmin;
-        padding: 2vmin 5vmin;
-        border-color: rgba(255, 255, 255, 0);
-        background-color: rgb(166, 237, 252);
-        margin: 0;
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        font-style: normal;
-        font-size: calc(10px + 1.9vmin);
-    }
-
-    .circle-div {
-        background-color: rgba(241, 241, 241, 0);
-        border-radius: 100%;
-        width: calc(10px + 10vmin);
-        height: calc(10px + 10vmin);
-        position: relative;
-        text-align: center;
-    }
-
-    .intro-icons {
-        font-size: calc(10px + 2.5vmin);
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  .intro-icons {
+    font-size: calc(10px + 2.5vmin);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media only screen and (min-width: 600px) {
-    .App-header {
-        background-color: rgba(255, 255, 255, 0);
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: calc(10px + 1vmin);
-        color: black;
-        padding: 0;
-    }
+  .App-header {
+    background-color: rgba(255, 255, 255, 0);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 1vmin);
+    color: black;
+    padding: 0;
+  }
 
-    ul.social-cons {
-        list-style-type: none;
-        padding-left: 0;
-        margin: 0 0 3vmin;
-    }
-    ul > li {
-        list-style-type: none;
-        display: inline-block;
-        margin: 0 3vmin;
-        text-align: center;
-        color: black;
-        font-size: calc(10px + 2vmin);
-        padding: 0;
-    }
+  ul.social-cons {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0 0 3vmin;
+  }
+  ul > li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 3vmin;
+    text-align: center;
+    color: black;
+    font-size: calc(10px + 2vmin);
+    padding: 0;
+  }
 
-    a {
-        text-decoration: none;
-        color: black;
-    }
+  a {
+    text-decoration: none;
+    color: black;
+  }
 
-    a:visited {
-        color: black;
-    }
+  a:visited {
+    color: black;
+  }
 
-    p {
-        font-size: calc(8px + 1vmin);
-        margin: 0 3vmin;
-    }
+  p {
+    font-size: calc(8px + 1vmin);
+    margin: 0 3vmin;
+  }
 
-    p.website-intro-top {
-        font-size: calc(10px + 1vmin);
-        margin: 0 3vmin 3vmin;
-        color: rgb(80, 80, 80);
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        font-style: normal;
-    }
+  p.website-intro-top {
+    font-size: calc(10px + 1vmin);
+    margin: 0 3vmin 3vmin;
+    color: rgb(80, 80, 80);
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+  }
 
-    .resume {
-        margin-top: 6vmin;
-    }
+  .resume {
+    margin-top: 6vmin;
+  }
 
-    a.csText {
-        font-size: calc(10px + 1vmin);
-        color: rgb(7, 88, 143);
-        text-decoration: none;
-    }
+  a.csText {
+    font-size: calc(10px + 1vmin);
+    color: rgb(7, 88, 143);
+    text-decoration: none;
+  }
 
-    a.csText:visited {
-        color: rgb(7, 88, 143);
-    }
+  a.csText:visited {
+    color: rgb(7, 88, 143);
+  }
 
-    a.schoolText {
-        font-size: calc(10px + 1vmin);
-        color: rgb(163, 38, 163);
-        text-decoration: none;
-    }
+  a.schoolText {
+    font-size: calc(10px + 1vmin);
+    color: rgb(163, 38, 163);
+    text-decoration: none;
+  }
 
-    a.schoolText:visited {
-        color: rgb(163, 38, 163);
-    }
+  a.schoolText:visited {
+    color: rgb(163, 38, 163);
+  }
 
-    .dundee-name {
-        font-size: calc(10px + 2.5vmin);
-        margin: 3vmin auto;
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 600;
-        font-style: normal;
-        color: rgb(18, 100, 112);
-    }
+  .dundee-name {
+    font-size: calc(10px + 2.5vmin);
+    margin: 3vmin auto;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(18, 100, 112);
+  }
 
-    .resume-button {
-        color: rgb(36, 46, 51);
-        border-radius: 100vmin;
-        padding: 1vmin 2.5vmin;
-        border-color: rgba(255, 255, 255, 0);
-        background-color: rgb(166, 237, 252);
-        margin: 0;
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        font-style: normal;
-    }
+  .resume-button {
+    color: rgb(36, 46, 51);
+    border-radius: 100vmin;
+    padding: 1vmin 2.5vmin;
+    border-color: rgba(255, 255, 255, 0);
+    background-color: rgb(166, 237, 252);
+    margin: 0;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+  }
 
-    .resume-button:hover {
-        color: rgb(13, 37, 58);
-        background-color: rgb(150, 220, 230);
-        -webkit-transition: all 0.2s;
-        -moz-transition: all 0.2s;
-        transition: all 0.2s;
-        transform: scale(1.08);
-    }
+  .resume-button:hover {
+    color: rgb(13, 37, 58);
+    background-color: rgb(150, 220, 230);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    transform: scale(1.08);
+  }
 
-    .circle-div {
-        background-color: rgba(241, 241, 241, 0);
-        border-radius: 100%;
-        width: calc(10px + 4.5vmin);
-        height: calc(10px + 4.5vmin);
+  .circle-div {
+    background-color: rgba(241, 241, 241, 0);
+    border-radius: 100%;
+    width: calc(10px + 4.5vmin);
+    height: calc(10px + 4.5vmin);
 
-        position: relative;
-        text-align: center;
-    }
+    position: relative;
+    text-align: center;
+  }
 
-    .circle-div:hover {
-        background-color: rgba(241, 241, 241, 0.432);
-        backdrop-filter: blur(1px);
-        -webkit-transition: all 0.2s;
-        -moz-transition: all 0.2s;
-        transition: all 0.2s;
-        transform: scale(1.1);
-    }
+  .circle-div:hover {
+    background-color: rgba(241, 241, 241, 0.432);
+    backdrop-filter: blur(1px);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    transform: scale(1.1);
+  }
 
-    .intro-icons {
-        font-size: calc(10px + 1.2vmin);
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  .intro-icons {
+    font-size: calc(10px + 1.2vmin);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-    .App-header {
-        color: white;
-    }
-    ul > li {
-        color: white;
-    }
+  .App-header {
+    color: white;
+  }
+  ul > li {
+    color: white;
+  }
 
-    a,
-    a:visited {
-        color: white;
-    }
-    p.website-intro-top {
-        color: rgb(172, 172, 172);
-    }
+  a,
+  a:visited {
+    color: white;
+  }
+  p.website-intro-top {
+    color: rgb(172, 172, 172);
+  }
 
-    a.csText {
-        color: rgb(255, 255, 255);
-    }
+  a.csText {
+    color: rgb(255, 255, 255);
+  }
 
-    a.csText:visited {
-        color: rgb(255, 255, 255);
-    }
+  a.csText:visited {
+    color: rgb(255, 255, 255);
+  }
 
-    a.schoolText {
-        color: rgb(226, 137, 231);
-    }
+  a.schoolText {
+    color: rgb(226, 137, 231);
+  }
 
-    a.schoolText:visited {
-        color: rgb(226, 137, 231);
-    }
+  a.schoolText:visited {
+    color: rgb(226, 137, 231);
+  }
 
-    .dundee-name {
-        color: rgb(226, 137, 231);
-    }
+  .dundee-name {
+    color: rgb(226, 137, 231);
+  }
 
-    @keyframes blink-caret {
-        from,
-        to {
-            border-color: transparent;
-        }
-        50% {
-            border-color: rgb(226, 137, 231);
-        }
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
     }
+    50% {
+      border-color: rgb(226, 137, 231);
+    }
+  }
 
-    span.glow {
-        background: radial-gradient(
-            circle at 100%,
-            rgb(226, 137, 231),
-            rgb(224, 191, 225),
-            rgb(209, 79, 216),
-            rgb(233, 189, 235),
-            rgb(226, 137, 231)
-        );
-        font-weight: 600;
-        background-size: 200% auto;
-        color: #000;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: animatedTextGradient 2.2s linear infinite;
-    }
+  .resume-button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(60, 60, 60);
+  }
 
-    .resume-button {
-        color: rgb(255, 255, 255);
-        background-color: rgb(60, 60, 60);
-    }
+  .resume-button:hover {
+    background-color: rgb(72, 72, 72);
+    color: white;
+  }
 
-    .resume-button:hover {
-        background-color: rgb(72, 72, 72);
-        color: white;
-    }
+  .circle-div {
+    background-color: #1f1f1f00;
+  }
 
-    .circle-div {
-        background-color: #1f1f1f00;
-    }
-
-    .circle-div:hover {
-        background-color: #2424244d;
-        backdrop-filter: blur(1px);
-    }
+  .circle-div:hover {
+    background-color: #2424244d;
+    backdrop-filter: blur(1px);
+  }
 }

@@ -1,184 +1,178 @@
-@media only screen and (max-width: 600px) {
-    .contact-button {
-        font-size: calc(8px + 2vmin);
-        color: rgb(0, 0, 0);
-        border-radius: 100vmin;
-        padding: 2vmin 5vmin;
-        border-color: rgba(255, 255, 255, 0);
-        background-color: rgb(166, 237, 252);
-        margin: 2vmin 0 20vmin;
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        font-style: normal;
-    }
-
-    .contact-input-box,
-    .contact-input-field {
-        width: 100%;
-        font-size: calc(8px + 1.8vmin);
-        color: rgb(0, 0, 0);
-        border-radius: 2vmin;
-        padding: 2vmin 5vmin;
-        border-color: rgba(255, 255, 255, 0);
-        background-color: #ffffff00;
-        backdrop-filter: blur(4px);
-        margin: 0 0 2vmin;
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        font-style: normal;
-        box-shadow: 0 0px 10px 1px rgb(211, 211, 211);
-    }
-
-    .contact-card-text {
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        font-style: normal;
-        margin: 3vmin 0 1vmin;
-        text-align: left;
-        color: rgb(0, 0, 0);
-        font-size: calc(8px + 2.5vmin);
-    }
-
-    .content-container-center {
-        margin: 0 auto;
-        width: 50vmin;
-        min-width: 300px;
-        max-width: 500px;
-    }
-
-    .send-button-icon {
-        margin: auto 1vmin auto auto;
-    }
-
-    textarea {
-        height: calc(10px + 40vmin);
-    }
-
-    p.message-return {
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        font-style: normal;
-        font-size: calc(8px + 2.5vmin);
-        margin-bottom: 20vmin;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .contact-button {
-        font-size: calc(8px + 1.2vmin);
-        color: rgb(0, 0, 0);
-        border-radius: 100vmin;
-        padding: 1vmin 2.5vmin;
-        border-color: rgba(255, 255, 255, 0);
-        background-color: rgb(166, 237, 252);
-        margin: 2vmin 0 4vmin;
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        font-style: normal;
-    }
-
-    .contact-button:hover {
-        color: rgb(13, 37, 58);
-        background-color: rgb(150, 220, 230);
-    }
-
-    .contact-input-box,
-    .contact-input-field {
-        width: 100%;
-        margin: 0 0 2vmin;
-        font-size: calc(8px + 1.2vmin);
-        color: rgb(0, 0, 0);
-        border-radius: 2vmin;
-        padding: 1vmin 2.5vmin;
-        border-color: rgba(255, 255, 255, 0);
-        background-color: #ffffff00;
-        backdrop-filter: blur(4px);
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        font-style: normal;
-        box-shadow: 0 0px 10px 1px rgb(211, 211, 211);
-    }
-
-    .contact-card-text {
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        font-style: normal;
-        margin: 0 0 1vmin;
-        text-align: left;
-        color: rgb(0, 0, 0);
-    }
-
-    .content-container-center {
-        margin: 0 auto;
-        width: 50vmin;
-        min-width: 400px;
-        max-width: 600px;
-    }
-
-    .send-button-icon {
-        margin: auto 1vmin auto auto;
-    }
-    textarea {
-        height: calc(10px + 20vmin);
-    }
-
-    p.message-return {
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 500;
-        font-style: normal;
-        font-size: calc(8px + 1.2vmin);
-        margin-bottom: 10vmin;
-    }
+.contact-button {
+  border-radius: 100vmin;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: #ffffff00;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0px 10px 1px rgb(211, 211, 211);
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
 }
 
 input:focus {
-    outline-color: rgb(103, 138, 151);
+  outline-color: rgb(196, 130, 204);
 }
 
 textarea:focus {
-    outline-color: rgb(103, 138, 151);
+  outline-color: rgb(196, 130, 204);
 }
 
 contact-button:disabled {
-    color: white;
-    background-color: rgb(150, 220, 230);
+  color: white;
+  background-color: rgb(240, 240, 240);
+}
+
+.contact-button:hover {
+  background-color: rgb(240, 240, 240);
+  color: rgb(0, 0, 0);
+  transition: all 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-button {
+    font-size: calc(8px + 2vmin);
+    color: rgb(0, 0, 0);
+    border-radius: 100vmin;
+    padding: 2vmin 5vmin;
+    margin: 2vmin 0 20vmin;
+  }
+
+  .contact-input-box,
+  .contact-input-field {
+    width: 100%;
+    font-size: calc(8px + 1.8vmin);
+    color: rgb(0, 0, 0);
+    border-radius: 2vmin;
+    padding: 2vmin 5vmin;
+    border-color: rgba(255, 255, 255, 0);
+    background-color: #ffffff00;
+    backdrop-filter: blur(4px);
+    margin: 0 0 2vmin;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    box-shadow: 0 0px 10px 1px rgb(211, 211, 211);
+  }
+
+  .contact-card-text {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    margin: 3vmin 0 1vmin;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: calc(8px + 2.5vmin);
+  }
+
+  .content-container-center {
+    margin: 0 auto;
+    width: 50vmin;
+    min-width: 300px;
+    max-width: 500px;
+  }
+
+  .send-button-icon {
+    margin: auto 1vmin auto auto;
+  }
+
+  textarea {
+    height: calc(10px + 40vmin);
+  }
+
+  p.message-return {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: calc(8px + 2.5vmin);
+    margin-bottom: 20vmin;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .contact-button {
+    font-size: calc(8px + 1.2vmin);
+    color: rgb(0, 0, 0);
+    padding: 1vmin 2.5vmin;
+    margin: 2vmin 0 4vmin;
+  }
+
+  .contact-input-box,
+  .contact-input-field {
+    width: 100%;
+    margin: 0 0 2vmin;
+    font-size: calc(8px + 1.2vmin);
+    color: rgb(0, 0, 0);
+    border-radius: 2vmin;
+    padding: 1vmin 2.5vmin;
+    border-color: rgba(255, 255, 255, 0);
+    background-color: #ffffff00;
+    backdrop-filter: blur(4px);
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    box-shadow: 0 0px 10px 1px rgb(211, 211, 211);
+  }
+
+  .contact-card-text {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0 0 1vmin;
+    text-align: left;
+    color: rgb(0, 0, 0);
+  }
+
+  .content-container-center {
+    margin: 0 auto;
+    width: 50vmin;
+    min-width: 400px;
+    max-width: 600px;
+  }
+
+  .send-button-icon {
+    margin: auto 1vmin auto auto;
+  }
+  textarea {
+    height: calc(10px + 20vmin);
+  }
+
+  p.message-return {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: calc(8px + 1.2vmin);
+    margin-bottom: 10vmin;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-    input:focus {
-        outline-color: rgb(196, 130, 204);
-    }
+  contact-button:disabled {
+    color: white;
+    background-color: rgb(150, 220, 230);
+  }
 
-    textarea:focus {
-        outline-color: rgb(196, 130, 204);
-    }
+  .contact-button {
+    color: white;
+    border-color: rgba(221, 221, 221, 0);
+    background-color: rgba(60, 60, 60, 0.219);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0px 10px 1px rgb(20, 20, 20);
+  }
 
-    contact-button:disabled {
-        color: white;
-        background-color: rgb(150, 220, 230);
-    }
+  .contact-button:hover {
+    background-color: rgb(72, 72, 72);
+    color: white;
+  }
 
-    .contact-button {
-        color: white;
-        border-color: rgba(221, 221, 221, 0);
-        background-color: rgba(60, 60, 60, 0.219);
-        backdrop-filter: blur(4px);
-    }
+  .contact-input-box,
+  .contact-input-field {
+    color: white;
+    background-color: rgba(60, 60, 60, 0.219);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0px 10px 1px rgb(20, 20, 20);
+  }
 
-    .contact-button:hover {
-        background-color: rgb(72, 72, 72);
-        color: white;
-    }
-
-    .contact-input-box,
-    .contact-input-field {
-        color: white;
-        background-color: rgba(60, 60, 60, 0.219);
-        backdrop-filter: blur(4px);
-        box-shadow: 0 0px 10px 1px rgb(20, 20, 20);
-    }
-
-    .contact-card-text {
-        color: white;
-    }
+  .contact-card-text {
+    color: white;
+  }
 }

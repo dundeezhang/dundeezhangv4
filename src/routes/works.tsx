@@ -23,7 +23,7 @@ function Works() {
               </a>
             </span>
           </p>
-          <div>
+          <div className="projects-container">
             <Container fluid>
               <WorkCards />
             </Container>
