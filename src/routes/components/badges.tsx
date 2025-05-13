@@ -3,41 +3,7 @@ import { useMediaQuery } from "react-responsive";
 
 import uwcsWrBlack from "/icons/blackuwcswebring.svg";
 import uwcsWrWhite from "/icons/uwcscwebring.svg";
-
-interface BadgeProps {
-  imageUrl: string;
-  linkUrl: string;
-  altText: string;
-}
-
-const badgesData: BadgeProps[] = [
-  {
-    imageUrl: "/badges/dundeezhang.gif",
-    linkUrl: "https://dundeezha.ng",
-    altText: "dundeezhang",
-  },
-  {
-    imageUrl: "/badges/zerotiger.gif",
-    linkUrl: "https://zerotiger.ca",
-    altText: "zerotiger",
-  },
-  {
-    imageUrl: "/badges/amandaxi.gif",
-    linkUrl: "https://amandaxi.ca",
-    altText: "amandaxi",
-  },
-  {
-    imageUrl: "/badges/hyperneutrino.png",
-    linkUrl: "https://hyperneutrino.xyz",
-    altText: "hyperneutrino",
-  },
-  {
-    imageUrl: "/badges/s23adhik.png",
-    linkUrl: "https://csclub.uwaterloo.ca/~s23adhik/",
-    altText: "s23adhik",
-  },
-  // future badges
-];
+import badgesData from "../../data/badges.json";
 
 const Badges: React.FC = () => {
   const isDarkMode = useMediaQuery({ query: "(prefers-color-scheme: dark)" });

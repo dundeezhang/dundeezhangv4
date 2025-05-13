@@ -132,6 +132,7 @@ export default function WorkCards() {
   const [worksData, setWorksData] = useState(rawWorksData);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [showAllTags, setShowAllTags] = useState(false);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
@@ -176,8 +177,14 @@ export default function WorkCards() {
       const tags = searchTerm
         .toLowerCase()
         .split(",")
-        .map((tag) => tag.trim());
-      return tags.some((tag) => {
+        .map((tag) => tag.trim())
+        .filter((tag) => tag.length > 0);
+
+      // If no tags, show all
+      if (tags.length === 0) return true;
+
+      // All tags must be present (AND)
+      return tags.every((tag) => {
         if (tag.startsWith("!")) {
           return false;
         }
@@ -194,9 +201,14 @@ export default function WorkCards() {
   const lastProject = rawWorksData[rawWorksData.length - 1];
 
   const tagList = [
-    "All",
-    "Web",
     "JavaScript",
+    "TypeScript",
+    "React",
+    "Markdown",
+    "HTML",
+    "CSS",
+    "Bootstrap",
+    "Next.js",
     "Python",
     "C++",
     "Java8",
@@ -205,6 +217,9 @@ export default function WorkCards() {
     "Firebase",
     "GPT",
   ];
+
+  const sortedTagList = tagList.sort((a, b) => a.localeCompare(b));
+  const visibleTags = showAllTags ? sortedTagList : sortedTagList.slice(0, 9);
 
   const filteredLastProject = worksData.find(
     ([title]) => title === lastProject[0]
@@ -220,7 +235,7 @@ export default function WorkCards() {
         style={{ maxWidth: "600px", margin: "20px 0" }}
       />
       <div className="tag-container">
-        {tagList.map((tag) => (
+        {visibleTags.map((tag) => (
           <button
             key={tag}
             className={`tag-button ${
@@ -243,6 +258,14 @@ export default function WorkCards() {
             {tag}
           </button>
         ))}
+        {sortedTagList.length > 9 && (
+          <button
+            className="tag-button"
+            onClick={() => setShowAllTags(!showAllTags)}
+          >
+            {showAllTags ? "Show Less" : "Show More"}
+          </button>
+        )}
       </div>
       {worksData.map(
         ([
