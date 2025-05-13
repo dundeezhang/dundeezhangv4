@@ -6,7 +6,7 @@ export default function About() {
       <h2 className="header-name">About Me</h2>
       <TiltImage />
       <p className="about-me-ptext">
-        I am a first year (1B){" "}
+        I am a first year (1B Co-op){" "}
         <a href="https://uwaterloo.ca/future-students/co-op" target="_blank">
           <span className="about-me-paragraph link-hover">CS + CO-OP</span>
         </a>{" "}

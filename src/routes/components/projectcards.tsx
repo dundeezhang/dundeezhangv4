@@ -4,10 +4,7 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import { useState, useEffect } from "react";
-
-const viewProject = (repo: string): undefined => {
-  window.open(`https://github.com/dundeezhang/${repo}`, "_blank");
-};
+import workData from "../../data/works.json";
 
 const openLink = (link: string): undefined => {
   window.open(link, "_blank");
@@ -42,157 +39,35 @@ interface Datas {
   externallink: string;
 }
 
-const rawWorksData: [
-  string,
-  string,
-  string,
-  string,
-  string,
-  string,
-  string,
-  string
-][] = [
-  [
-    "Portfolio",
-    "TypeScript, React, CSS",
-    "Website to show my projects, ideas, and experience. Continue browsing this site to see the fruits of my labour.",
-    "website.png",
-    "dundeezhangv4",
-    "Github Repository",
-    "",
-    "https://dundeezhang.com",
-  ],
-  [
-    "Blog",
-    "TypeScript, React, Markdown",
-    "Blog site to share my notes, ideas and life updates. Uses Markdown to write posts and uses Giscus to allow user commenting.",
-    "blog.png",
-    "blogv2",
-    "Github Repository",
-    "",
-    "https://blog.dhz.app",
-  ],
-  [
-    "Auranate",
-    "Flask, Python, JavaScript, Firebase-Auth, GPT-4o",
-    "AI toolset to prepare and help people in the workforce. Uses text and image generative AI to help users create resumes, cover letters, and portfolios.",
-    "aura.png",
-    "aura",
-    "Github Repository",
-    "",
-    "https://aura.dhz.app",
-  ],
-  [
-    "yourDoList",
-    "Python, Flask, SQLAlchemy, GPT-4o",
-    "To do list that generates subtasks for your main tasks. Uses AI to help you break down your tasks into smaller, more manageable pieces so that you spend more time working; less time planning.",
-    "todo.png",
-    "todo",
-    "Github Repository",
-    "",
-    "/works/todo.mov",
-  ],
-  [
-    "Eco Elo",
-    "React, JavaScript, PostgreSQL, Resend, Regex",
-    "Earn elo and compete to be the most eco friendly consumer! Uses computer vision to scan receipts and recognize the most eco-friendly items to rank users against each other.",
-    "ecoelo.png",
-    "ecoelo",
-    "Github Repository",
-    "hide-button-class",
-    "",
-  ],
-  [
-    "GoTerpret",
-    "GoLang, Bash",
-    "Bash interpreter written in Go. Uses Go's built-in libraries to parse and execute bash commands. User is able to customize the interpreter to their liking with config files.",
-    "goterpret.png",
-    "goterpret",
-    "Github Repository",
-    "hide-button-class",
-    "",
-  ],
-  [
-    "Contest Solutions",
-    "C++, Java, Python",
-    "Repository to store most of my solutions for CS problems. Most solutions are only for CCC, but includes some other contests on DMOJ.",
-    "compcode.png",
-    "Contests",
-    "Github Repository",
-    "hide-button-class",
-    "",
-  ],
-  [
-    "PicToPDF",
-    "JavaScript, React, CSS",
-    "Easily convert your pictures to a singular PDF file online.",
-    "pictopdf.png",
-    "pictopdf",
-    "Github Repository",
-    "",
-    "https://pictopdf.dhz.app/",
-  ],
-  [
-    "ReadMd",
-    "JavaScript, Markdown, React",
-    "View markdown files in a more readable format online.",
-    "readmd.png",
-    "readmd",
-    "Github Repository",
-    "",
-    "https://readmd.dhz.app/",
-  ],
-  [
-    "Skibidention",
-    "JavaScript, Chrome Extension",
-    "View webpages in a more readable format by brain rotting words into skibidi.",
-    "skibidention.png",
-    "Skibidention",
-    "Github Repository",
-    "hide-button-class",
-    "https://readmd.dhz.app/",
-  ],
-  [
-    "NHSCSC Website",
-    "TypeScript, Next, CSS",
-    "Website for NHS CS Club. Shows events and announcements. No longer maintained.",
-    "nhscsc.png",
-    "website-nhscc",
-    "Github Repository",
-    "",
-    "https://nhscc.vercel.app/",
-  ],
-  [
-    "dzPass",
-    "C++, Makefile, OOP",
-    "An CLI password and user manager tool written in C++ only.",
-    "dzpass.png",
-    "dzPass",
-    "Github Repository",
-    "hide-button-class",
-    "",
-  ],
-  [
-    "Submarine Intercept Sim",
-    "Java, Java-Swing, OOP",
-    "World War II Battleship (Haida) versus submarine simulator",
-    "haida.jpg",
-    "Submarine-Intercept-Simulator",
-    "Github Repository",
-    "hide-button-class",
-    "",
-  ],
-  [
-    "More Projects",
-    "More Languages",
-    "Most of my projects are found on my GitHub profile or dhz.app.",
-    "future.jpg",
-    "",
-    "Github Profile",
-    "",
-    "https://dhz.app",
-  ],
-];
+const rawWorksData = workData
+  .filter(({ title }) => title !== "More Projects")
+  .map(
+    ({
+      title,
+      tech,
+      description,
+      image,
+      repo,
+      repoLabel,
+      buttonClass,
+      link,
+    }) => [title, tech, description, image, repo, repoLabel, buttonClass, link]
+  )
+  .sort((a, b) => a[0].localeCompare(b[0]));
+
+const lastProject = workData.find(({ title }) => title === "More Projects");
+if (lastProject) {
+  rawWorksData.push([
+    lastProject.title,
+    lastProject.tech,
+    lastProject.description,
+    lastProject.image,
+    lastProject.repo || "", // Ensure repo is a string
+    lastProject.repoLabel,
+    lastProject.buttonClass,
+    lastProject.link,
+  ]);
+}
 
 function WorksCard({
   title,
@@ -215,7 +90,7 @@ function WorksCard({
           variants={CardDiv}
         >
           <Card className="project-cards">
-            <a onClick={() => viewProject(repository)}>
+            <a onClick={() => openLink(repository)}>
               <Card.Img
                 variant="top"
                 src={`/works/${pic}`}
@@ -230,7 +105,7 @@ function WorksCard({
 
               <button
                 type="button"
-                onClick={() => viewProject(repository)}
+                onClick={() => openLink(repository)}
                 className="github-button"
               >
                 <i className="fa-brands fa-github github-button-icon"></i>
@@ -294,7 +169,7 @@ export default function WorkCards() {
 
   useEffect(() => {
     const filteredData = rawWorksData.filter((item, index) => {
-      if (index === rawWorksData.length - 1) {
+      if (index === rawWorksData.length) {
         return false;
       }
       const [title, langs, desc] = item;
@@ -324,11 +199,16 @@ export default function WorkCards() {
     "JavaScript",
     "Python",
     "C++",
+    "Java8",
     "GoLang",
     "SQL",
     "Firebase",
     "GPT",
   ];
+
+  const filteredLastProject = worksData.find(
+    ([title]) => title === lastProject[0]
+  );
 
   return (
     <>
@@ -388,7 +268,7 @@ export default function WorkCards() {
           />
         )
       )}
-      {lastProject && (
+      {!filteredLastProject && lastProject && (
         <WorksCard
           title={lastProject[0]}
           langs={lastProject[1]}

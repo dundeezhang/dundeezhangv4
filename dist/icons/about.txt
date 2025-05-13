@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Oxygen Mono
+- Font Author: Copyright (c) 2012, vernon adams (vern@newtypography.co.uk), with Reserved Font Names 'Oxygen'
+- Font Source: https://fonts.gstatic.com/s/oxygenmono/v14/h0GsssGg9FxgDgCjLeAd7ijfze-PPlUu.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
