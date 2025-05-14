@@ -61,7 +61,7 @@
   },
   {
     "title": "Eco Elo",
-    "tech": "React, JavaScript, PostgreSQL, Resend, Regex",
+    "tech": "React, JavaScript, PostgreSQL, NeonDB, Resend",
     "description": "Earn elo and compete to be the most eco friendly consumer! Uses computer vision to scan receipts and recognize the most eco-friendly items to rank users against each other.",
     "image": "ecoelo.png",
     "repo": "https://github.com/dundeezhang/ecoelo",
