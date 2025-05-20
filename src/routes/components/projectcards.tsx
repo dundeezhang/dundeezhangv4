@@ -133,6 +133,7 @@ export default function WorkCards() {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [showAllTags, setShowAllTags] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(10); // Number of cards to display initially
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
@@ -197,6 +198,20 @@ export default function WorkCards() {
     });
     setWorksData(filteredData);
   }, [searchTerm]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (
+        window.innerHeight + document.documentElement.scrollTop >=
+        document.documentElement.offsetHeight - 100
+      ) {
+        setVisibleCount((prevCount) => prevCount + 10);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const lastProject = rawWorksData[rawWorksData.length - 1];
 
@@ -267,30 +282,32 @@ export default function WorkCards() {
           </button>
         )}
       </div>
-      {worksData.map(
-        ([
-          title,
-          langs,
-          desc,
-          pic,
-          repository,
-          buttontext,
-          hideclass,
-          externallink,
-        ]) => (
-          <WorksCard
-            title={title}
-            langs={langs}
-            desc={desc}
-            pic={pic}
-            repository={repository}
-            buttontext={buttontext}
-            hideclass={hideclass}
-            externallink={externallink}
-            key={title}
-          />
-        )
-      )}
+      {worksData
+        .slice(0, visibleCount)
+        .map(
+          ([
+            title,
+            langs,
+            desc,
+            pic,
+            repository,
+            buttontext,
+            hideclass,
+            externallink,
+          ]) => (
+            <WorksCard
+              title={title}
+              langs={langs}
+              desc={desc}
+              pic={pic}
+              repository={repository}
+              buttontext={buttontext}
+              hideclass={hideclass}
+              externallink={externallink}
+              key={title}
+            />
+          )
+        )}
       {!filteredLastProject && lastProject && (
         <WorksCard
           title={lastProject[0]}
