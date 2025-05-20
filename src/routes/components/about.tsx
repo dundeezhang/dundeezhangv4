@@ -24,9 +24,7 @@ export default function About() {
       <p className="about-me-ptext">
         Currently, I am seeking internships for{" "}
         <a href="/resume.pdf" target="_blank">
-          <span className="about-me-paragraph link-hover">
-            Fall 2025 or Winter 2026
-          </span>
+          <span className="about-me-paragraph link-hover">Winter 2026</span>
         </a>
         .
       </p>

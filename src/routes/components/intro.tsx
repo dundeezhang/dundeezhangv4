@@ -19,25 +19,7 @@ export default function Intro() {
           }}
         >
           <p className="website-intro-top">
-            Welcome to my website! I'm currently studying{" "}
-            <a
-              target="_blank"
-              rel="noreferrer"
-              className="csText"
-              href="https://uwaterloo.ca/future-students/programs/computer-science"
-            >
-              <span className="glow">CS</span>
-            </a>{" "}
-            @{" "}
-            <a
-              target="_blank"
-              rel="noreferrer"
-              className="schoolText"
-              href="https://uwaterloo.ca"
-            >
-              <span className="glow">University of Waterloo</span>
-            </a>
-            .
+            currently working swe @ airfairness and studying cs @ uwaterloo.
           </p>
         </motion.div>
 
