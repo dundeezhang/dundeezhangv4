@@ -133,7 +133,7 @@ export default function WorkCards() {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [showAllTags, setShowAllTags] = useState(false);
-  const [visibleCount, setVisibleCount] = useState(10); // Number of cards to display initially
+  const [visibleCount, setVisibleCount] = useState(5); // Number of cards to display initially
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
@@ -205,7 +205,7 @@ export default function WorkCards() {
         window.innerHeight + document.documentElement.scrollTop >=
         document.documentElement.offsetHeight - 100
       ) {
-        setVisibleCount((prevCount) => prevCount + 10);
+        setVisibleCount((prevCount) => prevCount + 5);
       }
     };
 
