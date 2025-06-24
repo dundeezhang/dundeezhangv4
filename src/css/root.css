@@ -13,7 +13,7 @@
 
 .dundee-name {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid rgb(18, 100, 112); /* The typwriter cursor */
+  border-right: 0.15em solid rgb(226, 137, 231); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   animation: typing 0.8s steps(40, end), blink-caret 0.75s step-end infinite;
   position: relative;
@@ -64,7 +64,7 @@ span.glow {
     border-color: transparent;
   }
   50% {
-    border-color: rgb(18, 100, 112);
+    border-color: rgb(226, 137, 231);
   }
 }
 
@@ -129,20 +129,6 @@ span.glow {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 600;
     font-style: normal;
-    color: rgb(18, 100, 112);
-  }
-
-  .resume-button {
-    color: rgb(36, 46, 51);
-    border-radius: 100vmin;
-    padding: 2vmin 5vmin;
-    border-color: rgba(255, 255, 255, 0);
-    background-color: rgb(166, 237, 252);
-    margin: 0;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
-    font-size: calc(10px + 1.9vmin);
   }
 
   .circle-div {
@@ -219,54 +205,12 @@ span.glow {
     margin-top: 6vmin;
   }
 
-  a.csText {
-    font-size: calc(10px + 1vmin);
-    color: rgb(7, 88, 143);
-    text-decoration: none;
-  }
-
-  a.csText:visited {
-    color: rgb(7, 88, 143);
-  }
-
-  a.schoolText {
-    font-size: calc(10px + 1vmin);
-    color: rgb(163, 38, 163);
-    text-decoration: none;
-  }
-
-  a.schoolText:visited {
-    color: rgb(163, 38, 163);
-  }
-
   .dundee-name {
     font-size: calc(10px + 2.5vmin);
     margin: 3vmin auto;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 600;
     font-style: normal;
-    color: rgb(18, 100, 112);
-  }
-
-  .resume-button {
-    color: rgb(36, 46, 51);
-    border-radius: 100vmin;
-    padding: 1vmin 2.5vmin;
-    border-color: rgba(255, 255, 255, 0);
-    background-color: rgb(166, 237, 252);
-    margin: 0;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
-  }
-
-  .resume-button:hover {
-    color: rgb(13, 37, 58);
-    background-color: rgb(150, 220, 230);
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    transition: all 0.2s;
-    transform: scale(1.08);
   }
 
   .circle-div {
@@ -342,16 +286,6 @@ span.glow {
     50% {
       border-color: rgb(226, 137, 231);
     }
-  }
-
-  .resume-button {
-    color: rgb(255, 255, 255);
-    background-color: rgb(60, 60, 60);
-  }
-
-  .resume-button:hover {
-    background-color: rgb(72, 72, 72);
-    color: white;
   }
 
   .circle-div {
