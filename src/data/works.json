@@ -20,6 +20,16 @@
     "link": "https://csclub.uwaterloo.ca/"
   },
   {
+    "title": "Yang News",
+    "tech": "AWS, Python, FastAPI, React, TypeScript, Supabase",
+    "description": "Positive news website! Deployed through an AWS EC2 instance. Uses FastAPI to serve the backend and Supabase for the database. React+Vite frontend.",
+    "image": "yang-news.png",
+    "repo": "https://github.com/dundeezhang/hack404",
+    "repoLabel": "Github Repository",
+    "buttonClass": "",
+    "link": "https://yang-eah.pages.dev"
+  },
+  {
     "title": "Blog",
     "tech": "TypeScript, React, Markdown",
     "description": "Blog site to share my notes, ideas and life updates. Uses Markdown to write posts and uses Giscus to allow user commenting.",

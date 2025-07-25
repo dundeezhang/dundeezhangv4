@@ -184,8 +184,8 @@ export default function WorkCards() {
       // If no tags, show all
       if (tags.length === 0) return true;
 
-      // All tags must be present (AND)
-      return tags.every((tag) => {
+      // Any tag can be present (OR)
+      return tags.some((tag) => {
         if (tag.startsWith("!")) {
           return false;
         }
@@ -230,6 +230,10 @@ export default function WorkCards() {
     "GoLang",
     "SQL",
     "Firebase",
+    "Supabase",
+    "AWS",
+    "FastAPI",
+    "Flask",
     "GPT",
   ];
 
