@@ -21,7 +21,7 @@
   },
   {
     "title": "NanoWorks",
-    "tech": "TypeScript, Python, 3JS, Next.js, TailwindCSS, FastAPI",
+    "tech": "TypeScript, Python, Three.js, Pollinations.ai, Next.js, TailwindCSS, FastAPI",
     "description": "Cursor for DNA Origami. Creates 3D models from DNA sequences with optimal DNA pathing algorithms. Useful for creating base structures for DNA origami decreasing the time and research it takes to create nanostructures. Can be used to create DNA origami for drug delivery, biosensors, and more.",
     "image": "nanoworks1.png",
     "repo": "https://github.com/Kurtis24/Terrahacks-Hackathon",

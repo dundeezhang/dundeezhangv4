@@ -4,7 +4,7 @@ export default function TableOfContents() {
       <div className="mobile-nav">
         <div className="center-list">
           <a href="/">Home</a>
-          <a href="/works">Projects</a>
+          <a href="/works">Works</a>
           <a href="/contact">Contact</a>
           <a href="/resume.pdf" target="_blank">
             Resume
@@ -20,7 +20,7 @@ export default function TableOfContents() {
 
         <ul className="table-of-content">
           <a rel="noreferrer" className="table-of-content-text" href="/works">
-            <span className="nav-span">Projects</span>
+            <span className="nav-span">Works</span>
           </a>
         </ul>
 

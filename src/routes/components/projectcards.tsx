@@ -235,8 +235,9 @@ export default function WorkCards() {
     "FastAPI",
     "Flask",
     "GPT",
-    "3JS",
+    "Three.js",
     "TailwindCSS",
+    "Pollinations.ai",
   ];
 
   const sortedTagList = tagList.sort((a, b) => a.localeCompare(b));
