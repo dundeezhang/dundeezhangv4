@@ -20,8 +20,18 @@
     "link": "https://csclub.uwaterloo.ca/"
   },
   {
+    "title": "NanoWorks",
+    "tech": "TypeScript, Python, 3JS, Next.js, TailwindCSS, FastAPI",
+    "description": "Cursor for DNA Origami. Creates 3D models from DNA sequences with optimal DNA pathing algorithms. Useful for creating base structures for DNA origami decreasing the time and research it takes to create nanostructures. Can be used to create DNA origami for drug delivery, biosensors, and more.",
+    "image": "nanoworks1.png",
+    "repo": "https://github.com/Kurtis24/Terrahacks-Hackathon",
+    "repoLabel": "Github Repository",
+    "buttonClass": "",
+    "link": "https://www.youtube.com/watch?v=N8X2oWvuaNU"
+  },
+  {
     "title": "Yang News",
-    "tech": "AWS, Python, FastAPI, React, TypeScript, Supabase",
+    "tech": "AWS, Python, FastAPI, React, TypeScript, Supabase, TailwindCSS",
     "description": "Positive news website! Deployed through an AWS EC2 instance. Uses FastAPI to serve the backend and Supabase for the database. React+Vite frontend.",
     "image": "yang-news.png",
     "repo": "https://github.com/dundeezhang/hack404",
