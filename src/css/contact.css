@@ -9,6 +9,10 @@
   font-style: normal;
 }
 
+.contact-form-container {
+  min-height: 100vh;
+}
+
 input:focus {
   outline-color: rgb(196, 130, 204);
 }
