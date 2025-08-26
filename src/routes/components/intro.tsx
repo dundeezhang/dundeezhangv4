@@ -105,6 +105,7 @@ export default function Intro() {
             </motion.div>
           </li>
         </ul>
+        {/** bottom intro text
         <motion.div
           initial={{ opacity: 0, scale: 0.7 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -118,6 +119,7 @@ export default function Intro() {
             Move mouse for parallax effect!
           </p>
         </motion.div>
+        */}
         <motion.div
           initial={{ opacity: 0, scale: 1.05 }}
           animate={{ opacity: 1, scale: 1 }}

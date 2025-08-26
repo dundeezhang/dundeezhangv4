@@ -6,13 +6,13 @@ export default function About() {
       <h2 className="header-name">About Me</h2>
       <TiltImage />
       <p className="about-me-ptext">
-        I am a first year (1B Co-op){" "}
+        I am a second year (2A){" "}
         <a href="https://uwaterloo.ca/future-students/co-op" target="_blank">
-          <span className="about-me-paragraph link-hover">CS + CO-OP</span>
+          <span className="about-me-paragraph link-hover">CS</span>
         </a>{" "}
-        student at the University of Waterloo. I have practical experience
-        developing using TypeScript, C, Java, and Python with frameworks and
-        tools such as React, Node, Next, and SQL.
+        student at the University of Waterloo. I mainly develop using
+        TypeScript, C, and Python with frameworks and tools such as Next.js,
+        PostgreSQL, and AWS.
       </p>
       <p className="about-me-ptext">
         I also maintain and update my blog when I have time. Check it out{" "}
@@ -27,10 +27,6 @@ export default function About() {
           <span className="about-me-paragraph link-hover">Winter 2026</span>
         </a>
         .
-      </p>
-      <p className="about-me-ptext">
-        Browse the rest of my website using the navigation bar or list to see my
-        works and contact details.
       </p>
     </div>
   );
