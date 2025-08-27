@@ -4,6 +4,7 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import { useState, useEffect } from "react";
+import { useTheme } from "../../hooks/useTheme";
 import workData from "../../data/works.json";
 
 const openLink = (link: string): undefined => {
@@ -131,24 +132,10 @@ export default function WorkCards() {
   const [searchTerm, setSearchTerm] = useState("");
   const [worksData, setWorksData] = useState(rawWorksData);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const { theme } = useTheme();
+  const isDarkMode = theme === "dark";
   const [showAllTags, setShowAllTags] = useState(false);
   const [visibleCount, setVisibleCount] = useState(5); // Number of cards to display initially
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-    setIsDarkMode(mediaQuery.matches);
-
-    const handleChange = (event: MediaQueryListEvent) => {
-      setIsDarkMode(event.matches);
-    };
-
-    mediaQuery.addEventListener("change", handleChange);
-
-    return () => {
-      mediaQuery.removeEventListener("change", handleChange);
-    };
-  }, []);
 
   const handleTagClick = (tag: string) => {
     setSelectedTags((prevTags) => {

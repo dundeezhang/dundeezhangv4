@@ -13,14 +13,12 @@
   }
   .mobile-nav {
     z-index: 999;
-    position: fixed;
+    position: absolute;
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
     top: 30px;
     overflow: hidden;
-    background-color: rgba(250, 250, 250, 0.512);
-    backdrop-filter: blur(10px);
   }
 
   .center-list {

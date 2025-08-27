@@ -80,9 +80,12 @@
 
 .tag-button {
   color: rgb(0, 0, 0);
-  border-radius: 100vmin;
-  border-color: rgba(255, 255, 255, 0);
-  background-color: rgb(241, 241, 241);
+  border-radius: 2.5vmin;
+  border-color: rgb(231, 231, 231);
+  border: 0;
+  background-color: #ffffff00;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0px 5px 1px rgb(211, 211, 211);
   font-family: "IBM Plex Mono", monospace;
   font-weight: 500;
   font-style: normal;
@@ -214,7 +217,7 @@
 
   .tag-button {
     font-size: calc(4px + 1.2vmin);
-    padding: 0.4vmin 2vmin;
+    padding: 0.8vmin 2vmin;
     margin: 0 5px 10px;
   }
 
@@ -253,7 +256,7 @@
 }
 
 [data-theme="dark"] .project-cards {
-  background-color: #00000000;
+  background-color: #ffffff0f;
   backdrop-filter: blur(4px);
   color: white;
   box-shadow: 0 0px 10px 1px rgb(18, 18, 18);
@@ -282,7 +285,9 @@
 
 [data-theme="dark"] .tag-button {
   color: white;
-  background-color: rgb(60, 60, 60);
+  background-color: #ffffff0f;
+  box-shadow: 0 0px 10px 1px rgb(18, 18, 18);
+  border-color: #252525;
 }
 
 [data-theme="dark"] .tag-button:hover {

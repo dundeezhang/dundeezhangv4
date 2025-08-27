@@ -12,16 +12,18 @@ function Works() {
         <TableOfContents />
         <body className="App-content">
           <h2 className="header-name">My Projects:</h2>
-
           <p className="header-desc">
-            View most of my projects here! <br />
-            Also check out my GitHub since almost everything I do is uploaded
-            there:{" "}
+            My projects sorted by alphabetical order.
+          </p>
+          <br />
+          <p className="header-desc">
+            Also check out my{" "}
             <span className="glow">
               <a href="https://github.com/dundeezhang" target="_blank">
                 GitHub
               </a>
-            </span>
+            </span>{" "}
+            since almost everything I do is uploaded there.
           </p>
           <div className="projects-container">
             <Container fluid>
