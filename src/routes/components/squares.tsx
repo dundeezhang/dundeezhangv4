@@ -1,3 +1,4 @@
+// old background
 export default function Squares() {
   return (
     <div>
