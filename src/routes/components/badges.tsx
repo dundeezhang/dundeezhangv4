@@ -1,12 +1,13 @@
 import React from "react";
-import { useMediaQuery } from "react-responsive";
+import { useTheme } from "../../hooks/useTheme";
 
 import uwcsWrBlack from "/icons/blackuwcswebring.svg";
 import uwcsWrWhite from "/icons/uwcscwebring.svg";
 import badgesData from "../../data/badges.json";
 
 const Badges: React.FC = () => {
-  const isDarkMode = useMediaQuery({ query: "(prefers-color-scheme: dark)" });
+  const { theme } = useTheme();
+  const isDarkMode = theme === "dark";
   return (
     <div style={{ marginBottom: "12vh" }}>
       <p>UWaterloo CS Webring:</p>

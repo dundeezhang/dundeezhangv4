@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import { useTheme } from "../../hooks/useTheme";
 
 const GridContainer = styled.div<{ isDarkMode: boolean }>`
   position: fixed;
@@ -49,23 +50,8 @@ const GlassBackground = styled.div<{ isDarkMode: boolean }>`
 
 const Grid: React.FC = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  useEffect(() => {
-    // Detect system dark mode preference
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-    setIsDarkMode(mediaQuery.matches);
-
-    const handleChange = (e: MediaQueryListEvent) => {
-      setIsDarkMode(e.matches);
-    };
-
-    mediaQuery.addEventListener("change", handleChange);
-
-    return () => {
-      mediaQuery.removeEventListener("change", handleChange);
-    };
-  }, []);
+  const { theme } = useTheme();
+  const isDarkMode = theme === "dark";
 
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {

@@ -84,23 +84,15 @@ span.link-hover:hover {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  span.link-hover:hover {
-    background: radial-gradient(
-      circle at 100%,
-      rgb(255, 255, 255),
-      rgb(209, 209, 209),
-      rgb(255, 255, 255)
-    );
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animatedTextGradient 2.2s linear infinite;
-  }
-
-  @keyframes animatedTextGradient {
-    to {
-      background-position: 200% center;
-    }
-  }
+[data-theme="dark"] span.link-hover:hover {
+  background: radial-gradient(
+    circle at 100%,
+    rgb(255, 255, 255),
+    rgb(209, 209, 209),
+    rgb(255, 255, 255)
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animatedTextGradient 2.2s linear infinite;
 }

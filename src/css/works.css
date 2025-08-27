@@ -228,67 +228,65 @@
   }
 }
 /* dark mode*/
-@media (prefers-color-scheme: dark) {
-  .project-title {
-    color: white;
-  }
+[data-theme="dark"] .project-title {
+  color: white;
+}
 
-  .tools-used {
-    color: rgb(184, 184, 184);
-  }
+[data-theme="dark"] .tools-used {
+  color: rgb(184, 184, 184);
+}
 
-  .about-project-desc {
-    color: rgb(211, 211, 211);
-  }
+[data-theme="dark"] .about-project-desc {
+  color: rgb(211, 211, 211);
+}
 
-  .header-name {
-    color: white;
-  }
+[data-theme="dark"] .header-name {
+  color: white;
+}
 
-  .project-images {
-    filter: brightness(50%);
-  }
+[data-theme="dark"] .project-images {
+  filter: brightness(50%);
+}
 
-  .project-images:hover {
-    filter: brightness(75%);
-  }
+[data-theme="dark"] .project-images:hover {
+  filter: brightness(75%);
+}
 
-  .project-cards {
-    background-color: #00000000;
-    backdrop-filter: blur(4px);
-    color: white;
-    box-shadow: 0 0px 10px 1px rgb(18, 18, 18);
-    border-color: #252525;
-  }
+[data-theme="dark"] .project-cards {
+  background-color: #00000000;
+  backdrop-filter: blur(4px);
+  color: white;
+  box-shadow: 0 0px 10px 1px rgb(18, 18, 18);
+  border-color: #252525;
+}
 
-  .github-button {
-    color: white;
-    background-color: rgb(60, 60, 60);
-  }
+[data-theme="dark"] .github-button {
+  color: white;
+  background-color: rgb(60, 60, 60);
+}
 
-  .github-button:hover {
-    background-color: rgb(80, 80, 80);
-    color: white;
-  }
+[data-theme="dark"] .github-button:hover {
+  background-color: rgb(80, 80, 80);
+  color: white;
+}
 
-  #external-link-button {
-    color: white;
-    background-color: rgb(60, 60, 60);
-  }
+[data-theme="dark"] #external-link-button {
+  color: white;
+  background-color: rgb(60, 60, 60);
+}
 
-  #external-link-button:hover {
-    background-color: rgb(80, 80, 80);
-    color: white;
-  }
+[data-theme="dark"] #external-link-button:hover {
+  background-color: rgb(80, 80, 80);
+  color: white;
+}
 
-  .tag-button {
-    color: white;
-    background-color: rgb(60, 60, 60);
-  }
+[data-theme="dark"] .tag-button {
+  color: white;
+  background-color: rgb(60, 60, 60);
+}
 
-  .tag-button:hover {
-    background-color: rgb(80, 80, 80);
-    color: white;
-    transition: all 0.5s;
-  }
+[data-theme="dark"] .tag-button:hover {
+  background-color: rgb(80, 80, 80);
+  color: white;
+  transition: all 0.5s;
 }

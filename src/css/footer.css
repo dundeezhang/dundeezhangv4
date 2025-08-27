@@ -13,8 +13,7 @@
 }
 
 .app-footer {
-  background-color: rgb(8, 8, 8);
-  color: white;
+  background-color: rgb(241, 241, 241);
   text-align: left !important; /* override body rule */
   padding: 5vmin 0;
   margin-bottom: 0;
@@ -24,16 +23,40 @@
   font-style: normal;
 }
 
+[data-theme="dark"] .app-footer {
+  background-color: rgb(8, 8, 8);
+  color: rgb(255, 255, 255);
+}
+
 .footer-text {
   padding-left: 3vmin;
-  width: 100%;
-  color: rgb(162, 162, 162);
+  width: fit-content;
+  color: rgb(70, 70, 70);
+  margin: 3px 0;
+  display: block;
+}
+
+[data-theme="dark"] .footer-text {
+  color: rgb(175, 175, 175);
 }
 
 p.footer-text:hover {
   animation: none !important;
   transition: none !important;
   transform: none !important;
+}
+
+.theme-toggle {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  color: black !important;
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+  color: white !important;
 }
 
 @media only screen and (max-width: 600px) {

@@ -240,50 +240,42 @@ span.glow {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .App-header {
-    color: white;
-  }
-  ul > li {
-    color: white;
-  }
+[data-theme="dark"] .App-header {
+  color: white;
+}
+[data-theme="dark"] ul > li {
+  color: white;
+}
 
-  a,
-  a:visited {
-    color: white;
-  }
-  p.website-intro-top {
-    color: rgb(172, 172, 172);
-  }
+[data-theme="dark"] a,
+[data-theme="dark"] a:visited {
+  color: white;
+}
+[data-theme="dark"] p.website-intro-top {
+  color: rgb(172, 172, 172);
+}
 
-  a.csText {
-    color: rgb(255, 255, 255);
-  }
+[data-theme="dark"] a.csText {
+  color: rgb(255, 255, 255);
+}
 
-  a.csText:visited {
-    color: rgb(255, 255, 255);
-  }
+[data-theme="dark"] a.csText:visited {
+  color: rgb(255, 255, 255);
+}
 
-  .dundee-name {
-    color: rgb(239, 45, 120);
-  }
+[data-theme="dark"] .dundee-name {
+  color: rgb(239, 45, 120);
+}
 
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: rgb(239, 45, 120);
-    }
-  }
+[data-theme="dark"] .dundee-name {
+  border-right: 0.15em solid rgb(239, 45, 120);
+}
 
-  .circle-div {
-    background-color: #1f1f1f00;
-  }
+[data-theme="dark"] .circle-div {
+  background-color: #1f1f1f00;
+}
 
-  .circle-div:hover {
-    background-color: #2424244d;
-    backdrop-filter: blur(1px);
-  }
+[data-theme="dark"] .circle-div:hover {
+  background-color: #2424244d;
+  backdrop-filter: blur(1px);
 }

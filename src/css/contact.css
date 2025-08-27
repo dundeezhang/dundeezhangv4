@@ -149,34 +149,32 @@ contact-button:disabled {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  contact-button:disabled {
-    color: white;
-    background-color: rgb(150, 220, 230);
-  }
+[data-theme="dark"] contact-button:disabled {
+  color: white;
+  background-color: rgb(150, 220, 230);
+}
 
-  .contact-button {
-    color: white;
-    border-color: rgba(221, 221, 221, 0);
-    background-color: rgba(60, 60, 60, 0.219);
-    backdrop-filter: blur(4px);
-    box-shadow: 0 0px 10px 1px rgb(20, 20, 20);
-  }
+[data-theme="dark"] .contact-button {
+  color: white;
+  border-color: rgba(221, 221, 221, 0);
+  background-color: rgba(60, 60, 60, 0.219);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0px 10px 1px rgb(20, 20, 20);
+}
 
-  .contact-button:hover {
-    background-color: rgb(72, 72, 72);
-    color: white;
-  }
+[data-theme="dark"] .contact-button:hover {
+  background-color: rgb(72, 72, 72);
+  color: white;
+}
 
-  .contact-input-box,
-  .contact-input-field {
-    color: white;
-    background-color: rgba(60, 60, 60, 0.219);
-    backdrop-filter: blur(4px);
-    box-shadow: 0 0px 10px 1px rgb(20, 20, 20);
-  }
+[data-theme="dark"] .contact-input-box,
+[data-theme="dark"] .contact-input-field {
+  color: white;
+  background-color: rgba(60, 60, 60, 0.219);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0px 10px 1px rgb(20, 20, 20);
+}
 
-  .contact-card-text {
-    color: white;
-  }
+[data-theme="dark"] .contact-card-text {
+  color: white;
 }
