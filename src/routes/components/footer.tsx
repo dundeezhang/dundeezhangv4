@@ -5,12 +5,20 @@ export default function Footer() {
   const currYear = new Date().getFullYear();
   const { theme, toggleTheme } = useTheme();
   const [currentTime, setCurrentTime] = useState(
-    new Date().toLocaleTimeString([], { hour12: false })
+    new Date().toLocaleTimeString("en-US", {
+      hour12: false,
+      timeZone: "America/Toronto",
+    })
   );
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentTime(new Date().toLocaleTimeString([], { hour12: false }));
+      setCurrentTime(
+        new Date().toLocaleTimeString("en-US", {
+          hour12: false,
+          timeZone: "America/Toronto",
+        })
+      );
     }, 1000);
 
     return () => clearInterval(timer);
