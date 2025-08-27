@@ -29,10 +29,9 @@
 }
 
 .footer-text {
-  padding-left: 3vmin;
   width: fit-content;
   color: rgb(70, 70, 70);
-  margin: 0 auto;
+  margin: 3px auto;
   display: block;
 }
 
