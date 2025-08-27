@@ -1,125 +1,106 @@
 .about-me-ptext {
-    margin-left: 12vw;
-    margin-right: 12vw;
-    max-width: 650px;
-    margin-top: 3vh;
+  margin: 3vh 12vw 0;
+  max-width: 650px;
 }
 
 #about {
-    align-items: center;
-    margin-bottom: 12vh;
+  align-items: center;
+  margin-bottom: 6vh;
 }
 
 .pulse {
-    animation: pulse-animation 0.2s ease-in-out; /* Adjust duration as needed */
+  animation: pulse-animation 0.2s ease-in-out;
 }
 
 @keyframes pulse-animation {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05); /* Adjust scale factor as needed */
-    }
-    100% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .about-me-profile {
-    border-radius: 100%;
-    max-width: 300px;
-    display: inline-block;
-    display: block;
-    align-items: center;
-    text-align: center;
-    margin: 6vmin auto 3vmin;
-    transition: all 0.2s ease-in-out;
+  border-radius: 100%;
+  max-width: 300px;
+  display: inline-block;
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin: 6vmin auto 3vmin;
+  transition: all 0.2s ease-in-out;
 }
 
 .about-me-profile:hover {
-    transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 p {
-    transition: transform 0.2s ease-in-out; /* Smooth transition for scaling */
-    display: inline-block; /* Ensure the anchor behaves like a block for scaling */
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
 }
 
 p:hover {
-    transform: scale(1.05); /* Slightly expand the badge on hover */
+  transform: scale(1.03);
 }
 
 span.about-me-paragraph {
-    background: radial-gradient(
-        circle at 100%,
-        rgb(112, 92, 4),
-        rgb(150, 136, 4),
-        rgb(112, 92, 4)
-    );
-    font-weight: 600;
-    background-size: 200% auto;
-    color: #000;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animatedTextGradient 2.2s linear infinite;
+  background: radial-gradient(
+    circle at 100%,
+    rgb(239, 45, 120),
+    rgb(255, 126, 175),
+    rgb(239, 45, 120)
+  );
+  font-weight: 600;
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animatedTextGradient 2.2s linear infinite;
 }
 
 span.link-hover:hover {
-    background: radial-gradient(
-        circle at 100%,
-        rgb(0, 0, 0),
-        rgb(34, 34, 34),
-        rgb(0, 0, 0)
-    );
-    font-weight: 600;
-    background-size: 200% auto;
-    color: #000;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animatedTextGradient 2.2s linear infinite;
+  background: radial-gradient(
+    circle at 100%,
+    rgb(0, 0, 0),
+    rgb(34, 34, 34),
+    rgb(0, 0, 0)
+  );
+  font-weight: 600;
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animatedTextGradient 2.2s linear infinite;
 }
 
 @keyframes animatedTextGradient {
-    to {
-        background-position: 200% center;
-    }
+  to {
+    background-position: 200% center;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-    span.about-me-paragraph {
-        background: radial-gradient(
-            circle at 100%,
-            rgb(218, 207, 90),
-            rgb(214, 211, 182),
-            rgb(218, 207, 90)
-        );
-        font-weight: 600;
-        background-size: 200% auto;
-        color: #000;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: animatedTextGradient 2.2s linear infinite;
-    }
+  span.link-hover:hover {
+    background: radial-gradient(
+      circle at 100%,
+      rgb(255, 255, 255),
+      rgb(209, 209, 209),
+      rgb(255, 255, 255)
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animatedTextGradient 2.2s linear infinite;
+  }
 
-    span.link-hover:hover {
-        background: radial-gradient(
-            circle at 100%,
-            rgb(255, 255, 255),
-            rgb(209, 209, 209),
-            rgb(255, 255, 255)
-        );
-        font-weight: 600;
-        background-size: 200% auto;
-        color: #000;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: animatedTextGradient 2.2s linear infinite;
+  @keyframes animatedTextGradient {
+    to {
+      background-position: 200% center;
     }
-
-    @keyframes animatedTextGradient {
-        to {
-            background-position: 200% center;
-        }
-    }
+  }
 }

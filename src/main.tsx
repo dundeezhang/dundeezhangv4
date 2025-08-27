@@ -6,7 +6,7 @@ import Works from "./routes/works";
 import Contact from "./routes/contact";
 
 import "./css/tableofcontent.css";
-import "./css/background.css";
+import "./css/squares.css";
 import "./css/index.css";
 import "./css/about.css";
 import "./css/root.css";

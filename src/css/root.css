@@ -13,7 +13,7 @@
 
 .dundee-name {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid rgb(226, 137, 231); /* The typwriter cursor */
+  border-right: 0.15em solid rgb(239, 45, 120); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   animation: typing 0.8s steps(40, end), blink-caret 0.75s step-end infinite;
   position: relative;
@@ -22,11 +22,9 @@
 span.glow {
   background: radial-gradient(
     circle at 100%,
-    rgb(226, 137, 231),
-    rgb(231, 160, 234),
-    rgb(209, 79, 216),
-    rgb(231, 160, 234),
-    rgb(226, 137, 231)
+    rgb(239, 45, 120),
+    rgb(255, 126, 175),
+    rgb(239, 45, 120)
   );
   font-weight: 600;
   background-size: 200% auto;
@@ -64,7 +62,7 @@ span.glow {
     border-color: transparent;
   }
   50% {
-    border-color: rgb(226, 137, 231);
+    border-color: rgb(239, 45, 120);
   }
 }
 
@@ -266,16 +264,8 @@ span.glow {
     color: rgb(255, 255, 255);
   }
 
-  a.schoolText {
-    color: rgb(226, 137, 231);
-  }
-
-  a.schoolText:visited {
-    color: rgb(226, 137, 231);
-  }
-
   .dundee-name {
-    color: rgb(226, 137, 231);
+    color: rgb(239, 45, 120);
   }
 
   @keyframes blink-caret {
@@ -284,7 +274,7 @@ span.glow {
       border-color: transparent;
     }
     50% {
-      border-color: rgb(226, 137, 231);
+      border-color: rgb(239, 45, 120);
     }
   }
 

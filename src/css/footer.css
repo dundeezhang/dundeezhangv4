@@ -15,27 +15,28 @@
 .app-footer {
   background-color: rgb(8, 8, 8);
   color: white;
+  text-align: left !important; /* override body rule */
+  padding: 5vmin 0;
+  margin-bottom: 0;
+  height: fit-content;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
 }
 
-.circle-div-footer {
-  background-color: rgba(60, 60, 60, 0);
+.footer-text {
+  padding-left: 3vmin;
+  width: 100%;
+  color: rgb(162, 162, 162);
 }
 
-.circle-div-footer:hover {
-  background-color: rgba(80, 80, 80, 0.488);
-  backdrop-filter: blur(1px);
-  transition: all 0.5s;
-}
-
-.footer-icons {
-  color: white;
+p.footer-text:hover {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
 }
 
 @media only screen and (max-width: 600px) {
-  .p-foot {
-    margin: 5vh 0 3vh;
-  }
-
   .cs-webring {
     width: 7vmin;
     margin: 0 5px;
@@ -43,34 +44,7 @@
   }
 
   .app-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: calc(10px + 1vmin);
-    padding: 0;
-    margin-bottom: 0;
-    height: fit-content;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
-  }
-
-  .circle-div-footer {
-    border-radius: 100%;
-    width: calc(10px + 7vmin);
-    height: calc(10px + 7vmin);
-    position: relative;
-    text-align: center;
-  }
-
-  .footer-icons {
-    font-size: calc(10px + 1.5vmin);
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 }
 
@@ -81,46 +55,7 @@
     transition: all 0.2s;
   }
 
-  .p-foot {
-    margin: 5vh 0 3vh;
-  }
-
   .app-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: calc(10px + 1vmin);
-    padding: 0;
-    margin-bottom: 0;
-    height: fit-content;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
-  }
-
-  .circle-div-footer {
-    border-radius: 100%;
-    width: calc(10px + 4.5vmin);
-    height: calc(10px + 4.5vmin);
-
-    position: relative;
-    text-align: center;
-  }
-
-  .circle-div-footer:hover {
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    transition: all 0.2s;
-    transform: scale(1.1);
-  }
-
-  .footer-icons {
-    font-size: calc(10px + 1.2vmin);
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 }
