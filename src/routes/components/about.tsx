@@ -1,10 +1,8 @@
-import TiltImage from "./tiltimage";
-
 export default function About() {
   return (
     <div id="about">
       <h2 className="header-name">About Me</h2>
-      <TiltImage />
+
       <p className="about-me-ptext">
         I am a second year (2A){" "}
         <a href="https://uwaterloo.ca/future-students/co-op" target="_blank">
