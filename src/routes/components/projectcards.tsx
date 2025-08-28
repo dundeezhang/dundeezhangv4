@@ -240,7 +240,7 @@ export default function WorkCards() {
         type="text"
         placeholder="Search projects"
         onChange={(e) => setSearchTerm(e.target.value)}
-        className="search-bar contact-input-box"
+        className="search-bar works-search"
         style={{ maxWidth: "600px", margin: "20px 0" }}
       />
       <div className="tag-container">

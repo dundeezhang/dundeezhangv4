@@ -2,6 +2,22 @@
   display: none;
 }
 
+.works-search {
+  width: 100%;
+  margin: 0 0 2vmin;
+  border-radius: 2vmin;
+  border-color: rgb(231, 231, 231);
+  border: 0;
+  background-color: #ffffff00;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0px 5px 1px rgb(211, 211, 211);
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+  box-shadow: 0 0px 10px 1px rgb(211, 211, 211);
+  color: black;
+}
+
 .projects-container {
   margin-bottom: 50px;
 }
@@ -98,6 +114,11 @@
 }
 
 @media only screen and (max-width: 650px) {
+  .works-search {
+    font-size: calc(8px + 1.8vmin);
+    padding: 2vmin 5vmin;
+  }
+
   .project-title {
     font-size: calc(8px + 4vmin);
   }
@@ -151,6 +172,11 @@
 }
 
 @media only screen and (min-width: 650px) {
+  .works-search {
+    font-size: calc(8px + 1.2vmin);
+    padding: 1vmin 2.5vmin;
+  }
+
   .project-title {
     font-size: calc(8px + 1.7vmin);
   }
@@ -231,6 +257,14 @@
   }
 }
 /* dark mode*/
+
+[data-theme="dark"] .works-search {
+  color: white;
+  background-color: #ffffff0f;
+  box-shadow: 0 0px 10px 1px rgb(18, 18, 18);
+  border-color: #252525;
+}
+
 [data-theme="dark"] .project-title {
   color: white;
 }
