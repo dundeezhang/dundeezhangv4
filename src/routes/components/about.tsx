@@ -4,13 +4,13 @@ export default function About() {
       <h2 className="header-name">About Me</h2>
 
       <p className="about-me-ptext">
-        I'm a second year (2A) CS student at the{" "}
+        Currently studying CS at the{" "}
         <a href="https://uwaterloo.ca/future-students/co-op" target="_blank">
           <span className="about-me-paragraph link-hover">
             University of Waterloo
           </span>
         </a>
-        . Recently, I shipped at{" "}
+        . Recently shipped at{" "}
         <a href="https://airfairness.com" target="_blank">
           <span className="about-me-paragraph link-hover">airfairness</span>
         </a>

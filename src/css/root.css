@@ -169,7 +169,7 @@ span.glow {
   ul > li {
     list-style-type: none;
     display: inline-block;
-    margin: 0 3vmin;
+    margin: 0 2vmin;
     text-align: center;
     color: black;
     font-size: calc(10px + 2vmin);
@@ -216,7 +216,6 @@ span.glow {
     border-radius: 100%;
     width: calc(10px + 4.5vmin);
     height: calc(10px + 4.5vmin);
-
     position: relative;
     text-align: center;
   }

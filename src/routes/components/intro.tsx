@@ -6,7 +6,7 @@ export default function Intro() {
       <header className="App-header">
         <div className="dundee-container">
           <h1 className="dundee-name">
-            <span className="glow">Hello! I'm Dundee.</span>
+            <span className="glow">Hello! I'm Dundee,</span>
           </h1>
         </div>
         <motion.div
@@ -19,7 +19,7 @@ export default function Intro() {
           }}
         >
           <p className="website-intro-top">
-            currently working swe @ airfairness and studying cs @ uwaterloo.
+            currently studying cs @ uwaterloo.
           </p>
         </motion.div>
 
@@ -105,27 +105,12 @@ export default function Intro() {
             </motion.div>
           </li>
         </ul>
-        {/** bottom intro text
-        <motion.div
-          initial={{ opacity: 0, scale: 0.7 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 1,
-            delay: 1.1,
-            ease: [0, 0.71, 0.2, 1.01],
-          }}
-        >
-          <p className="website-intro-top navlist" style={{ opacity: 0.75 }}>
-            Move mouse for parallax effect!
-          </p>
-        </motion.div>
-        */}
         <motion.div
           initial={{ opacity: 0, scale: 1.05 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
             duration: 1,
-            delay: 1.8,
+            delay: 1,
             ease: [0, 0.71, 0.2, 1.01],
           }}
         >
@@ -146,7 +131,7 @@ export default function Intro() {
           >
             <i
               className="fa-solid fa-chevron-down"
-              style={{ opacity: 0.75 }}
+              style={{ opacity: 0.9 }}
               onClick={() => {
                 window.scrollBy({
                   top: window.innerHeight,
