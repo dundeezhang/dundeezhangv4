@@ -7,7 +7,7 @@ export default function TableOfContents() {
         <div className="center-list">
           <a href="/">Home</a>
           <a href="/works">Works</a>
-          <a href="/contact">Contact</a>
+          <a href="mailto:contact@dundeezha.ng">Contact</a>
           <a href="/resume.pdf" target="_blank">
             Resume
           </a>
@@ -59,9 +59,11 @@ export default function TableOfContents() {
             <a
               rel="noreferrer"
               className="table-of-content-text"
-              href="/contact"
+              href="mailto:contact@dundeezha.ng"
             >
-              <span className="nav-span">Contact</span>
+              <span className="nav-span">
+                Contact <i className="fa fa-external-link"></i>
+              </span>
             </a>
           </ul>
         </motion.div>
