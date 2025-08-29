@@ -1,4 +1,4 @@
-import { useTheme } from "../../hooks/useTheme";
+import { useTheme } from "../../../hooks/useTheme";
 import { useState, useEffect } from "react";
 
 export default function Footer() {

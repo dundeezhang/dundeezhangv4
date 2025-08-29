@@ -1,9 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
-import WorkCards from "./components/projectcards";
-import TableOfContents from "./components/navbar";
-import MainBackground from "./components/background";
-import Footer from "./components/footer";
+import WorkCards from "./components/works/projectcards";
+import TableOfContents from "./components/navbar/navbar";
+import MainBackground from "./components/general/background";
+import Footer from "./components/general/footer";
 
 function Works() {
   return (

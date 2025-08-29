@@ -1,9 +1,9 @@
 import React from "react";
-import { useTheme } from "../../hooks/useTheme";
+import { useTheme } from "../../../hooks/useTheme";
 
 import uwcsWrBlack from "/icons/blackuwcswebring.svg";
 import uwcsWrWhite from "/icons/uwcscwebring.svg";
-import badgesData from "../../data/badges.json";
+import badgesData from "../../../data/badges.json";
 
 const Badges: React.FC = () => {
   const { theme } = useTheme();

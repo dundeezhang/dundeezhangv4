@@ -4,8 +4,8 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import { useState, useEffect } from "react";
-import { useTheme } from "../../hooks/useTheme";
-import workData from "../../data/works.json";
+import { useTheme } from "../../../hooks/useTheme";
+import workData from "../../../data/works.json";
 
 const openLink = (link: string): undefined => {
   window.open(link, "_blank");
