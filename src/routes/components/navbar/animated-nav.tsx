@@ -59,11 +59,10 @@ export default function TableOfContents() {
             <a
               rel="noreferrer"
               className="table-of-content-text"
-              href="mailto:contact@dundeezha.ng"
+              href="https://blog.dhz.app"
+              target="_self"
             >
-              <span className="nav-span">
-                Contact <i className="fa fa-external-link"></i>
-              </span>
+              <span className="nav-span">Blog</span>
             </a>
           </ul>
         </motion.div>
@@ -81,11 +80,10 @@ export default function TableOfContents() {
             <a
               rel="noreferrer"
               className="table-of-content-text"
-              href="https://blog.dhz.app"
-              target="_blank"
+              href="mailto:contact@dundeezha.ng"
             >
               <span className="nav-span">
-                Blog <i className="fa fa-external-link"></i>
+                Contact <i className="fa fa-external-link"></i>
               </span>
             </a>
           </ul>
