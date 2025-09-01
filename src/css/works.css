@@ -1,279 +1,331 @@
 .hide-button-class {
-    display: none;
+  display: none;
+}
+
+.works-search {
+  width: 100%;
+  margin: 0 0 2vmin;
+  border-radius: 2vmin;
+  border-color: rgb(231, 231, 231);
+  border: 0;
+  background-color: #ffffff00;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0px 5px 1px rgb(211, 211, 211);
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+  box-shadow: 0 0px 10px 1px rgb(211, 211, 211);
+  color: black;
+}
+
+.projects-container {
+  margin-bottom: 50px;
 }
 
 .project-title {
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 600;
-    font-style: normal;
-    margin: 0.8vmin 0 1vmin;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0.8vmin 0 1vmin;
 }
 
 .tools-used {
-    color: rgb(82, 82, 82);
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
+  color: rgb(82, 82, 82);
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .about-project-desc {
-    margin: 0;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
-    color: rgb(51, 51, 51);
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(51, 51, 51);
 }
 
 .header-name {
-    margin: 0 0 3vmin;
-    padding-top: 18vmin;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 600;
-    font-style: normal;
+  margin: 0 0 3vmin;
+  padding-top: 18vmin;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .project-images {
-    object-fit: cover;
-    overflow: hidden;
-    margin: 0;
-    max-width: 100%;
-    border-radius: 2.5vmin;
-    filter: brightness(70%);
+  object-fit: cover;
+  overflow: hidden;
+  margin: 0;
+  max-width: 100%;
+  border-radius: 2.5vmin;
+  filter: brightness(70%);
 }
 
 .project-cards {
-    border-color: rgb(231, 231, 231);
-    border-radius: 2.5vmin;
-    background-color: #ffffff00;
-    backdrop-filter: blur(4px);
-    color: black;
-    margin: 2vmin auto;
-    text-align: left;
-    box-shadow: 0 0px 10px 1px rgb(211, 211, 211);
+  border-color: rgb(231, 231, 231);
+  border-radius: 2.5vmin;
+  background-color: #ffffff00;
+  backdrop-filter: blur(4px);
+  color: black;
+  margin: 2vmin auto;
+  text-align: left;
+  box-shadow: 0 0px 10px 1px rgb(211, 211, 211);
 }
 
 .github-button {
-    color: rgb(0, 0, 0);
-    border-radius: 100vmin;
-    border-color: rgba(255, 255, 255, 0);
-    background-color: rgb(166, 237, 252);
-    margin: 2vmin 0 0;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
+  color: rgb(0, 0, 0);
+  border-radius: 100vmin;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgb(241, 241, 241);
+  margin: 2vmin 0 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
 }
 
 #external-link-button {
-    color: rgb(0, 0, 0);
-    border-radius: 100vmin;
-    border-color: rgba(255, 255, 255, 0);
-    background-color: rgb(241, 241, 241);
-    margin: 2vmin 0 0 2vmin;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
+  color: rgb(0, 0, 0);
+  border-radius: 100vmin;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgb(241, 241, 241);
+  margin: 2vmin 0 0 2vmin;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .tag-button {
-    color: rgb(0, 0, 0);
-    border-radius: 100vmin;
-    border-color: rgba(255, 255, 255, 0);
-    background-color: rgb(166, 237, 252);
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
-    font-style: normal;
+  color: rgb(0, 0, 0);
+  border-radius: 2.5vmin;
+  border-color: rgb(231, 231, 231);
+  border: 0;
+  background-color: #ffffff00;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0px 5px 1px rgb(211, 211, 211);
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.tag-button:hover {
+  background-color: rgb(211, 211, 211);
+  color: rgb(0, 0, 0);
+  transition: all 0.5s;
 }
 
 @media only screen and (max-width: 650px) {
-    .project-title {
-        font-size: calc(8px + 4vmin);
-    }
+  .works-search {
+    font-size: calc(8px + 1.8vmin);
+    padding: 2vmin 5vmin;
+  }
 
-    .tools-used {
-        font-size: calc(8px + 2vmin);
-    }
+  .project-title {
+    font-size: calc(8px + 4vmin);
+  }
 
-    .about-project-desc {
-        font-size: calc(8px + 1.8vmin);
-    }
+  .tools-used {
+    font-size: calc(8px + 2vmin);
+  }
 
-    .header-name {
-        font-size: calc(10px + 4vmin);
-    }
+  .about-project-desc {
+    font-size: calc(8px + 1.8vmin);
+  }
 
-    .project-images {
-        height: 60vmin;
-    }
+  .header-name {
+    font-size: calc(10px + 4vmin);
+    margin-top: 5vh;
+  }
 
-    .project-cards {
-        min-width: 350px;
-    }
+  .project-images {
+    height: 60vmin;
+  }
 
-    .github-button {
-        font-size: calc(8px + 2vmin);
-        padding: 2vmin 5vmin;
-    }
+  .project-cards {
+    min-width: 350px;
+  }
 
-    #external-link-button {
-        font-size: calc(8px + 2vmin);
-        padding: 2vmin 5vmin;
-    }
+  .github-button {
+    font-size: calc(8px + 2vmin);
+    padding: 2vmin 5vmin;
+  }
 
-    .github-button-icon {
-        margin: auto 2vmin auto auto;
-        font-size: calc(8px + 2vmin);
-    }
+  #external-link-button {
+    font-size: calc(8px + 2vmin);
+    padding: 2vmin 5vmin;
+  }
 
-    .tag-button {
-        font-size: calc(5px + 2vmin);
-        padding: 1.5vmin 4vmin;
-        margin: 5px;
-    }
+  .github-button-icon {
+    margin: auto 2vmin auto auto;
+    font-size: calc(8px + 2vmin);
+  }
 
-    .tag-container {
-        max-width: 600px;
-        margin: 2vmin auto;
-    }
+  .tag-button {
+    font-size: calc(5px + 2vmin);
+    padding: 1.5vmin 4vmin;
+    margin: 5px;
+  }
+
+  .tag-container {
+    max-width: 600px;
+    margin: 2vmin auto;
+  }
 }
 
 @media only screen and (min-width: 650px) {
-    .project-title {
-        font-size: calc(8px + 1.7vmin);
-    }
+  .works-search {
+    font-size: calc(8px + 1.2vmin);
+    padding: 1vmin 2.5vmin;
+  }
 
-    .tools-used {
-        font-size: calc(6 + 1.2vmin);
-    }
+  .project-title {
+    font-size: calc(8px + 1.7vmin);
+  }
 
-    .about-project-desc {
-        font-size: calc(6 + 1.2vmin);
-    }
+  .tools-used {
+    font-size: calc(6 + 1.2vmin);
+  }
 
-    .about-project-desc:hover {
-        transform: scale(1); /* little oopsies */
-    }
+  .about-project-desc {
+    font-size: calc(6 + 1.2vmin);
+  }
 
-    .header-name {
-        font-size: calc(8px + 2.5vmin);
-    }
+  .about-project-desc:hover {
+    transform: scale(1); /* little oopsies */
+  }
 
-    .project-images {
-        height: 35vmin;
-    }
+  .header-name {
+    font-size: calc(8px + 2.5vmin);
+  }
 
-    .project-images:hover {
-        filter: brightness(90%);
-        transition: all 0.5s;
-    }
+  .project-images {
+    height: 35vmin;
+  }
 
-    .project-cards {
-        max-width: 600px;
-    }
+  .project-images:hover {
+    filter: brightness(90%);
+    transition: all 0.5s;
+  }
 
-    .github-button {
-        font-size: calc(6px + 1vmin);
-        padding: 1vmin 2.5vmin;
-    }
+  .project-cards {
+    max-width: 600px;
+  }
 
-    #external-link-button {
-        font-size: calc(6px + 1vmin);
-        padding: 1vmin 2.5vmin;
-    }
+  .github-button {
+    font-size: calc(6px + 1vmin);
+    padding: 1vmin 2.5vmin;
+  }
 
-    #external-link-button:hover {
-        background-color: rgb(212, 250, 255);
-        color: rgb(13, 37, 58);
-    }
+  #external-link-button {
+    font-size: calc(6px + 1vmin);
+    padding: 1vmin 2.5vmin;
+  }
 
-    .github-button:hover {
-        color: rgb(13, 37, 58);
-        background-color: rgb(150, 220, 230);
-    }
+  #external-link-button:hover {
+    background-color: rgb(211, 211, 211);
+    color: rgb(0, 0, 0);
+    transition: all 0.5s;
+  }
 
-    .github-button-icon {
-        margin: auto 1vmin auto auto;
-    }
+  .github-button:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(211, 211, 211);
 
-    .card-container-works {
-        margin: auto 10vw;
-    }
+    transition: all 0.5s;
+  }
 
-    .tag-button {
-        font-size: calc(4px + 1.2vmin);
-        padding: 0.4vmin 2vmin;
-        margin: 0 5px 10px;
-    }
+  .github-button-icon {
+    margin: auto 1vmin auto auto;
+  }
 
-    .tag-container {
-        max-width: 600px;
-        margin: 0 auto 3vmin;
-    }
+  .card-container-works {
+    margin: auto 10vw;
+  }
 
-    .header-desc {
-        margin: 0 15vw 3vh;
-    }
+  .tag-button {
+    font-size: calc(4px + 1.2vmin);
+    padding: 0.8vmin 2vmin;
+    margin: 0 5px 10px;
+  }
+
+  .tag-container {
+    max-width: 600px;
+    margin: 0 auto 3vmin;
+  }
+
+  .header-desc {
+    margin: 0 15vw 3vh;
+  }
 }
 /* dark mode*/
-@media (prefers-color-scheme: dark) {
-    .project-title {
-        color: white;
-    }
 
-    .tools-used {
-        color: rgb(184, 184, 184);
-    }
+[data-theme="dark"] .works-search {
+  color: white;
+  background-color: #ffffff0f;
+  box-shadow: 0 0px 10px 1px rgb(18, 18, 18);
+  border-color: #252525;
+}
 
-    .about-project-desc {
-        color: rgb(211, 211, 211);
-    }
+[data-theme="dark"] .project-title {
+  color: white;
+}
 
-    .header-name {
-        color: white;
-    }
+[data-theme="dark"] .tools-used {
+  color: rgb(184, 184, 184);
+}
 
-    .project-images {
-        filter: brightness(50%);
-    }
+[data-theme="dark"] .about-project-desc {
+  color: rgb(211, 211, 211);
+}
 
-    .project-images:hover {
-        filter: brightness(75%);
-    }
+[data-theme="dark"] .header-name {
+  color: white;
+}
 
-    .project-cards {
-        background-color: #00000000;
-        backdrop-filter: blur(4px);
-        color: white;
-        box-shadow: 0 0px 10px 1px rgb(18, 18, 18);
-        border-color: #252525;
-    }
+[data-theme="dark"] .project-images {
+  filter: brightness(50%);
+}
 
-    .github-button {
-        color: white;
-        background-color: rgb(60, 60, 60);
-    }
+[data-theme="dark"] .project-images:hover {
+  filter: brightness(75%);
+}
 
-    .github-button:hover {
-        background-color: rgb(72, 72, 72);
-        color: white;
-    }
+[data-theme="dark"] .project-cards {
+  background-color: #ffffff0f;
+  backdrop-filter: blur(4px);
+  color: white;
+  box-shadow: 0 0px 10px 1px rgb(18, 18, 18);
+  border-color: #252525;
+}
 
-    #external-link-button {
-        color: white;
-        background-color: rgb(60, 60, 60);
-    }
+[data-theme="dark"] .github-button {
+  color: white;
+  background-color: rgb(60, 60, 60);
+}
 
-    #external-link-button:hover {
-        background-color: rgb(72, 72, 72);
-        color: white;
-    }
+[data-theme="dark"] .github-button:hover {
+  background-color: rgb(80, 80, 80);
+  color: white;
+}
 
-    .tag-button {
-        color: white;
-        background-color: rgb(60, 60, 60);
-    }
+[data-theme="dark"] #external-link-button {
+  color: white;
+  background-color: rgb(60, 60, 60);
+}
 
-    .tag-button:hover {
-        background-color: rgb(72, 72, 72);
-        color: white;
-    }
+[data-theme="dark"] #external-link-button:hover {
+  background-color: rgb(80, 80, 80);
+  color: white;
+}
+
+[data-theme="dark"] .tag-button {
+  color: white;
+  background-color: #ffffff0f;
+  box-shadow: 0 0px 10px 1px rgb(18, 18, 18);
+  border-color: #252525;
+}
+
+[data-theme="dark"] .tag-button:hover {
+  background-color: rgb(80, 80, 80);
+  color: white;
+  transition: all 0.5s;
 }
