@@ -18,5 +18,10 @@
     "imageUrl": "/badges/s23adhik.png",
     "linkUrl": "https://csclub.uwaterloo.ca/~s23adhik/",
     "altText": "s23adhik"
+  },
+  {
+    "imageUrl": "/badges/hexadecimaldinosuar.gif",
+    "linkUrl": "https://hexadecimaldinosaur.com/",
+    "altText": "hexadecimaldinosuar"
   }
 ]
