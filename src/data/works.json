@@ -1,182 +1,192 @@
 [
-  {
-    "title": "Portfolio",
-    "tech": "TypeScript, React, CSS, Bootstrap",
-    "description": "Website to show my projects, ideas, and experience. Continue browsing this site to see the fruits of my labour.",
-    "image": "website.jpeg",
-    "repo": "https://github.com/dundeezhang/dundeezhangv4",
-    "repoLabel": "Github Repository",
-    "buttonClass": "",
-    "link": "https://dundeezhang.com"
-  },
-  {
-    "title": "UWaterloo CS Club Website",
-    "tech": "TypeScript, React, Next.js, CSS",
-    "description": "Website for the University of Waterloo Computer Science Club. I worked on the merchandise page/gallery.",
-    "image": "csc-merch.jpeg",
-    "repo": "https://git.csclub.uwaterloo.ca/www/www-new",
-    "repoLabel": "Github Repository",
-    "buttonClass": "",
-    "link": "https://csclub.uwaterloo.ca/"
-  },
-  {
-    "title": "NanoWorks",
-    "tech": "TypeScript, Python, Three.js, Pollinations.ai, Next.js, TailwindCSS, FastAPI",
-    "description": "Cursor for DNA Origami. Creates 3D models from DNA sequences with optimal DNA pathing algorithms. Useful for creating base structures for DNA origami decreasing the time and research it takes to create nanostructures. Can be used to create DNA origami for drug delivery, biosensors, and more.",
-    "image": "nanoworks1.jpeg",
-    "repo": "https://github.com/Kurtis24/Terrahacks-Hackathon",
-    "repoLabel": "Github Repository",
-    "buttonClass": "",
-    "link": "https://www.youtube.com/watch?v=N8X2oWvuaNU"
-  },
-  {
-    "title": "Yang News",
-    "tech": "AWS, Python, FastAPI, React, TypeScript, Supabase, TailwindCSS",
-    "description": "Positive news website! Deployed through an AWS EC2 instance. Uses FastAPI to serve the backend and Supabase for the database. React+Vite frontend.",
-    "image": "yang-news.jpeg",
-    "repo": "https://github.com/dundeezhang/hack404",
-    "repoLabel": "Github Repository",
-    "buttonClass": "",
-    "link": "https://yang-eah.pages.dev"
-  },
-  {
-    "title": "Blog",
-    "tech": "TypeScript, React, Markdown",
-    "description": "Blog site to share my notes, ideas and life updates. Uses Markdown to write posts and uses Giscus to allow user commenting.",
-    "image": "blog.jpeg",
-    "repo": "https://github.com/dundeezhang/blogv2",
-    "repoLabel": "Github Repository",
-    "buttonClass": "",
-    "link": "https://blog.dhz.app"
-  },
-  {
-    "title": "datingdo.single",
-    "tech": "HTML, CSS, JavaScript, Bootstrap",
-    "description": "Dating consulting application that helps users find their perfect match. This is a prototype frontend made for a school course. Uses Bootstrap to make the site responsive.",
-    "image": "datingdo.jpeg",
-    "repo": "https://github.com/dundeezhang/datingdo.single",
-    "repoLabel": "Github Repository",
-    "buttonClass": "",
-    "link": "https://dhz.app/datingdo.single"
-  },
-  {
-    "title": "Auranate",
-    "tech": "Flask, Python, JavaScript, HTML, Firebase-Auth, GPT-4o",
-    "description": "AI toolset to prepare and help people in the workforce. Uses text and image generative AI to help users create resumes, cover letters, and portfolios.",
-    "image": "aura.jpeg",
-    "repo": "https://github.com/dundeezhang/aura",
-    "repoLabel": "Github Repository",
-    "buttonClass": "",
-    "link": "https://aura.dhz.app"
-  },
-  {
-    "title": "yourDoList",
-    "tech": "Python, Flask, HTML, SQLAlchemy, GPT-4o",
-    "description": "To do list that generates subtasks for your main tasks. Uses AI to help you break down your tasks into smaller, more manageable pieces so that you spend more time working; less time planning.",
-    "image": "todo.jpeg",
-    "repo": "https://github.com/dundeezhang/todo",
-    "repoLabel": "Github Repository",
-    "buttonClass": "",
-    "link": "/works/todo.mov"
-  },
-  {
-    "title": "Eco Elo",
-    "tech": "React, JavaScript, PostgreSQL, NeonDB, Resend",
-    "description": "Earn elo and compete to be the most eco friendly consumer! Uses computer vision to scan receipts and recognize the most eco-friendly items to rank users against each other.",
-    "image": "ecoelo.jpeg",
-    "repo": "https://github.com/dundeezhang/ecoelo",
-    "repoLabel": "Github Repository",
-    "buttonClass": "hide-button-class",
-    "link": ""
-  },
-  {
-    "title": "GoTerpret",
-    "tech": "GoLang, Bash",
-    "description": "Bash interpreter written in Go. Uses Go's built-in libraries to parse and execute bash commands. User is able to customize the interpreter to their liking with config files.",
-    "image": "goterpret.jpeg",
-    "repo": "https://github.com/dundeezhang/goterpret",
-    "repoLabel": "Github Repository",
-    "buttonClass": "hide-button-class",
-    "link": ""
-  },
-  {
-    "title": "Contest Solutions",
-    "tech": "C++, Java8, Python",
-    "description": "Repository to store most of my solutions for CS problems. Most solutions are only for CCC, but includes some other contests on DMOJ.",
-    "image": "compcode.jpeg",
-    "repo": "https://github.com/dundeezhang/Contests",
-    "repoLabel": "Github Repository",
-    "buttonClass": "hide-button-class",
-    "link": ""
-  },
-  {
-    "title": "PicToPDF",
-    "tech": "JavaScript, React, CSS",
-    "description": "Easily convert your pictures to a singular PDF file online.",
-    "image": "pictopdf.jpeg",
-    "repo": "https://github.com/dundeezhang/pictopdf",
-    "repoLabel": "Github Repository",
-    "buttonClass": "",
-    "link": "https://pictopdf.dhz.app/"
-  },
-  {
-    "title": "ReadMd",
-    "tech": "JavaScript, Markdown, React",
-    "description": "View markdown files in a more readable format online.",
-    "image": "readmd.jpeg",
-    "repo": "https://github.com/dundeezhang/readmd",
-    "repoLabel": "Github Repository",
-    "buttonClass": "",
-    "link": "https://readmd.dhz.app/"
-  },
-  {
-    "title": "Skibidention",
-    "tech": "JavaScript, Chrome Extension",
-    "description": "View webpages in a more readable format by brain rotting words into skibidi.",
-    "image": "skibidention.jpeg",
-    "repo": "https://github.com/dundeezhang/Skibidention",
-    "repoLabel": "Github Repository",
-    "buttonClass": "hide-button-class",
-    "link": "https://readmd.dhz.app/"
-  },
-  {
-    "title": "NHSCSC Website",
-    "tech": "TypeScript, Next.js, CSS, Bootstrap",
-    "description": "Website for NHS CS Club. Shows events and announcements. No longer maintained.",
-    "image": "nhscsc.jpeg",
-    "repo": "https://github.com/dundeezhang/website-nhscc",
-    "repoLabel": "Github Repository",
-    "buttonClass": "",
-    "link": "https://nhscc.vercel.app/"
-  },
-  {
-    "title": "dzPass",
-    "tech": "C++, Makefile, OOP",
-    "description": "An CLI password and user manager tool written in C++ only.",
-    "image": "dzpass.jpeg",
-    "repo": "https://github.com/dundeezhang/dzPass",
-    "repoLabel": "Github Repository",
-    "buttonClass": "hide-button-class",
-    "link": ""
-  },
-  {
-    "title": "Submarine Intercept Sim",
-    "tech": "Java8, Java-Swing, OOP",
-    "description": "World War II Battleship (Haida) versus submarine simulator",
-    "image": "haida.jpeg",
-    "repo": "https://github.com/dundeezhang/Submarine-Intercept-Simulator",
-    "repoLabel": "Github Repository",
-    "buttonClass": "hide-button-class",
-    "link": ""
-  },
-  {
-    "title": "More Projects",
-    "tech": "More Languages",
-    "description": "Most of my projects are found on my GitHub profile or dhz.app.",
-    "image": "future.jpeg",
-    "repo": "https://github.com/dundeezhang/",
-    "repoLabel": "Github Profile",
-    "buttonClass": "",
-    "link": "https://dhz.app"
-  }
+    {
+        "title": "Portfolio",
+        "tech": "TypeScript, React, CSS, Bootstrap",
+        "description": "Website to show my projects, ideas, and experience. Continue browsing this site to see the fruits of my labour.",
+        "image": "website.jpeg",
+        "repo": "https://github.com/dundeezhang/dundeezhangv4",
+        "repoLabel": "Github Repository",
+        "buttonClass": "",
+        "link": "https://dundeezhang.com"
+    },
+    {
+        "title": "UWaterloo CS Club Website",
+        "tech": "TypeScript, React, Next.js, CSS",
+        "description": "Website for the University of Waterloo Computer Science Club. I worked on the merchandise page/gallery.",
+        "image": "csc-merch.jpeg",
+        "repo": "https://git.csclub.uwaterloo.ca/www/www-new",
+        "repoLabel": "Github Repository",
+        "buttonClass": "",
+        "link": "https://csclub.uwaterloo.ca/"
+    },
+    {
+        "title": "NanoWorks",
+        "tech": "TypeScript, Python, Three.js, Pollinations.ai, Next.js, TailwindCSS, FastAPI",
+        "description": "Cursor for DNA Origami. Creates 3D models from DNA sequences with optimal DNA pathing algorithms. Useful for creating base structures for DNA origami decreasing the time and research it takes to create nanostructures. Can be used to create DNA origami for drug delivery, biosensors, and more.",
+        "image": "nanoworks1.jpeg",
+        "repo": "https://github.com/Kurtis24/Terrahacks-Hackathon",
+        "repoLabel": "Github Repository",
+        "buttonClass": "",
+        "link": "https://www.youtube.com/watch?v=N8X2oWvuaNU"
+    },
+    {
+        "title": "Yang News",
+        "tech": "AWS, Python, FastAPI, React, TypeScript, Supabase, TailwindCSS",
+        "description": "Positive news website! Deployed through an AWS EC2 instance. Uses FastAPI to serve the backend and Supabase for the database. React+Vite frontend.",
+        "image": "yang-news.jpeg",
+        "repo": "https://github.com/dundeezhang/hack404",
+        "repoLabel": "Github Repository",
+        "buttonClass": "",
+        "link": "https://yang-eah.pages.dev"
+    },
+    {
+        "title": "Blog V3",
+        "tech": "TypeScript, React, Markdown",
+        "description": "My brain. I write articles on coures notes, life updates, developer notes, and reviews. Uses Markdown for article writing and rendering and Giscus for user commenting. Deployed on Cloudflare Pages.",
+        "image": "blogv3.png",
+        "repo": "https://github.com/dundeezhang/blogv3",
+        "repoLabel": "Github Repository",
+        "buttonClass": "",
+        "link": "https://blog.dhz.app"
+    },
+    {
+        "title": "Old Blog (V2)",
+        "tech": "TypeScript, React, Markdown",
+        "description": "Blog site to share my notes, ideas and life updates. Uses Markdown to write posts and uses Giscus to allow user commenting.",
+        "image": "blogv2.jpeg",
+        "repo": "https://github.com/dundeezhang/blogv2",
+        "repoLabel": "Github Repository",
+        "buttonClass": "",
+        "link": "https://old-blog.dhz.app"
+    },
+    {
+        "title": "datingdo.single",
+        "tech": "HTML, CSS, JavaScript, Bootstrap",
+        "description": "Dating consulting application that helps users find their perfect match. This is a prototype frontend made for a school course. Uses Bootstrap to make the site responsive.",
+        "image": "datingdo.jpeg",
+        "repo": "https://github.com/dundeezhang/datingdo.single",
+        "repoLabel": "Github Repository",
+        "buttonClass": "",
+        "link": "https://dhz.app/datingdo.single"
+    },
+    {
+        "title": "Auranate",
+        "tech": "Flask, Python, JavaScript, HTML, Firebase-Auth, GPT-4o",
+        "description": "AI toolset to prepare and help people in the workforce. Uses text and image generative AI to help users create resumes, cover letters, and portfolios.",
+        "image": "aura.jpeg",
+        "repo": "https://github.com/dundeezhang/aura",
+        "repoLabel": "Github Repository",
+        "buttonClass": "",
+        "link": "https://aura.dhz.app"
+    },
+    {
+        "title": "yourDoList",
+        "tech": "Python, Flask, HTML, SQLAlchemy, GPT-4o",
+        "description": "To do list that generates subtasks for your main tasks. Uses AI to help you break down your tasks into smaller, more manageable pieces so that you spend more time working; less time planning.",
+        "image": "todo.jpeg",
+        "repo": "https://github.com/dundeezhang/todo",
+        "repoLabel": "Github Repository",
+        "buttonClass": "",
+        "link": "/works/todo.mov"
+    },
+    {
+        "title": "Eco Elo",
+        "tech": "React, JavaScript, PostgreSQL, NeonDB, Resend",
+        "description": "Earn elo and compete to be the most eco friendly consumer! Uses computer vision to scan receipts and recognize the most eco-friendly items to rank users against each other.",
+        "image": "ecoelo.jpeg",
+        "repo": "https://github.com/dundeezhang/ecoelo",
+        "repoLabel": "Github Repository",
+        "buttonClass": "hide-button-class",
+        "link": ""
+    },
+    {
+        "title": "GoTerpret",
+        "tech": "GoLang, Bash",
+        "description": "Bash interpreter written in Go. Uses Go's built-in libraries to parse and execute bash commands. User is able to customize the interpreter to their liking with config files.",
+        "image": "goterpret.jpeg",
+        "repo": "https://github.com/dundeezhang/goterpret",
+        "repoLabel": "Github Repository",
+        "buttonClass": "hide-button-class",
+        "link": ""
+    },
+    {
+        "title": "Contest Solutions",
+        "tech": "C++, Java8, Python",
+        "description": "Repository to store most of my solutions for CS problems. Most solutions are only for CCC, but includes some other contests on DMOJ.",
+        "image": "compcode.jpeg",
+        "repo": "https://github.com/dundeezhang/Contests",
+        "repoLabel": "Github Repository",
+        "buttonClass": "hide-button-class",
+        "link": ""
+    },
+    {
+        "title": "PicToPDF",
+        "tech": "JavaScript, React, CSS",
+        "description": "Easily convert your pictures to a singular PDF file online.",
+        "image": "pictopdf.jpeg",
+        "repo": "https://github.com/dundeezhang/pictopdf",
+        "repoLabel": "Github Repository",
+        "buttonClass": "",
+        "link": "https://pictopdf.dhz.app/"
+    },
+    {
+        "title": "ReadMd",
+        "tech": "JavaScript, Markdown, React",
+        "description": "View markdown files in a more readable format online.",
+        "image": "readmd.jpeg",
+        "repo": "https://github.com/dundeezhang/readmd",
+        "repoLabel": "Github Repository",
+        "buttonClass": "",
+        "link": "https://readmd.dhz.app/"
+    },
+    {
+        "title": "Skibidention",
+        "tech": "JavaScript, Chrome Extension",
+        "description": "View webpages in a more readable format by brain rotting words into skibidi.",
+        "image": "skibidention.jpeg",
+        "repo": "https://github.com/dundeezhang/Skibidention",
+        "repoLabel": "Github Repository",
+        "buttonClass": "hide-button-class",
+        "link": "https://readmd.dhz.app/"
+    },
+    {
+        "title": "NHSCSC Website",
+        "tech": "TypeScript, Next.js, CSS, Bootstrap",
+        "description": "Website for NHS CS Club. Shows events and announcements. No longer maintained.",
+        "image": "nhscsc.jpeg",
+        "repo": "https://github.com/dundeezhang/website-nhscc",
+        "repoLabel": "Github Repository",
+        "buttonClass": "",
+        "link": "https://nhscc.vercel.app/"
+    },
+    {
+        "title": "dzPass",
+        "tech": "C++, Makefile, OOP",
+        "description": "An CLI password and user manager tool written in C++ only.",
+        "image": "dzpass.jpeg",
+        "repo": "https://github.com/dundeezhang/dzPass",
+        "repoLabel": "Github Repository",
+        "buttonClass": "hide-button-class",
+        "link": ""
+    },
+    {
+        "title": "Submarine Intercept Sim",
+        "tech": "Java8, Java-Swing, OOP",
+        "description": "World War II Battleship (Haida) versus submarine simulator",
+        "image": "haida.jpeg",
+        "repo": "https://github.com/dundeezhang/Submarine-Intercept-Simulator",
+        "repoLabel": "Github Repository",
+        "buttonClass": "hide-button-class",
+        "link": ""
+    },
+    {
+        "title": "More Projects",
+        "tech": "More Languages",
+        "description": "Most of my projects are found on my GitHub profile or dhz.app.",
+        "image": "future.jpeg",
+        "repo": "https://github.com/dundeezhang/",
+        "repoLabel": "Github Profile",
+        "buttonClass": "",
+        "link": "https://dhz.app"
+    }
 ]
