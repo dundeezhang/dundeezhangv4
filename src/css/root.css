@@ -15,7 +15,9 @@
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid rgb(239, 45, 120); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  animation: typing 0.8s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation:
+    typing 0.8s steps(40, end),
+    blink-caret 0.75s step-end infinite;
   position: relative;
 }
 
@@ -264,9 +266,6 @@ span.glow {
 
 [data-theme="dark"] .dundee-name {
   color: rgb(239, 45, 120);
-}
-
-[data-theme="dark"] .dundee-name {
   border-right: 0.15em solid rgb(239, 45, 120);
 }
 
