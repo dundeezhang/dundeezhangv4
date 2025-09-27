@@ -26,6 +26,14 @@ const GridOverlay = styled.div<{ x: number; y: number; isDarkMode: boolean }>`
   background-size: 35px 35px;
   pointer-events: none;
   transform: ${({ x, y }) => `translate(${-x / 75}px, ${-y / 75}px)`};
+
+  @media (hover: none) and (pointer: coarse) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+  }
 `;
 
 const GlassBackground = styled.div<{ isDarkMode: boolean }>`
@@ -50,27 +58,43 @@ const GlassBackground = styled.div<{ isDarkMode: boolean }>`
 
 const Grid: React.FC = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
   const { theme } = useTheme();
   const isDarkMode = theme === "dark";
 
   useEffect(() => {
-    const handleMouseMove = (event: MouseEvent) => {
-      setMousePosition({ x: event.clientX, y: event.clientY });
+    // Check if device supports touch
+    const checkTouchDevice = () => {
+      setIsTouchDevice(
+        "ontouchstart" in window || navigator.maxTouchPoints > 0,
+      );
     };
 
-    window.addEventListener("mousemove", handleMouseMove);
+    checkTouchDevice();
+
+    const handleMouseMove = (event: MouseEvent) => {
+      if (!isTouchDevice) {
+        setMousePosition({ x: event.clientX, y: event.clientY });
+      }
+    };
+
+    if (!isTouchDevice) {
+      window.addEventListener("mousemove", handleMouseMove);
+    }
 
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
+      if (!isTouchDevice) {
+        window.removeEventListener("mousemove", handleMouseMove);
+      }
     };
-  }, []);
+  }, [isTouchDevice]);
 
   return (
     <>
       <GridContainer isDarkMode={isDarkMode}>
         <GridOverlay
-          x={mousePosition.x}
-          y={mousePosition.y}
+          x={isTouchDevice ? 0 : mousePosition.x}
+          y={isTouchDevice ? 0 : mousePosition.y}
           isDarkMode={isDarkMode}
         />
       </GridContainer>
