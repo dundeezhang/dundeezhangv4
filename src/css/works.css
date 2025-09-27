@@ -6,7 +6,6 @@
   width: 100%;
   margin: 0 0 2vmin;
   border-radius: 2vmin;
-  border-color: rgb(231, 231, 231);
   border: 0;
   background-color: #ffffff00;
   backdrop-filter: blur(4px);
@@ -14,7 +13,6 @@
   font-family: "IBM Plex Mono", monospace;
   font-weight: 500;
   font-style: normal;
-  box-shadow: 0 0px 10px 1px rgb(211, 211, 211);
   color: black;
 }
 
@@ -97,7 +95,6 @@
 .tag-button {
   color: rgb(0, 0, 0);
   border-radius: 2.5vmin;
-  border-color: rgb(231, 231, 231);
   border: 0;
   background-color: #ffffff00;
   backdrop-filter: blur(4px);
