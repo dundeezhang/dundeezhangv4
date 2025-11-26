@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
-import pfp from "../../img/specimenB.jpeg";
-import quack from "../../img/quack.mp3";
-import duck from "../../img/duck.png";
+import pfp from "../../../img/specimenB.jpeg";
+import quack from "../../../img/quack.mp3";
+import duck from "../../../img/duck.png";
 
 const TiltImage = () => {
   const [clickCount, setClickCount] = useState(0);
@@ -35,7 +35,7 @@ const TiltImage = () => {
     const intervalId = setInterval(() => {
       const now = Date.now();
       const lastSecondClicks = clickTimesRef.current.filter(
-        (time) => time > now - 1000
+        (time) => time > now - 1000,
       );
       setCps(lastSecondClicks.length);
     }, 1000);

@@ -1,7 +1,11 @@
+import TiltImage from "./tiltimage";
+
 export default function About() {
   return (
     <div id="about">
       <h2 className="header-name">About Me</h2>
+
+      <TiltImage />
 
       <p className="about-me-ptext">
         Currently studying CS at the{" "}
